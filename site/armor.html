@@ -5,7 +5,7 @@
 		<script src="libs/jquery-3.5.1.min.js"></script>
 		<script src="libs/jqueryloader.js"></script>
 		<script src="armor.js"></script>
-
+		<script>win.width = 1524</script>
 	</head>
 	<body onload="initArmorList()">
 	
@@ -21,35 +21,47 @@
 	</div-->
 
 	<div id="armor-list" style="display:block;">
-		<input class="search" placeholder="Search" />
-		<span id="filters"><div id="filter-template" style="display: none;" class="filterButton" data-filtercat="" onclick="armorFilterClicked(this)">template</div></span>
-		<table>
-			<thead>
-				<th><button class="sort" data-sort="armor_name">Name</button></th>
-				<th><button class="sort" data-sort="armor_AVC">AVC</button></th>
-				<th><button class="sort" data-sort="armor_AVP">AVP</button></th>
-				<th><button class="sort" data-sort="armor_AVB">AVB</button></th>
-				<th><button class="sort" data-sort="coveragecount">Coverage</button></th>
-				<th><button class="sort" data-sort="qualitycount">Qualities</button></th>
-				<th><button class="sort" data-sort="armor_weight">Wt</button></th>
-				<th><button class="sort" data-sort="fudged_pp">PP</button></th>
-				<th><button class="sort" data-sort="cpcost">Cost</button></th>
-			</thead>
+		<div style="display:block;">
+			<input class="search" placeholder="Search" /><button onclick="toggleWordCoverage(this)" class="filterButton" style="width: auto">Word coverages</button>
+		</div>
+		<span id="filters">
+			<div id="filter-template" style="display: none;" class="filterButton" data-filtercat="" onclick="armorFilterClicked(this)">template</div>
+		</span>
 		
-			<tbody class="list">
-				<tr id="armor-item" onclick="console.log(this.getAttribute('data-id'))">
-					<td class="armor_name"></td>
-					<td class="armor_AVC"></td>
-					<td class="armor_AVP"></td>
-					<td class="armor_AVB"></td>
-					<td class="armor_coverage"></td>
-					<td class="armor_qualities"></td>
-					<td class="armor_weight"></td>
-					<td class="armor_pp"></td>
-					<td class="armor_cost"></td>
-				</tr>
-			</tbody>
-		</table>
+		<div>
+			<table>
+				
+				<thead>
+					<th class="armor_type"><button class="sort" data-sort="armor_type">Type</button></th>
+					<th class="armor_name"><button class="sort" data-sort="armor_name">Name</button></th>
+					<th class="armor_AVC"><button class="sort" data-sort="armor_AVC">AVC</button></th>
+					<th class="armor_AVP"><button class="sort" data-sort="armor_AVP">AVP</button></th>
+					<th class="armor_AVB"><button class="sort" data-sort="armor_AVB">AVB</button></th>
+					<th class="armor_coverage_numbers"><button class="sort" data-sort="coveragecount">Coverage</button></th>
+					<th class="armor_coverage"><button class="sort" data-sort="coveragecount">Coverage</button></th>
+					<th class="armor_qualities"><button class="sort" data-sort="qualitycount">Qualities</button></th>
+					<th class="armor_weight"><button class="sort" data-sort="armor_weight">Wt</button></th>
+					<th class="armor_pp"><button class="sort" data-sort="fudged_pp">PP</button></th>
+					<th class="armor_cost"><button class="sort" data-sort="cpcost">Cost</button></th>
+				</thead>
+			
+				<tbody class="list">
+					<tr id="armor-item" onclick="console.log(this.getAttribute('data-id'))">
+						<td class="armor_type"></td>
+						<td class="armor_name"></td>
+						<td class="armor_AVC"></td>
+						<td class="armor_AVP"></td>
+						<td class="armor_AVB"></td>
+						<td class="armor_coverage_numbers"></td>
+						<td class="armor_coverage"></td>
+						<td class="armor_qualities"></td>
+						<td class="armor_weight"></td>
+						<td class="armor_pp"></td>
+						<td class="armor_cost"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<!--li id="armor-item" class="list">
 			<a class="armor_name"></a>
 			<a class="armor_AVC">8</a>

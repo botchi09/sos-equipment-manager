@@ -7,29 +7,39 @@ body {
 tbody {
 	box-shadow: 0 0 0 1px black;
 	border-radius: 0px;
-	font-size: x-small;
+	font-size: xx-small;
 	padding: 0;
 
 }
 
-td {
-    border: solid;
 
+.hidden {
+	display: none;
+}
+
+tbody td{
+}
+
+tbody tr:nth-child(odd){
+  background-color: #d7f1fc;
 }
 
 button {
 	width: 100%;
+	font-size: xx-small;
+	margin: 0px;
+	padding: 0px;
 }
 
 .filterButton {
 	display:inline-block;
-	padding:0.3em 0.5em;
-	margin:0 0.1em 0.1em 0;
-	border-radius:2em;
+	padding:0.0em 0.0em;
+	margin:0 1.5 0.0em 0;
+	border-radius:0.25em;
 	box-sizing: border-box;
 	text-decoration:none;
-	font-family:'Roboto',sans-serif;
 	font-weight:300;
+	font-size: xx-small;
 	color:#FFFFFF;
 	background-color:#4eb5f1;
 	text-align:center;

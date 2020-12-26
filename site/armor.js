@@ -8,17 +8,43 @@ function loadArmorData() {
 	console.log("armorData loaded!", Object.keys(armorData).length, "armor categories!")
 }
 
+function generateCoverageNumberString(coverage) {
+	var coverageString = ""
+	var weakSpot = decodeURIComponent("%E2%80%A1")
+	var halfProt = decodeURIComponent("%C2%BD")
+	for (var i=0;i<coverage.locations.length;i++) {
+		var num = coverage.locations[i]
+		coverageString += num
+		if (coverage.halfProt.indexOf(num) > -1) {
+			coverageString+=halfProt
+		}
+		if (coverage.weakSpot.indexOf(num) > -1) {
+			coverageString+=weakSpot
+		}
+		coverageString += ", "
+	}
+	
+	//Trim off the last comma and space
+	coverageString = coverageString.substring(0, coverageString.length-2)
+	
+	return coverageString
+}
+
 function initArmorList() {
+	
+
 	loadArmorData()
 
 
 	var options = {
 		item: "armor-item",
 		valueNames: [
+			"armor_type",
 			"armor_name",
 			"armor_AVC",
 			"armor_AVP",
 			"armor_AVB",
+			"armor_coverage_numbers",
 			"armor_coverage",
 			"armor_qualities",
 			"armor_weight",
@@ -40,17 +66,25 @@ function initArmorList() {
 				//console.log("item", armorPiece)
 				var coverageCount = 0
 				var coverageLocations = armorPiece.Coverage.locations
+				var armorCoverageNumbers = ""
+
 				if (coverageLocations !== null && coverageLocations !== undefined && coverageLocations !== "undefined") {
 					coverageCount = (coverageLocations.length || 0)
+					armorCoverageNumbers = generateCoverageNumberString(armorPiece.Coverage)
+					console.log("GENERATING COVERAGE", armorCoverageNumbers)
 				}
 				
 				var pp = (parseInt(armorPiece.PP) || 0)
 				var fudgedPp = pp+100
 				
+				
+				
+				
 				armorList.add({
+					armor_type: armorPiece.Type, 
 					armor_name: armorPiece.Name, id: armorPiece.Id, 
 					armor_AVC: armorPiece.AVC, armor_AVP: armorPiece.AVP, armor_AVB: armorPiece.AVB,
-					armor_coverage: armorPiece.Coverage.string || "",
+					armor_coverage: armorPiece.Coverage.string || "", armor_coverage_numbers: armorCoverageNumbers,
 					armor_qualities: armorPiece.Qualities,
 					armor_weight: armorPiece.Weight,
 					armor_pp: pp, fudged_pp: fudgedPp,
@@ -64,7 +98,8 @@ function initArmorList() {
 		filteredCategories[armorCategoryIndex] = false
 		$("#filter-template").clone().css("display", "").appendTo("#filters").attr("data-filtercat", armorCategoryIndex).text(armorCategoryIndex)
 	}
-	
+	initHiddenColumns()
+
 	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
 	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
 		if (a > b) { return 1 }
@@ -72,6 +107,13 @@ function initArmorList() {
             return 0
 		}
 	})*/
+}
+
+function initHiddenColumns() {
+	$(".armor_coverage_numbers").toggleClass("hidden")
+	$(".armor_type").toggleClass("hidden")
+	$(".armor_pp").toggleClass("hidden")
+
 }
 
 function applyArmorFilter(category, doFilter) {
@@ -94,6 +136,13 @@ function removeAllArmorFilters() {
 		filteredCategories[filterIndex] = false
 	}
 	armorList.filter()
+}
+
+
+function toggleWordCoverage(btn) {
+	$(btn).toggleClass("filterClicked")
+	$(".armor_coverage").toggleClass("hidden")
+	$(".armor_coverage_numbers").toggleClass("hidden")
 }
 
 function armorFilterClicked(btn) {
