@@ -27,7 +27,8 @@ function initArmorList() {
 			
 			{ data: ["id"] },
 			{ data: ["cpcost"] },
-			{ data: ["category"] }
+			{ data: ["category"] },
+			{ data: ["fudged_pp"] } //Negative number sort workaround
 		]
 	}
 	armorList = new List("armor-list", options)
@@ -43,13 +44,16 @@ function initArmorList() {
 					coverageCount = (coverageLocations.length || 0)
 				}
 				
+				var pp = (parseInt(armorPiece.PP) || 0)
+				var fudgedPp = pp+100
+				
 				armorList.add({
 					armor_name: armorPiece.Name, id: armorPiece.Id, 
 					armor_AVC: armorPiece.AVC, armor_AVP: armorPiece.AVP, armor_AVB: armorPiece.AVB,
 					armor_coverage: armorPiece.Coverage.string || "",
 					armor_qualities: armorPiece.Qualities,
 					armor_weight: armorPiece.Weight,
-					armor_pp: (parseInt(armorPiece.PP) || 0),
+					armor_pp: pp, fudged_pp: fudgedPp,
 					armor_cost: armorPiece.Cost, cpcost: armorPiece.CpCost, 
 					qualitycount: armorPiece.Qualities.length,
 					coveragecount: coverageCount,
@@ -61,12 +65,13 @@ function initArmorList() {
 		$("#filter-template").clone().css("display", "").appendTo("#filters").attr("data-filtercat", armorCategoryIndex).text(armorCategoryIndex)
 	}
 	
-
-	armorList.sort('armor_pp', { sortFunction: function(before, after) {
-		if (before > after) { return 1; }
-            if (before < after) { return -1; }
-            else { return 0; }
-	} });
+	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
+	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
+		if (a > b) { return 1 }
+            if (a < b) { return -1 }
+            return 0
+		}
+	})*/
 }
 
 function applyArmorFilter(category, doFilter) {
