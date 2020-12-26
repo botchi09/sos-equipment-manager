@@ -1,0 +1,65 @@
+body { 
+	font-family:sans-serif;
+}
+
+
+
+tbody {
+	box-shadow: 0 0 0 1px black;
+	border-radius: 0px;
+	font-size: x-small;
+	padding: 0;
+
+}
+
+td {
+    border: solid;
+
+}
+
+button {
+	width: 100%;
+}
+
+.filterButton {
+	display:inline-block;
+	padding:0.3em 0.5em;
+	margin:0 0.1em 0.1em 0;
+	border-radius:2em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#4eb5f1;
+	text-align:center;
+	transition: all 0.2s;
+}
+
+.filterButton:hover {
+	background-color:#3b8cbc;
+}
+
+.filterClicked {
+	background-color:#9692a2;
+}
+
+.filterClicked:hover {
+	background-color:#78777b;
+}
+
+#armor-item {
+	display: none;
+}
+
+.sort.asc, .sort.desc {
+	background-color: yellow;
+}
+.sort.asc::after {
+	content: "\002B06";
+	padding-left: 3px;
+}
+.sort.desc::after {
+	content: "\002B07";
+	padding-left: 3px
+}

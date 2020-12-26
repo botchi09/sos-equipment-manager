@@ -1,0 +1,177 @@
+Name,Type,Reach,Swing,STN,Thrust,TTN,DTN,Guard,Qualities,Weight,Cost
+Ballock Dagger,D,H,-1c,7,+1p,6,8,1,"Fluid Thrusts, Light Blade",0,5 cp
+Baselard,D,S,+0c,6,+0p,6,7,1,Fluid Thrusts,0,2 sp
+Bowie Knife,D,S,+0c,6,+1p,6,8,1,---,0,10 cp
+Cinqueda,"D, S",S,+0c,6,+2p,7,8,0,---,0,3 sp
+Degan,"D, S",S,-1c,6,+1p,6,7,0,"Fluid Thrusts, Light Blade",0,1 sp
+Dirk,D,H,-1c,7,+0p,6,7,0,"Fluid Thrusts, Light Blade",0,4 cp
+Kyber Knife,"D, S",S,+0c,7,+1p,7,7,0,"Draw 2, Thin Blade",0,10 cp
+Knife (Large),D,S,-1c,6,+0p,6,9,0,"Draw 1, Light Blade",0,7 cp
+Knife (Small),D,H,-2c,6,+1p,6,9,0,"Draw 1, Light Blade, Thin Blade",0,6 cp
+Kukri,D,S,+1c,6,+0p,7,9,0,"Draw 2, Forward Swept, Light Blade",0,1 sp
+Main Gauche,D,H,-1c,7,+0p,7,6,3,"Companion Weapon, Light Blade",0,3 sp
+Misericorde,D,H,-2c,9,-2p,5,10,0,"Fluid Thrusts, Light Blade, Thin Blade",0,3 cp
+Navaja,D,H,+0c,6,-1p,7,8,0,"Draw 2, Light Blade",0,6 cp
+Poignard,D,H,-1c,6,+0p,6,8,1,"Fluid Thrusts, Light Blade, Thin Blade",0,6 cp
+Pugio,D,H,-1c,7,+1p,6,7,0,"Light Blade, Spatulate Tip 2",0,6 cp
+Puukko,D,H,-1c,6,+0p,6,9,0,"Fluid Thrusts, Light Blade",0,4 cp
+Rondel Dagger,D,S,-1c,7,+1p,6,7,1,"Fluid Thrusts, Light Blade, Thin Blade",0,6 cp
+Short Kalzbalger,"D, S",S,+0c,7,+0p,7,7,1,Spatulate Tip 2,0,6 sp
+Stilette,D,H,-1c,7,+0p,6,8,1,"Fluid Thrusts, Light Blade, Thin Blade",0,8 cp
+Swordbreaker,D,S,-1c,6,+0p,6,7,1,"Companion Weapon, Parrying Teeth",0,1 sp
+Tanto,D,H,+0c,7,+0p,6,8,1,"Draw 1, Light Blade, Thin Blade",0,3 sp
+Arming Sword (Early),S,M,+1c,7,+0p,7,7,1,Spatulate Tip 2,0.5,1 gp
+Arming Sword (Chivalric),S,M,+2c,7,+0p,7,7,2,---,0.5,1 gp
+Arming Sword (Late),S,M,+0c,7,+2p,7,7,2,---,0.5,1 gp
+Backsword (Std.),S,M,+1c,7,+1p,7,7,3,---,0.5, 1 gp
+Backsword (Hvy.),S,L,+2c,7,+1p,8,8,3,---,0.5,25 sp
+Bastard Sword 1H,S,L,+0c,7,+1p,7,7,2,Heavy,1,50 sp
+Cinqueda,"D, S",S,+0c,6,+2p,7,7,0,---,0,3 sp
+Claymore (Bskt),S,M,+1c,7,+0p,7,7,4,Tight Grip,0.5,1 gp
+Cutlass,S,S,+1c,7,+0p,8,8,3,---,0.5,1 sp
+Degan,"D, S",S,-1c,6,+1p,6,6,0,"Fluid Thrusts, Light Blade",0,1 sp
+Dussack,S,S,+1c,7,-1p,7,7,3,"Draw 2, Tight Grip",0.5,1 sp
+Espada Ropera,S,L,+0c,7,+1p,7,7,3,---,0.5,25 sp
+Falcata,S,S,+1c,6,-1p,8,8,3,Forward Swept,0.5,1 gp
+Falchion,S,M,+2c,7,+0p,8,8,2,---,0.5,18 cp
+Gladius,S,S,+1c,7,+1p,7,7,0,---,0,1 sp
+Karthacki Dueling Sword,S,M,-1b,6,+0p,6,7,0,"Fluid Thrusts, Light Blade, Thin Blade",0.5,10 sp
+Katana 1H,S,M,+1c,7,+0p,8,8,1,"Draw 3, Heavy",1,50 sp
+Katzbalger,S,S,+1c,7,+0p,8,7,2,Spatulate Tip 2,0.5,4 sp
+Katzbalger (Short),"D, S",S,+0c,7,+0p,7,7,1,Spatulate Tip 2,0,6 sp
+Khyber Knife,"D, S",S,+0c,7,+1p,7,7,0,"Draw 2, Thin Blade",0,10 cp
+Kilij,S,M,+1c,7,+0p,8,7,2,"Cavalry Sword, Draw 4",0.5,30 sp
+Koncerz,S,VL,-2c,7,+2p,8,8,3,"AP Thrust 2, Couched Charge",0.5,25 sp
+Khopesh,"S, B",S,+1c,6,-1p,9,8,0,"Forward Swept, Hook",0.5,1 sp
+Kriegsmesser 1H,S,M,+1c,7,+0p,8,8,2,"Draw 2, Heavy",1,10 sp
+Langes Messer,S,M,+1c,7,+0p,7,8,2,Draw 2,0.5,1 sp
+Longsword 1H,S,L,+1c,7,+0p,7,8,2,Heavy,1,50 sp
+Pallasch,S,L,+1c,7,+1p,8,7,3,Cavalry Sword,0.5,35 sp
+Rapier,S,L,-1c,6,+0p,6,7,3,"Fluid Thrusts, Thin Blade",0.5,30 sp
+Saber (Early),S,M,+0c,7,+0p,7,8,1,"Cavalry Sword, Draw 2",0.5,10 sp
+Saber (Hussar),S,M,+1c,7,-1p,7,7,3,"Cavalry Sword, Draw 3",0.5,20 sp
+Saber (Karabela),S,M,+0c,7,-1p,8,7,3,"Cavalry Sword, Draw 4",0.5,30 sp
+Saber (Zellish),S,M,+1c,7,+0p,8,8,3,"Draw 2, Forward Swept",0.5,15 sp
+Schiavona,S,L,+0c,7,+0p,7,7,4,Tight Grip,0.5,1 gp
+Scimitar,S,M,+0c,7,-1p,7,7,2,"Cavalry Sword, Draw 4",0.5,15 sp
+Scythe-sword,S,S,+1c,7,-1p,9,8,1,"Draw 2, Forward Swept",0.5,16 cp
+Shashka,S,M,+0c,7,+0p,7,7,0,"Cavalry Sword, Draw 2",0.5,15 sp
+Short Sword,S,S,+0c,7,+1p,6,7,1,---,0,1 sp
+Sidesword,S,L,+1c,7,+1p,7,7,3,---,0.5,15 sp
+Smallsword,S,M,-2c,6,+0p,6,7,3,"Fluid Thrusts, Light Blade, Thin Blade",0.5,30 sp
+Spadroon,S,M,-1c,6,+0p,6,7,3,"Fluid Thrusts, Light Blade",0.5,30 sp
+Tesshake,S,S,+0c,7,+0p,7,8,3,---,0.5,1 sp
+Tulwar,S,S,+0c,7,+2p,7,8,2,"Cavalry Sword, Draw 4, Tight Grip",0.5,26 sp
+Urumi,S,VL,+0c,7,---,---,9,1,"Chain 3, Draw 2",0,30 sp
+Wakizashi,S,S,+0c,7,+0p,7,7,1,Draw 1,0,10 sp
+War Cleaver,S,M,+2c,7,-1p,7,8,0,Heavy,0.5,6 cp
+Yataghan,S,S,+1c,7,+0p,7,7,0,"Draw 1, Forward Swept",0.5,10 sp
+Bastard Sword 2H,S,L,+1c,7,+2p,7,7,2,"Hand Off, Heavy",1,50 sp
+Claymore,S,L,+3c,7,+1p,7,7,3,Heavy,2,50 sp
+Estoc,S,L,+0b,8,+2p,6,7,2,"AP Thrust 1, Fluid Thrusts, Thin Blade",1,45 sp
+Flammenschwert,S,VL,+2c,7,+3p,8,7,3,"Crushing 1, Draw 1, Heavy",2,4 gp
+Godenak,S,M,+3c,7,-1p,8,8,0,"AP Swing 1, Heavy",1,2 sp
+Grosses Messer,S,L,+2c,7,+0p,8,8,1,"Draw 3, Heavy",2,1 gp
+Katana 2H,S,M,+2c,7,+1p,7,7,1,"Draw 4, Hand Off, Heavy",1,50 sp
+Katzbalger (Large),S,L,+2c,7,+0p,8,7,2,"Heavy, Spatulate Tip 2",1,2 gp
+Kriegsmesser 2H,S,M,+2c,7,+0p,7,7,2,"Draw 3, Hand Off, Heavy",1,10 sp
+Longsword 2H,S,L,+2c,7,+1p,7,7,2,"Hand Off, Heavy",1,50 sp
+Massive Godenak,S,VL,+4c,7,+0p,8,8,0,"AP Swing 2, Freakishly Large, Heavy",1,10 sp
+Montante,S,VL,+2c,7,+1p,7,7,2,Heavy,2,4 gp
+No-Dachi,S,L,+2c,7,+0p,8,8,1,"Draw 3, Heavy",1,3 gp
+Swiss Saber (Schnepf),S,L,+1c,7,+0p,7,7,3,"Draw 3, Heavy",1,45 sp
+Zweihander,S,VL,+3c,7,+2p,8,7,2,Heavy,2,75 sp
+Zweihander (Grutte),S,EL,+4c,7,+3p,8,7,2,"Freakishly Large, Heavy",3,6 gp
+Battleaxe 1H,B,M,+2c,7,-2b,7,9,0,"AP Swing 1, Hook, Shock 2, Swing Slot, Thrust Slot",1,6 sp
+Bar Mace,B,S,+1b,7,-2b,7,7,0,"AP Swing 1, Shock 1, Thrust Slot",0,1 sp
+Club (Short) / Truncheon,B,S,+0b,6,-2b,7,6,0,---,0,1 cp
+Club (Medium) / Rod,B,M,+0b,7,-1b,7,6,0,---,0,1 cp
+Double-headed Flail,B,M,+1b,8,-2b,8,10,0,"AP Swing 2, Chain 1, Multi-Hit, Shock 2",1,9 cp
+Hand-axe / Hatchet,B,S,+2c,7,-2b,7,8,0,"AP Swing 1, Hook, Shock 1, Swing Slot, Thrust Slot",0,6 cp
+Khopesh,"S, B",S,+1c,6,-1p,9,8,0,"Forward Swept, Hook",0.5,1 sp
+Light Flail,B,M,+2b,7,-2b,8,8,0,"Chain 2, Shock 2",1,6 sp
+Light Mace (Flanged),B,S,+2b,7,-2b,7,7,0,"AP Swing 2, Crushing 1, Shock 2, Thrust Slot",0,3 sp
+Light Mace (Knobbled),B,S,+2b,7,-2b,7,7,0,"AP Swing 1, Shock 2, Thrust Slot",0,4 cp
+Light Mace (Spiked),B,S,+2b,7,-2b,7,7,0,"Bloody 2, Shock 2, Thrust Slot",0,8 cp
+Tabarzin 1H,B,L,+2c,7,+0p,8,8,0,"AP Swing 1, Hook, Shock 1, Swing Slot",2,10 sp
+Warhammer (Standard),B,S,+2b,7,-2b,7,8,0,"AP Swing 1, Crushing 1, Shock 1, Swing Slot, Thrust Slot",0,6 cp
+War Pick,B,S,+2p,7,-2b,7,8,0,"AP Swing 2, Hook, Swing Slot, Thrust Slot",0,2 sp
+Battleaxe 2H,B,M,+3c,7,-2b,7,8,0,"AP Swing 1, Hand Off, Heavy, Hook, Shock 2, Swing Slot, Thrust Slot",1,6 sp
+Club (Large),B,M,+1b,6,-1b,7,7,0,"Heavy, Shock 1, Thrust Slot",1,3 cp
+Metal Club (Large),B,M,+2b,6,-1b,7,8,0,"AP Swing 2, Crushing 2, Heavy, Shock 2, Thrust Slot",2,1 sp
+Dane Axe,B,L,+4c,7,+0p,8,8,0,"AP Swing 2, Heavy, Hook, Shock 2",2,7 sp
+Goedendag,"B, P",L,+3b,7,+2p,8,8,0,"AP Swing 2, AP Thrust 2, Crushing 1, Heavy, Shock 2",2,1 sp
+Gunstock Club,B,M,+2b,7,-1b,7,7,0,"AP Swing 1, Heavy, Shock 1, Swing Slot",1,7 cp
+Heavy Mace (Flanged),B,M,+3b,7,-2b,7,7,0,"AP Swing 2, Crushing 2, Heavy, Shock 1",1,6 sp
+Heavy Mace (Knobbled),B,M,+3b,7,-2b,7,7,0,"AP Swing 1, Heavy, Shock 4",1,1 sp
+Heavy Mace (Spiked),B,M,+3b,7,-2b,7,7,0,"AP Swing 1, Bloody 3, Crushing 1, Heavy",1,2 sp
+Morningstar,"B, P",L,+3b,7,+1p,8,8,0,"AP Swing 2, Bloody 3, Heavy",5,1 sp
+Poleaxe,"B, P, R",L,+2c,7,+2p,7,7,0,"AP Swing 1, AP Thrust 1, Heavy, Shock 2, Thin Blade, Swing Slot",5,8 sp
+Pole-Flail,"B, P",L,+2b,7,-2b,7,8,0,"AP Swing 2, Chain 2, Crushing 2, Heavy, Shock 2",2,2 sp
+Tabarzin 2H,B,L,+3c,7,+0p,8,8,0,"AP Swing 2, Hand Off, Heavy, Hook, Shock 2, Swing Slot",2,10 sp
+Warhammer (Heavy),B,M,+2b,7,-2b,7,8,0,"AP Swing 1, Crushing 2, Heavy, Shock 2, Swing Slot, Thrust Slot",1,1 sp
+War Maul,B,M,+3b,7,-2b,8,8,0,"AP Swing 1, Crushing 2, Heavy, Shock 4",2,2 sp
+Wood Axe,B,M,+2c,7,-2b,8,8,0,"AP Swing 1, Heavy, Hook, Shock 2",1,2 sp
+Ahlspiess,"R, P",L,-1b,8,+1p,7,7,0,"AP Thrust 3, Thin Blade",5,4 sp
+Fauchard,"R, P",VL,+2c,7,+1p,8,7,0,"Forward Swept, Heavy, Swing Slot",4,1 sp
+Ge (Chinese Dagger Axe),"R, P",VL,+3p,7,+2p,7,7,0,"AP Swing 1, Heavy, Hook Slot",5,1 sp
+Half-Pike 1H,R,L,-2c,8,+1p,7,8,0,Fluid Thrusts,4,1 sp
+Half-Pike 2H,R,L,-1c,7,+2p,6,7,0,"Fluid Thrusts, Hand Off",4,1 sp
+Lance (Light),R,VL,-1c,10,+2p,8,10,0,"Couched Charge, Heavy",4,1 cp
+Lance (Medium),R,EL,-1c,10,+3p,9,10,0,"Couched Charge, Heavy",6,1 sp
+Lance (Hollow),R,LL,-1c,10,+3p,9,10,0,"Couched Charge, Heavy",8,4 sp
+Longstaff,"R, P",EL,+0b,7,-1b,7,7,0,Heavy,6,4 cp
+Military Fork,"R, P",VL,-1c,10,+1p,7,7,0,"Multi-Hit Thrust 2, Heavy",5,3 cp
+Musket (Butt),R,H,+1b,7,-1b,7,8,0,"Heavy, Shock 2",0,3 cp
+Musket (Bayonet),R,L,-1c,9,+2p,7,8,0,"Heavy, Thin Blade",0,3 cp
+Naginata,"R, P",EL,+2c,7,+1p,7,7,0,"Draw 2, Fluid Thrusts",4,10 sp
+Partisan,"R, P",EL,+2c,8,+3p,7,7,0,Fluid Thrusts,5,10 sp
+Pike,"R, P",LL,-2c,10,+3p,8,9,0,Brace,6,1 sp
+Poleaxe,"B, P, R",L,+2c,7,+2p,7,7,0,"AP Swing 1, AP Thrust 1, Heavy, Shock 2, Thin Blade, Swing Slot",5,8 sp
+Quarterstaff,"R, P",VL,+0b,6,-1b,6,6,0,"Fluid Thrusts, Heavy",4,3 cp
+Ranseur,"R, P",EL,+0c,8,+2p,7,7,0,---,5,1 sp
+Spear (Arming) 1H,R,VL,-1c,9,+1p,7,9,0,---,4,6 cp
+Spear (Arming) 2H,R,VL,+0c,7,+2p,7,7,0,"Fluid Thrusts, Hand Off",4,6 cp
+Spear (Short),R,M,+0c,8,+2p,7,8,0,Fluid Thrusts,0,3 cp
+Spear (Standard) 1H,R,EL,+0c,9,+2p,7,9,0,---,4,8 cp
+Spear (Standard) 2H,R,EL,+0c,8,+3p,7,8,0,"Fluid Thrusts, Hand Off",4,8 cp
+Spetum,"R, P",VL,+1c,8,+2p,7,7,0,Fluid Thrusts,4,2 sp
+Swordstaff,"R, P",EL,+3c,8,+3p,7,8,0,---,8,3 sp
+Trident 1H,"R, P",L,-1c,10,-1p,8,9,0,Multi-Hit Thrust 3,4,5 cp
+Trident 2H,"R, P",L,+0c,9,+0p,7,7,0,"Hand Off, Multi-Hit Thrust 3",4,5 cp
+Yari (Jumonji),"R, P",VL,+2c,7,+2p,7,7,0,Heavy,4,2 sp
+Yari (Bishamon),"R, P",VL,+3c,7,+2p,7,7,0,AP Swing 1,4,3 sp
+Yari (Kata Kama),"R, P",VL,+2c/+2p,7,+2p,7,7,0,"AP Swing 1, Heavy, Hook",4,3 sp
+Ahlspiess,"R, P",L,-1b,8,+1p,7,7,0,"AP Thrust 3, Thin Blade",5,4 sp
+Bardiche,P,VL,+4c,7,-1p,9,8,0,"AP Swing 2, Crushing 2, Heavy, Shock 2, Swing Slot",5,2 sp
+Bec de Corbin,P,VL,+2p,7,+2p,7,7,0,"AP Swing 2, Heavy, Hook, Swing Slot, Thin Blade",5,1 sp
+Bill (Black),P,VL,+3c,8,+2p,7,7,0,"AP Swing 1, Crushing 1, Heavy, Hook, Shock 2, Swing Slot",5,1 sp
+Bill (Forest),P,EL,+2c,8,+2p,7,8,0,"AP Swing 2, Crushing 1, Heavy, Hook, Swing Slot",5,1 sp
+Falx,P,L,+3c,8,-1p,10,8,0,"AP Swing 2, Forward Swept, Heavy",4,1 sp
+Fauchard,"R, P",VL,+2c,7,+1p,8,7,0,"Forward Swept, Heavy, Swing Slot",4,1 sp
+Ge (Chinese Dagger Axe),"R, P",VL,+3p,7,+2p,7,7,0,"AP Swing 1, Heavy, Hook Slot",5,1 sp
+Glaive,P,VL,+2c,7,+1p,8,7,0,"Draw 2, Heavy, Swing Slot",5,3 sp
+Goedendag,"B, P",L,+3b,7,+2p,8,8,0,"AP Swing 2, AP Thrust 2, Crushing 1, Heavy, Shock 2",2,1 sp
+Guandao (Chinese Glaive),P,VL,+2c,7,+2p,8,7,0,"AP Swing 1, Draw 2, Heavy",5,5 sp
+Halberd,P,VL,+3c,7,+2p,8,7,0,"AP Swing 2, Crushing 2, Heavy, Swing Slot",5,3 sp
+Lochaber Axe,P,VL,+2c,7,+1p,8,8,0,"AP Swing 2, Heavy, Hook, Shock 2",5,2 sp
+Longstaff,"R, P",EL,+0b,7,-1b,7,7,0,Heavy,6,4 cp
+Lucerne Hammer,P,L,+2b,7,+2p,7,7,0,"AP Thrust 1, Crushing 2, Shock 2, Heavy, Thin Blade, Swing Slot",5,8 sp
+Military Fork,"R, P",VL,-1c,10,+1p,7,7,0,"Multi-Hit Thrust 2, Heavy",5,3 cp
+Morningstar,"B, P",L,+3b,7,+1p,8,8,0,"AP Swing 2, Bloody 3, Heavy",5,1 sp
+Naginata,"R, P",EL,+2c,7,+1p,7,7,0,"Draw 2, Fluid Thrusts",4,10 sp
+Partisan,"R, P",EL,+2c,8,+3p,7,7,0,Fluid Thrusts,5,10 sp
+Pike,"R, P",LL,-2c,10,+3p,8,9,0,Brace,6,1 sp
+Poleaxe,"B, P, R",L,+2c,7,+2p,7,7,0,"AP Swing 1, AP Thrust 1, Heavy, Shock 2, Thin Blade, Swing Slot",5,8 sp
+Pole-Flail,"B, P",L,+2b,7,-2b,7,8,0,"AP Swing 2, Chain 2, Crushing 2, Heavy, Shock 2",2,2 sp
+Quarterstaff,"R, P",VL,+0b,6,-1b,6,6,0,"Fluid Thrusts, Heavy",4,3 cp
+Saber-Halberd,P,VL,+3c,7,+0p,8,7,0,"AP Swing 1, Crushing 1, Draw 2, Heavy, Swing Slot",5,15 sp
+Spetum,"R, P",VL,+1c,8,+2p,7,7,0,Fluid Thrusts,4,2 sp
+Swordstaff,"R, P",EL,+3c,8,+3p,7,8,0,---,8,3 sp
+Trident 1H,"R, P",L,-1c,10,-1p,8,9,0,Multi-Hit Thrust 3,4,5 cp
+Trident 2H,"R, P",L,+0c,9,+0p,7,7,0,"Hand Off, Multi-Hit Thrust 3",4,5 cp
+War-Scythe,P,VL,+3c,7,+0p,9,8,0,"Forward Swept, Heavy",4,4 cp
+Yari (Jumonji),"R, P",VL,+2c,7,+2p,7,7,0,Heavy,4,2 sp
+Yari (Bishamon),"R, P",VL,+3c,7,+2p,7,7,0,AP Swing 1,4,3 sp
+Yari (Kata Kama),"R, P",VL,+2c/+2p,7,+2p,7,7,0,"AP Swing 1, Heavy, Hook",4,3 sp
+Homebrewsword,"R, P",LL,-1c,8,+2p,7,7,0,"Fluid Thrusts, Hook",4,2 sp
