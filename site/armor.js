@@ -54,7 +54,8 @@ function initArmorList() {
 			{ data: ["id"] },
 			{ data: ["cpcost"] },
 			{ data: ["category"] },
-			{ data: ["fudged_pp"] } //Negative number sort workaround
+			{ data: ["fudged_pp"] }, //Negative number sort workaround
+			{ data: ["coverage_data"] }
 		]
 	}
 	armorList = new List("armor-list", options)
@@ -71,20 +72,17 @@ function initArmorList() {
 				if (coverageLocations !== null && coverageLocations !== undefined && coverageLocations !== "undefined") {
 					coverageCount = (coverageLocations.length || 0)
 					armorCoverageNumbers = generateCoverageNumberString(armorPiece.Coverage)
-					console.log("GENERATING COVERAGE", armorCoverageNumbers)
+					//console.log("GENERATING COVERAGE", armorCoverageNumbers)
 				}
 				
 				var pp = (parseInt(armorPiece.PP) || 0)
 				var fudgedPp = pp+100
-				
-				
-				
-				
+		
 				armorList.add({
 					armor_type: armorPiece.Type, 
 					armor_name: armorPiece.Name, id: armorPiece.Id, 
 					armor_AVC: armorPiece.AVC, armor_AVP: armorPiece.AVP, armor_AVB: armorPiece.AVB,
-					armor_coverage: armorPiece.Coverage.string || "", armor_coverage_numbers: armorCoverageNumbers,
+					armor_coverage: armorPiece.Coverage.string || "", armor_coverage_numbers: armorCoverageNumbers, coverage_data: coverageLocations || [],
 					armor_qualities: armorPiece.Qualities,
 					armor_weight: armorPiece.Weight,
 					armor_pp: pp, fudged_pp: fudgedPp,
@@ -99,7 +97,8 @@ function initArmorList() {
 		$("#filter-template").clone().css("display", "").appendTo("#filters").attr("data-filtercat", armorCategoryIndex).text(armorCategoryIndex)
 	}
 	initHiddenColumns()
-
+	initImageMapResize()
+	initImageMapHighlights()
 	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
 	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
 		if (a > b) { return 1 }
@@ -107,6 +106,31 @@ function initArmorList() {
             return 0
 		}
 	})*/
+}
+
+function initImageMapResize() {
+	imageMapResize()
+}
+
+function initImageMapHighlights() {
+		
+	//20 possible hitzones, so 1-20
+	for (var i=1;i<=20;i++) {
+		$("[id^=armor-map-" + i +"-]").each(function(index) {
+			this.addEventListener("mouseover", function(e) {
+				var this2 = this
+				//We re-scope and must redeclare our selector
+				$("[id^=armor-map-" + this.alt +"-]").each(function(index2) {		
+						if (e.target != this) {
+							
+							console.log("target", e.target, this, e.target == this)
+							$(this).mouseover()
+						}
+				})
+			})
+		})	
+	}
+	$(".map").maphilight()
 }
 
 function initHiddenColumns() {
@@ -158,3 +182,30 @@ function armorFilterClicked(btn) {
 		//filteredCategories[category] = false
 	}
 }
+
+function armorItemClick(item) {
+	console.log(item.getAttribute("data-id"))
+}
+
+function armorItemMouseOver(item) {
+	var coverage = item.getAttribute("data-coverage_data").split(",")
+	if (coverage[0] !== "") {
+		for (var i=0;i<coverage.length;i++) {
+			$("[id^=armor-map-" + coverage[i] +"-]").mouseover()
+		}		
+	}
+}
+
+function armorItemMouseOut(item) {
+	var coverage = item.getAttribute("data-coverage_data").split(",")
+	if (coverage[0] !== "") {
+		for (var i=0;i<coverage.length;i++) {
+			$("[id^=armor-map-" + coverage[i] +"-]").mouseout()
+		}		
+	}
+}
+
+
+
+
+

@@ -3,13 +3,12 @@ body {
 }
 
 
-
 tbody {
 	box-shadow: 0 0 0 1px black;
 	border-radius: 0px;
 	font-size: xx-small;
 	padding: 0;
-
+	overflow: auto;
 }
 
 
@@ -22,6 +21,14 @@ tbody td{
 
 tbody tr:nth-child(odd){
   background-color: #d7f1fc;
+}
+
+tbody {
+	
+}
+
+.armor-list-body {
+	
 }
 
 button {
@@ -72,4 +79,17 @@ button {
 .sort.desc::after {
 	content: "\002B07";
 	padding-left: 3px
+}
+
+
+#armor-list: {
+	
+}
+
+.doll-container {
+
+	border: 3px solid #73AD21;
+	width:auto;
+	height:auto;
+
 }
