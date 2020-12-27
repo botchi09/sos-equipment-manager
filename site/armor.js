@@ -34,7 +34,7 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.css("width", dollSizeMultiplier*boxWidth)
 			.css("height", dollSizeMultiplier*boxWidth)
 			.attr("id", "avbox-" + id + "-" + boxTypes[0]) //TODO: identify type of box in ID too
-			.text("1")
+			.text("0")
 			.prependTo("#armor-doll")
 			boxTypes.splice(0, 1)
 		}
