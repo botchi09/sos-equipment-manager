@@ -93,3 +93,11 @@ button {
 	height:auto;
 
 }
+
+.avbox {
+	
+    position: absolute;
+    border: solid;
+    opacity: 0.5;
+    z-index: 1;
+}

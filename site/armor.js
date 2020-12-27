@@ -1,6 +1,45 @@
 var armorData = null
 var armorList = null
-var filteredCategories = {}
+var filteredArmorCategories = {}
+var equippedArmor = {}
+var armorDisplayBoxes = {}
+var dollSizeMultiplier = 0.5 //Full size image would be really silly huge. Due to lib limitations we can't dynamically resize.
+
+//Purely for creating and deciding the positions of armour display divs
+function armorDisplayBox(id, x, y, mapAtEnd) {
+	
+	var boxWidth = 60
+	var box = {}
+	box.id = id
+	box.x = x
+	box.y = y
+	
+	var mapPos = 0
+	if (mapAtEnd) {
+		mapPos = 5
+	}
+	
+	var boxTypes = ["c", "p", "b", "m", "w"]
+	for (var i=0;i<6;i++) {
+		var curX = (x + (i*boxWidth)) * dollSizeMultiplier
+		var curY = (y + boxWidth) * dollSizeMultiplier
+		if (i==mapPos) {
+			var curBoxW = (curX+dollSizeMultiplier*boxWidth)
+			var curBoxH = (curY+dollSizeMultiplier*boxWidth)
+			$("<area target='' alt='"+id+"' shape='rect' id='armor-map-"+id+"-num' coords='"+curX + ","+curY+","+curBoxW+","+curBoxH+"'>")
+			.appendTo("#armor-map")
+		} else {
+			$("#avbox-template").clone().css("display", "block")
+			.css("top", curY).css("left", curX)
+			.css("width", dollSizeMultiplier*boxWidth)
+			.css("height", dollSizeMultiplier*boxWidth)
+			.attr("id", "avbox-" + id + "-" + boxTypes[0]) //TODO: identify type of box in ID too
+			.prependTo("#armor-doll")
+			boxTypes.splice(0, 1)
+		}
+	}
+	
+}
 
 function loadArmorData() {
 	var loader = require("./dataloader")
@@ -93,7 +132,7 @@ function initArmorList() {
 				})
 			}
 		}
-		filteredCategories[armorCategoryIndex] = false
+		filteredArmorCategories[armorCategoryIndex] = false
 		$("#filter-template").clone().css("display", "").appendTo("#filters").attr("data-filtercat", armorCategoryIndex).text(armorCategoryIndex)
 	}
 	initHiddenColumns()
@@ -113,7 +152,17 @@ function initImageMapResize() {
 }
 
 function initImageMapHighlights() {
-		
+	
+	var interval = 73*dollSizeMultiplier
+	var startY = 98*dollSizeMultiplier
+	for (var i=0;i<10;i++) {
+		armorDisplayBox(i+1, 9*dollSizeMultiplier, (1+i)*(startY) + (interval*i), true)
+	}
+	
+	for (var i=0;i<10;i++) {
+		armorDisplayBox(i+11, 2305*dollSizeMultiplier, (1+i)*(startY) + (interval*i), false)
+	}
+	
 	//20 possible hitzones, so 1-20
 	for (var i=1;i<=20;i++) {
 		$("[id^=armor-map-" + i +"-]").each(function(index) {
@@ -130,7 +179,7 @@ function initImageMapHighlights() {
 			})
 		})	
 	}
-	$(".map").maphilight()
+	$(".map").maphilight({fillOpacity: 0.5, strokeWidth: 3})
 }
 
 function initHiddenColumns() {
@@ -141,9 +190,9 @@ function initHiddenColumns() {
 }
 
 function applyArmorFilter(category, doFilter) {
-	filteredCategories[category] = (doFilter == null)
+	filteredArmorCategories[category] = (doFilter == null)
 	armorList.filter(function(item) {
-		if (filteredCategories[item.values().category] == true) {
+		if (filteredArmorCategories[item.values().category] == true) {
 			return false
 		} else {
 			return true
@@ -156,8 +205,8 @@ function removeArmorFilter(category) {
 }
 
 function removeAllArmorFilters() {
-	for (var filterIndex in filteredCategories) {
-		filteredCategories[filterIndex] = false
+	for (var filterIndex in filteredArmorCategories) {
+		filteredArmorCategories[filterIndex] = false
 	}
 	armorList.filter()
 }
@@ -173,13 +222,10 @@ function armorFilterClicked(btn) {
 	var category = btn.getAttribute("data-filtercat")
 	console.log("btn", btn, category)
 	$(btn).toggleClass("filterClicked")
-	if (filteredCategories[category] == false) {
+	if (filteredArmorCategories[category] == false) {
 		applyArmorFilter(category)
-		//filteredCategories[category] = true
 	} else {
 		removeArmorFilter(category)
-		//applyArmorFilter(category, false)
-		//filteredCategories[category] = false
 	}
 }
 
