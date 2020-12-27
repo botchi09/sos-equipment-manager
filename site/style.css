@@ -95,9 +95,12 @@ button {
 }
 
 .avbox {
-	
+	font-size:18;
+	font-family:cursive;
+	font-weight:bolder;
     position: absolute;
-    border: solid;
-    opacity: 0.5;
+	text-align:center;
+    border: none;
+    opacity: 0.9;
     z-index: 1;
 }

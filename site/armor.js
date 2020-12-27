@@ -8,7 +8,7 @@ var dollSizeMultiplier = 0.5 //Full size image would be really silly huge. Due t
 //Purely for creating and deciding the positions of armour display divs
 function armorDisplayBox(id, x, y, mapAtEnd) {
 	
-	var boxWidth = 60
+	var boxWidth = 59
 	var box = {}
 	box.id = id
 	box.x = x
@@ -34,6 +34,7 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.css("width", dollSizeMultiplier*boxWidth)
 			.css("height", dollSizeMultiplier*boxWidth)
 			.attr("id", "avbox-" + id + "-" + boxTypes[0]) //TODO: identify type of box in ID too
+			.text("1")
 			.prependTo("#armor-doll")
 			boxTypes.splice(0, 1)
 		}
@@ -153,14 +154,18 @@ function initImageMapResize() {
 
 function initImageMapHighlights() {
 	
-	var interval = 73*dollSizeMultiplier
-	var startY = 98*dollSizeMultiplier
+	var intervalLeft = 74*dollSizeMultiplier
+	var intervalRight = 70.5*dollSizeMultiplier
+	var startYLeft = 98*dollSizeMultiplier
+	var startYRight = 102*dollSizeMultiplier
+	var startXLeft = 20*dollSizeMultiplier
+	var startXRight = 2315*dollSizeMultiplier
 	for (var i=0;i<10;i++) {
-		armorDisplayBox(i+1, 9*dollSizeMultiplier, (1+i)*(startY) + (interval*i), true)
+		armorDisplayBox(i+1, startXLeft, (1+i)*(startYLeft) + (intervalLeft*i), true)
 	}
 	
 	for (var i=0;i<10;i++) {
-		armorDisplayBox(i+11, 2305*dollSizeMultiplier, (1+i)*(startY) + (interval*i), false)
+		armorDisplayBox(i+11, startXRight, (1+i)*(startYRight) + (intervalRight*i), false)
 	}
 	
 	//20 possible hitzones, so 1-20
