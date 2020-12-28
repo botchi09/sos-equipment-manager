@@ -1,1 +1,4107 @@
-{"Head and Neck Armor":[{"Type":"Plate","Name":"Armet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[1,2,3,4],"halfProt":[],"weakSpot":[2],"string":"Full head, face‡, neck"},"Qualities":"Hard, Movable, Restrictive 2","Weight":4,"PP":-2,"Cost":"2 gp","Id":"QXJtZXQ=","CpCost":480},{"Type":"Plate","Name":"Barbute","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[1,2,3],"halfProt":[2],"weakSpot":[2],"string":"Upper head, face½ ‡, lower head"},"Qualities":"Hard","Weight":1,"PP":-1,"Cost":"10 sp","Id":"QmFyYnV0ZQ==","CpCost":120},{"Type":"Plate","Name":"Bascinet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"Wear great helm for Layer 1, +1 AV vs downward swings","locations":[1,3],"halfProt":[],"weakSpot":[],"string":"Upper head, lower head"},"Qualities":"Hard","Weight":1.5,"PP":0,"Cost":"12 sp","Id":"QmFzY2luZXQ=","CpCost":144},{"Type":"Plate","Name":"Burgonet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"+1 AV vs downward swings","locations":[1,3],"halfProt":[],"weakSpot":[],"string":"Upper head, lower head"},"Qualities":"Hard","Weight":2,"PP":-1,"Cost":"10 sp","Id":"QnVyZ29uZXQ=","CpCost":120},{"Type":"Plate","Name":"Close Helmet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[1,2,3,4],"halfProt":[],"weakSpot":[2],"string":"Full head, face‡, neck"},"Qualities":"Hard, Movable","Weight":3.5,"PP":-1,"Cost":"3 gp","Id":"Q2xvc2UgSGVsbWV0","CpCost":720},{"Type":"Plate","Name":"Closed Sallet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"No AV on face vs upward swings","locations":[1,2,3],"halfProt":[3],"weakSpot":[2],"string":"Upper head, face‡, lower head½"},"Qualities":"Hard","Weight":2,"PP":-1,"Cost":"10 sp","Id":"Q2xvc2VkIFNhbGxldA==","CpCost":120},{"Type":"Plate","Name":"Conical Helm","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"+2 AV vs downward swings","locations":[1],"halfProt":[],"weakSpot":[],"string":"Upper head"},"Qualities":"Hard","Weight":2,"PP":0,"Cost":"2 sp","Id":"Q29uaWNhbCBIZWxt","CpCost":24},{"Type":"Plate","Name":"Great Bascinet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[1,2,3,4,5],"halfProt":[],"weakSpot":[2],"string":"Full head, face‡, neck, shoulder"},"Qualities":"Hard, Movable, Restrictive 2","Weight":3.5,"PP":-2,"Cost":"15 sp","Id":"R3JlYXQgQmFzY2luZXQ=","CpCost":180},{"Type":"Plate","Name":"Great Helm","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"Wear skullcap or bascinet for Layer 1","locations":[1,2,3,4],"halfProt":[],"weakSpot":[2,4],"string":"Full head, face‡, neck‡"},"Qualities":"Hard, Restrictive 3","Weight":5,"PP":-3,"Cost":"30 sp","Id":"R3JlYXQgSGVsbQ==","CpCost":360},{"Type":"Textile","Name":"Hat/Cap","AVC":1,"AVP":1,"AVB":1,"Coverage":{"special":"","locations":[1],"halfProt":[],"weakSpot":[],"string":"Upper head"},"Qualities":"","Weight":0,"PP":0,"Cost":"1 cp","Id":"SGF0L0NhcA==","CpCost":1},{"Type":"Plate","Name":"Kettle Helm","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"No AV vs upward swings","locations":[1,3],"halfProt":[3],"weakSpot":[],"string":"Upper head, lower head½"},"Qualities":"Hard","Weight":0,"PP":0,"Cost":"3 sp","Id":"S2V0dGxlIEhlbG0=","CpCost":36},{"Type":"Mail","Name":"Lamellar Pot Helm","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[1,3],"halfProt":[],"weakSpot":[],"string":"Upper head, lower head"},"Qualities":"Hard","Weight":2,"PP":-1,"Cost":"8 sp","Id":"TGFtZWxsYXIgUG90IEhlbG0=","CpCost":96},{"Type":"Leather","Name":"Leather Pot Helm","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[1,3],"halfProt":[],"weakSpot":[],"string":"Upper head, lower head"},"Qualities":"","Weight":1,"PP":-1,"Cost":"10 cp","Id":"TGVhdGhlciBQb3QgSGVsbQ==","CpCost":10},{"Type":"Leather","Name":"Leather Skullcap","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[1],"halfProt":[],"weakSpot":[],"string":"Upper head"},"Qualities":"","Weight":0,"PP":0,"Cost":"6 cp","Id":"TGVhdGhlciBTa3VsbGNhcA==","CpCost":6},{"Type":"Plate","Name":"Morion","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"+1 AV vs downward swings","locations":[1,3],"halfProt":[3],"weakSpot":[],"string":"Upper head, lower head½"},"Qualities":"Hard","Weight":1,"PP":0,"Cost":"12 sp","Id":"TW9yaW9u","CpCost":144},{"Type":"Plate","Name":"Open Sallet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[1,3],"halfProt":[3],"weakSpot":[],"string":"Upper head, lower head½"},"Qualities":"Hard","Weight":2,"PP":0,"Cost":"5 sp","Id":"T3BlbiBTYWxsZXQ=","CpCost":60},{"Type":"Textile","Name":"Quilted Helmet","AVC":2,"AVP":4,"AVB":5,"Coverage":{"special":"","locations":[1,3],"halfProt":[],"weakSpot":[],"string":"Upper head, lower head"},"Qualities":"Textile","Weight":0,"PP":0,"Cost":"8 cp","Id":"UXVpbHRlZCBIZWxtZXQ=","CpCost":8},{"Type":"Plate","Name":"Reinforced Roman Helm","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"+4 AV on upper head","locations":[1,3,4,5],"halfProt":[4,5],"weakSpot":[],"string":"Upper head, lower head, neck½, shoulders½"},"Qualities":"Hard","Weight":2.5,"PP":0,"Cost":"1 gp","Id":"UmVpbmZvcmNlZCBSb21hbiBIZWxt","CpCost":240},{"Type":"Plate","Name":"Roman Helm (Gallic Style)","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[1,3,4,5],"halfProt":[4,5],"weakSpot":[],"string":"Upper head, lower head, neck½, shoulders½"},"Qualities":"Hard","Weight":2,"PP":0,"Cost":"15 sp","Id":"Um9tYW4gSGVsbSAoR2FsbGljIFN0eWxlKQ==","CpCost":180},{"Type":"Plate","Name":"Skullcap","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"Wear great helm for Layer 2","locations":[1],"halfProt":[],"weakSpot":[],"string":"Upper head"},"Qualities":"Hard","Weight":0,"PP":0,"Cost":"1 sp","Id":"U2t1bGxjYXA=","CpCost":12},{"Type":"Plate","Name":"Stechhelm","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"+4 AV on lower head, face, and neck","locations":[1,2,3,4],"halfProt":[],"weakSpot":[],"string":"Full head, neck"},"Qualities":"Hard, Restrictive 3","Weight":8,"PP":-3,"Cost":"1 gp","Id":"U3RlY2hoZWxt","CpCost":240},{"Type":"Plate","Name":"Tailed Sallet","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"No AV on face vs upward swings","locations":[1,2,3,4,5],"halfProt":[3,4,5],"weakSpot":[2],"string":"Upper head, face‡, lower head½, neck½, shoulders½"},"Qualities":"Hard","Weight":2,"PP":-1,"Cost":"12 sp","Id":"VGFpbGVkIFNhbGxldA==","CpCost":144},{"Type":"Plate","Name":"Zischagge/Szyszak","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"+4 AV on upper head","locations":[1,3,4,5],"halfProt":[4,5],"weakSpot":[],"string":"Upper head, lower head, neck½, shoulders½"},"Qualities":"Hard","Weight":2.5,"PP":0,"Cost":"10 sp","Id":"WmlzY2hhZ2dlL1N6eXN6YWs=","CpCost":120}],"Visors":[{"Type":"Plate","Name":"Bar-Nasel","AVC":4,"AVP":2,"AVB":1,"Coverage":{"special":"no AV vs upward swings","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Hard","Weight":0,"PP":0,"Cost":"1 sp","Id":"QmFyLU5hc2Vs","CpCost":12},{"Type":"Plate","Name":"Cage Visor","AVC":7,"AVP":3,"AVB":5,"Coverage":{"special":"","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Hard, Movable","Weight":1,"PP":0,"Cost":"5 sp","Id":"Q2FnZSBWaXNvcg==","CpCost":60},{"Type":"Plate","Name":"Falling Buff (Hinged Gorget)","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[2,4],"halfProt":[],"weakSpot":[2],"string":"Face‡, neck"},"Qualities":"Hard, Movable, Restrictive 2","Weight":2,"PP":-1,"Cost":"1 gp","Id":"RmFsbGluZyBCdWZmIChIaW5nZWQgR29yZ2V0KQ==","CpCost":240},{"Type":"Plate","Name":"Full Visor","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Hard, Movable, Restrictive 2","Weight":1.5,"PP":-1,"Cost":"10 sp","Id":"RnVsbCBWaXNvcg==","CpCost":120},{"Type":"Plate","Name":"Goggle Type","AVC":5,"AVP":4,"AVB":3,"Coverage":{"special":"no AV vs upward swings","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Hard","Weight":0.5,"PP":-1,"Cost":"3 sp","Id":"R29nZ2xlIFR5cGU=","CpCost":36},{"Type":"Plate","Name":"Mail Ventail","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Hard, Layer 1, Mail","Weight":1.5,"PP":-1,"Cost":"1 sp","Id":"TWFpbCBWZW50YWls","CpCost":12},{"Type":"Plate","Name":"Tri-Bar Nasel","AVC":6,"AVP":3,"AVB":2,"Coverage":{"special":"no AV vs upward swings","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Hard","Weight":0.5,"PP":0,"Cost":"3 sp","Id":"VHJpLUJhciBOYXNlbA==","CpCost":36}],"Non-helmet Head Protection":[{"Type":"Mail","Name":"Lamellar Ventail","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[2,4],"halfProt":[],"weakSpot":[2],"string":"Face‡, neck"},"Qualities":"Hard","Weight":1.5,"PP":-1,"Cost":"2 sp","Id":"TGFtZWxsYXIgVmVudGFpbA==","CpCost":24},{"Type":"Mail","Name":"Mail Camail","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[3,4,5],"halfProt":[],"weakSpot":[],"string":"Lower head, neck, shoulders"},"Qualities":"Hard, Layer 1, Mail","Weight":1,"PP":0,"Cost":"4 sp","Id":"TWFpbCBDYW1haWw=","CpCost":48},{"Type":"Mail","Name":"Mail Coif","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[1,3,4],"halfProt":[],"weakSpot":[],"string":"Upper head, lower head, neck"},"Qualities":"Hard, Layer 1, Mail","Weight":1,"PP":0,"Cost":"2 sp","Id":"TWFpbCBDb2lm","CpCost":24},{"Type":"Mail","Name":"Mail Ventail","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Hard, Layer 1, Mail","Weight":1.5,"PP":-1,"Cost":"1 sp","Id":"TWFpbCBWZW50YWls","CpCost":12},{"Type":"Textile","Name":"Quilted Camail","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[3,4,5],"halfProt":[],"weakSpot":[],"string":"Lower head, neck, shoulders"},"Qualities":"Textile","Weight":0,"PP":0,"Cost":"8 cp","Id":"UXVpbHRlZCBDYW1haWw=","CpCost":8},{"Type":"Textile","Name":"Quilted Coif","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[1,3,4],"halfProt":[],"weakSpot":[],"string":"Upper head, lower head, neck"},"Qualities":"Textile","Weight":0,"PP":0,"Cost":"4 cp","Id":"UXVpbHRlZCBDb2lm","CpCost":4},{"Type":"Textile","Name":"Quilted Ventail","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Textile","Weight":0,"PP":-1,"Cost":"1 cp","Id":"UXVpbHRlZCBWZW50YWls","CpCost":1},{"Type":"Plate","Name":"Steel Facemask","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[2],"halfProt":[],"weakSpot":[2],"string":"Face‡"},"Qualities":"Restrictive 1, Hard","Weight":2,"PP":-1,"Cost":"8 sp","Id":"U3RlZWwgRmFjZW1hc2s=","CpCost":96}],"Neck protection":[{"Type":"Plate","Name":"Bevor","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[2,3,4],"halfProt":[],"weakSpot":[2],"string":"Face‡, lower head, neck"},"Qualities":"Restrictive 1, Hard","Weight":2,"PP":0,"Cost":"12 sp","Id":"QmV2b3I=","CpCost":144},{"Type":"Plate","Name":"Gorget","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[4],"halfProt":[],"weakSpot":[],"string":"Neck"},"Qualities":"Hard","Weight":1,"PP":0,"Cost":"10 sp","Id":"R29yZ2V0","CpCost":120},{"Type":"Leather","Name":"Leather Neck-Stock","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[4],"halfProt":[],"weakSpot":[],"string":"Neck"},"Qualities":"","Weight":0,"PP":0,"Cost":"8 cp","Id":"TGVhdGhlciBOZWNrLVN0b2Nr","CpCost":8},{"Type":"Textile","Name":"Neck-Wrap (Scarf)","AVC":1,"AVP":1,"AVB":1,"Coverage":{"special":"","locations":[4],"halfProt":[],"weakSpot":[],"string":"Neck"},"Qualities":"Textile","Weight":0,"PP":0,"Cost":"1 cp","Id":"TmVjay1XcmFwIChTY2FyZik=","CpCost":1},{"Type":"Leather","Name":"Reinforced Leather Neck-Stock","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[4],"halfProt":[],"weakSpot":[],"string":"Neck"},"Qualities":"Hard","Weight":0,"PP":0,"Cost":"1 sp","Id":"UmVpbmZvcmNlZCBMZWF0aGVyIE5lY2stU3RvY2s=","CpCost":12}],"Torso armour":[{"Type":"Plate","Name":"Breastplate","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[6,8,7],"halfProt":[],"weakSpot":[],"string":"Chest, belly, sides"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"1 gp","Id":"QnJlYXN0cGxhdGU=","CpCost":240},{"Type":"Plate","Name":"Bulletproof Breastplate","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[6,8,7],"halfProt":[],"weakSpot":[],"string":"Chest, belly, sides"},"Qualities":"Bulletproof, Hard","Weight":3.5,"PP":null,"Cost":"2 gp","Id":"QnVsbGV0cHJvb2YgQnJlYXN0cGxhdGU=","CpCost":480},{"Type":"Plate","Name":"Bulletproof Cuirass","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[6,8,7,19,20],"halfProt":[],"weakSpot":[],"string":"Chest, belly, sides, upper back, lower back"},"Qualities":"Bulletproof, Hard","Weight":4.5,"PP":null,"Cost":"4 gp","Id":"QnVsbGV0cHJvb2YgQ3VpcmFzcw==","CpCost":960},{"Type":"Plate","Name":"Bulletproof Codpiece","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[10],"halfProt":[],"weakSpot":[],"string":"Groin"},"Qualities":"Bulletproof, Hard","Weight":0.5,"PP":null,"Cost":"1 gp","Id":"QnVsbGV0cHJvb2YgQ29kcGllY2U=","CpCost":240},{"Type":"Plate","Name":"Cuirass","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[6,8,7,19,20],"halfProt":[],"weakSpot":[],"string":"Chest, belly, sides, upper back, lower back"},"Qualities":"Hard","Weight":2.5,"PP":null,"Cost":"2 gp","Id":"Q3VpcmFzcw==","CpCost":480},{"Type":"Plate","Name":"Codpiece","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[10],"halfProt":[],"weakSpot":[],"string":"Groin"},"Qualities":"Hard","Weight":0,"PP":null,"Cost":"5 sp","Id":"Q29kcGllY2U=","CpCost":60},{"Type":"Plate","Name":"Fauld","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[9,10,15],"halfProt":[],"weakSpot":[9,10,15],"string":"Hips‡, groin‡, thighs‡"},"Qualities":"Hard, Layers 2","Weight":1.5,"PP":null,"Cost":"10 sp","Id":"RmF1bGQ=","CpCost":120},{"Type":"Plate","Name":"Heartguard","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[6],"halfProt":[],"weakSpot":[6],"string":"Chest‡"},"Qualities":"Hard","Weight":0,"PP":null,"Cost":"1 sp","Id":"SGVhcnRndWFyZA==","CpCost":12},{"Type":"Plate","Name":"Mirror Plate","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[6],"halfProt":[],"weakSpot":[6],"string":"Chest‡"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"1 gp","Id":"TWlycm9yIFBsYXRl","CpCost":240},{"Type":"Plate","Name":"Munitions Breastplate","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"","locations":[6],"halfProt":[],"weakSpot":[],"string":"Chest"},"Qualities":"Hard","Weight":2.5,"PP":null,"Cost":"10 sp","Id":"TXVuaXRpb25zIEJyZWFzdHBsYXRl","CpCost":120},{"Type":"Plate","Name":"Munitions Cuirass","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"","locations":[6,8,7],"halfProt":[],"weakSpot":[6,8,7],"string":"Chest‡, belly‡, sides‡"},"Qualities":"Hard","Weight":3.5,"PP":null,"Cost":"15 sp","Id":"TXVuaXRpb25zIEN1aXJhc3M=","CpCost":180},{"Type":"Plate","Name":"Munitions Fauld","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"","locations":[9,10,15],"halfProt":[],"weakSpot":[9,10,15],"string":"Hips‡, groin‡, thighs‡"},"Qualities":"Hard, Layers 1","Weight":2.5,"PP":null,"Cost":"10 sp","Id":"TXVuaXRpb25zIEZhdWxk","CpCost":120},{"Type":"Plate","Name":"Plackart","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[6,8,7],"halfProt":[],"weakSpot":[6,8,7],"string":"Chest‡, belly‡, sides‡"},"Qualities":"Hard, Layers 2 (belly, sides)","Weight":0.5,"PP":null,"Cost":"1 gp","Id":"UGxhY2thcnQ=","CpCost":240},{"Type":"Laminar","Name":"Anima Cuirass","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[6,8,7],"halfProt":[],"weakSpot":[],"string":"Chest, belly, sides"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"48 sp","Id":"QW5pbWEgQ3VpcmFzcw==","CpCost":576},{"Type":"Laminar","Name":"Anima Fauld","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[9,10,15],"halfProt":[],"weakSpot":[10,15],"string":"Hips, groin‡, thighs‡"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"1 gp","Id":"QW5pbWEgRmF1bGQ=","CpCost":240},{"Type":"Laminar","Name":"Laminar Cuirass","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[6,8,7],"halfProt":[],"weakSpot":[6,8,7],"string":"Chest‡, belly‡, sides‡"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"1 gp","Id":"TGFtaW5hciBDdWlyYXNz","CpCost":240},{"Type":"Laminar","Name":"Segmented Tassets","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[9,10],"halfProt":[],"weakSpot":[],"string":"Hips, groin"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"12 sp","Id":"U2VnbWVudGVkIFRhc3NldHM=","CpCost":144},{"Type":"Mail","Name":"Brigandine Coat","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[6,7,8,9,19,20,5,10,15,16],"halfProt":[],"weakSpot":[],"string":"Full torso, shoulders, hips, groin, thighs, knees"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"3 gp","Id":"QnJpZ2FuZGluZSBDb2F0","CpCost":720},{"Type":"Mail","Name":"Brigandine Shirt","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[6,7,8,9,19,20,10,15],"halfProt":[],"weakSpot":[],"string":"Full torso, hips, groin, thighs"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"30 sp","Id":"QnJpZ2FuZGluZSBTaGlydA==","CpCost":360},{"Type":"Mail","Name":"Brigandine Vest","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[6,7,8,9,19,20],"halfProt":[],"weakSpot":[],"string":"Full torso"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"1 gp","Id":"QnJpZ2FuZGluZSBWZXN0","CpCost":240},{"Type":"Mail","Name":"Lamellar Coat","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[6,7,8,9,19,20,5,10,15,16],"halfProt":[],"weakSpot":[],"string":"Full torso, shoulders, hips, groin, thighs, knees"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"3 gp","Id":"TGFtZWxsYXIgQ29hdA==","CpCost":720},{"Type":"Mail","Name":"Lamellar Shirt","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[6,7,8,9,19,20,10,15],"halfProt":[],"weakSpot":[],"string":"Full torso, hips, groin, thighs"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"2 gp","Id":"TGFtZWxsYXIgU2hpcnQ=","CpCost":480},{"Type":"Mail","Name":"Lamellar Vest","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[6,7,8,9,19,20],"halfProt":[],"weakSpot":[],"string":"Full torso"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"1 gp","Id":"TGFtZWxsYXIgVmVzdA==","CpCost":240},{"Type":"Mail","Name":"Mail Coat","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[6,7,8,9,19,20,5,10,15,16],"halfProt":[],"weakSpot":[],"string":"Full torso, shoulders, hips, groin, thighs, knees"},"Qualities":"Hard, Layer 1, Mail","Weight":2.5,"PP":null,"Cost":"2 gp","Id":"TWFpbCBDb2F0","CpCost":480},{"Type":"Mail","Name":"Mail Shirt","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[6,7,8,9,19,20,10,15],"halfProt":[],"weakSpot":[],"string":"Full torso, hips, groin, thighs"},"Qualities":"Hard, Layer 1, Mail","Weight":1.5,"PP":null,"Cost":"1 gp","Id":"TWFpbCBTaGlydA==","CpCost":240},{"Type":"Mail","Name":"Mail Vest","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[6,7,8,9,19,20],"halfProt":[],"weakSpot":[],"string":"Full torso"},"Qualities":"Hard, Layer 1, Mail","Weight":0.5,"PP":null,"Cost":"18 sp","Id":"TWFpbCBWZXN0","CpCost":216},{"Type":"Textile","Name":"Heavy Quilted Coat","AVC":3,"AVP":4,"AVB":5,"Coverage":{"special":"","locations":[6,7,8,9,19,20,5,10,15,16],"halfProt":[],"weakSpot":[],"string":"Full torso, shoulders, hips, groin, thighs, knees"},"Qualities":"Textile","Weight":1,"PP":null,"Cost":"5 sp","Id":"SGVhdnkgUXVpbHRlZCBDb2F0","CpCost":60},{"Type":"Textile","Name":"Heavy Quilted Shirt","AVC":3,"AVP":4,"AVB":5,"Coverage":{"special":"","locations":[6,7,8,9,19,20,10,15],"halfProt":[],"weakSpot":[],"string":"Full torso, hips, groin, thighs"},"Qualities":"Textile","Weight":0.5,"PP":null,"Cost":"3 sp","Id":"SGVhdnkgUXVpbHRlZCBTaGlydA==","CpCost":36},{"Type":"Textile","Name":"Heavy Quilted Vest","AVC":3,"AVP":4,"AVB":5,"Coverage":{"special":"","locations":[6,7,8,9,19,20],"halfProt":[],"weakSpot":[],"string":"Full torso"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"2 sp","Id":"SGVhdnkgUXVpbHRlZCBWZXN0","CpCost":24},{"Type":"Textile","Name":"Quilted Coat","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[6,7,8,9,19,20,5,10,15,16],"halfProt":[],"weakSpot":[],"string":"Full torso, shoulders, hips, groin, thighs, knees"},"Qualities":"Textile","Weight":0.5,"PP":null,"Cost":"17 cp","Id":"UXVpbHRlZCBDb2F0","CpCost":17},{"Type":"Textile","Name":"Quilted Shirt","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[6,7,8,9,19,20,10,15],"halfProt":[],"weakSpot":[],"string":"Full torso, hips, groin, thighs"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"1 sp","Id":"UXVpbHRlZCBTaGlydA==","CpCost":12},{"Type":"Textile","Name":"Quilted Vest","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[6,7,8,9,19,20],"halfProt":[],"weakSpot":[],"string":"Full torso"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"5 cp","Id":"UXVpbHRlZCBWZXN0","CpCost":5},{"Type":"Leather","Name":"Leather Buffcoat","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[6,7,8,9,19,20,5,10,15,16],"halfProt":[],"weakSpot":[],"string":"Full torso, shoulders, hips, groin, thighs, knees"},"Qualities":"","Weight":0,"PP":null,"Cost":"5 sp","Id":"TGVhdGhlciBCdWZmY29hdA==","CpCost":60},{"Type":"Leather","Name":"Leather Jack","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[6,7,8,9,19,20,10,15],"halfProt":[],"weakSpot":[],"string":"Full torso, hips, groin, thighs"},"Qualities":"","Weight":0,"PP":null,"Cost":"2 sp","Id":"TGVhdGhlciBKYWNr","CpCost":24},{"Type":"Leather","Name":"Leather Lamellar Coat","AVC":3,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[6,7,8,9,19,20,5,10,15,16],"halfProt":[],"weakSpot":[],"string":"Full torso, shoulders, hips, groin, thighs, knees"},"Qualities":"","Weight":1,"PP":null,"Cost":"9 sp","Id":"TGVhdGhlciBMYW1lbGxhciBDb2F0","CpCost":108},{"Type":"Leather","Name":"Leather Lamellar Shirt","AVC":3,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[6,7,8,9,19,20,10,15],"halfProt":[],"weakSpot":[],"string":"Full torso, hips, groin, thighs"},"Qualities":"","Weight":0.5,"PP":null,"Cost":"6 sp","Id":"TGVhdGhlciBMYW1lbGxhciBTaGlydA==","CpCost":72},{"Type":"Leather","Name":"Leather Lamellar Vest","AVC":3,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[6,7,8,9,19,20],"halfProt":[],"weakSpot":[],"string":"Full torso"},"Qualities":"","Weight":0,"PP":null,"Cost":"3 sp","Id":"TGVhdGhlciBMYW1lbGxhciBWZXN0","CpCost":36},{"Type":"Leather","Name":"Leather Vest","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[6,7,8,9,19,20],"halfProt":[],"weakSpot":[],"string":"Full torso"},"Qualities":"","Weight":0,"PP":null,"Cost":"1 sp","Id":"TGVhdGhlciBWZXN0","CpCost":12},{"Type":"Leather","Name":"Hardened Leather Breastplate","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[6,8,7],"halfProt":[],"weakSpot":[],"string":"Chest, belly, sides"},"Qualities":"","Weight":0,"PP":null,"Cost":"5 sp","Id":"SGFyZGVuZWQgTGVhdGhlciBCcmVhc3RwbGF0ZQ==","CpCost":60},{"Type":"Leather","Name":"Hardened Leather Cuirass","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[6,8,7,19,20],"halfProt":[],"weakSpot":[],"string":"Chest, belly, sides, upper back, lower back"},"Qualities":"","Weight":1,"PP":null,"Cost":"8 sp","Id":"SGFyZGVuZWQgTGVhdGhlciBDdWlyYXNz","CpCost":96},{"Type":"Leather","Name":"Shagreen Greatcoat","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[5,11,12,13,14,6,7,8,9,19,20,10,15,16,17],"halfProt":[],"weakSpot":[],"string":"Full torso, full arms, hips, groin, thighs, knees, shins"},"Qualities":"","Weight":0,"PP":null,"Cost":"1 gp","Id":"U2hhZ3JlZW4gR3JlYXRjb2F0","CpCost":240}],"Arm armor":[{"Type":"Plate","Name":"Besagews","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"When layered with spaulders use besagews value against Th","locations":[5,11],"halfProt":[11],"weakSpot":[],"string":"Shoulders (Th), upper arms½ (Th)"},"Qualities":"Hard","Weight":0.5,"PP":null,"Cost":"8 sp","Id":"QmVzYWdld3M=","CpCost":96},{"Type":"Plate","Name":"Bulletproof Vambraces","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[13],"halfProt":[],"weakSpot":[],"string":"Forearms"},"Qualities":"Bulletproof, Hard","Weight":2,"PP":null,"Cost":"1 gp","Id":"QnVsbGV0cHJvb2YgVmFtYnJhY2Vz","CpCost":240},{"Type":"Plate","Name":"Couters","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[12],"halfProt":[],"weakSpot":[12],"string":"Elbows‡"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"5 sp","Id":"Q291dGVycw==","CpCost":60},{"Type":"Plate","Name":"Gauntlets","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[14],"string":"Hands‡"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"5 sp","Id":"R2F1bnRsZXRz","CpCost":60},{"Type":"Plate","Name":"Jack Chains","AVC":6,"AVP":0,"AVB":3,"Coverage":{"special":"No AV against Th attacks of any damage type","locations":[11,12,13],"halfProt":[],"weakSpot":[11,12,13],"string":"Upper arms‡, elbows‡, forearms‡"},"Qualities":"Hard","Weight":0.5,"PP":null,"Cost":"1 sp","Id":"SmFjayBDaGFpbnM=","CpCost":12},{"Type":"Plate","Name":"Munitions Pauldrons","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[5,11],"string":"Shoulders‡, upper arms‡"},"Qualities":"Hard","Weight":4,"PP":null,"Cost":"8 sp","Id":"TXVuaXRpb25zIFBhdWxkcm9ucw==","CpCost":96},{"Type":"Plate","Name":"Munitions Rerebraces","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"","locations":[11],"halfProt":[],"weakSpot":[11],"string":"Upper arms‡"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"2 sp","Id":"TXVuaXRpb25zIFJlcmVicmFjZXM=","CpCost":24},{"Type":"Plate","Name":"Munitions Spaulders","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"Half AV against Th to shoulders","locations":[5,11],"halfProt":[11],"weakSpot":[5,11],"string":"Shoulders‡, upper arms½ ‡"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"4 sp","Id":"TXVuaXRpb25zIFNwYXVsZGVycw==","CpCost":48},{"Type":"Plate","Name":"Munitions Vambraces","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"","locations":[13],"halfProt":[],"weakSpot":[13],"string":"Forearms‡"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"2 sp","Id":"TXVuaXRpb25zIFZhbWJyYWNlcw==","CpCost":24},{"Type":"Plate","Name":"Pauldrons","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms"},"Qualities":"Bulletproof, Hard","Weight":3,"PP":null,"Cost":"1 gp","Id":"UGF1bGRyb25z","CpCost":240},{"Type":"Plate","Name":"Rerebraces","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[11],"halfProt":[],"weakSpot":[],"string":"Upper arms"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"5 sp","Id":"UmVyZWJyYWNlcw==","CpCost":60},{"Type":"Plate","Name":"Spaulders","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"Half AV against Th to shoulders","locations":[5,11],"halfProt":[11],"weakSpot":[5,11],"string":"Shoulders‡, upper arms½ ‡"},"Qualities":"Hard","Weight":0.5,"PP":null,"Cost":"6 sp","Id":"U3BhdWxkZXJz","CpCost":72},{"Type":"Plate","Name":"Vambraces","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[13],"halfProt":[],"weakSpot":[],"string":"Forearms"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"5 sp","Id":"VmFtYnJhY2Vz","CpCost":60},{"Type":"Laminar","Name":"Anima Pauldrons","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"2 gp","Id":"QW5pbWEgUGF1bGRyb25z","CpCost":480},{"Type":"Laminar","Name":"Anima Rerebraces","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[11],"halfProt":[],"weakSpot":[],"string":"Upper arms"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"1 gp","Id":"QW5pbWEgUmVyZWJyYWNlcw==","CpCost":240},{"Type":"Laminar","Name":"Anima Spaulders","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"Half AV against Th to shoulders","locations":[5,11],"halfProt":[11],"weakSpot":[11],"string":"Shoulders, upper arms½ ‡"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"1 gp","Id":"QW5pbWEgU3BhdWxkZXJz","CpCost":240},{"Type":"Laminar","Name":"Anima Vambrace","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[13],"halfProt":[],"weakSpot":[],"string":"Forearms"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"3 gp","Id":"QW5pbWEgVmFtYnJhY2U=","CpCost":720},{"Type":"Laminar","Name":"Laminar Forearm Guard","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[13],"halfProt":[],"weakSpot":[13],"string":"Forearms‡"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"3 sp","Id":"TGFtaW5hciBGb3JlYXJtIEd1YXJk","CpCost":36},{"Type":"Laminar","Name":"Laminar Elbow Joint","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[12],"halfProt":[],"weakSpot":[12],"string":"Elbows‡"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"3 sp","Id":"TGFtaW5hciBFbGJvdyBKb2ludA==","CpCost":36},{"Type":"Laminar","Name":"Laminar Pauldrons","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[5,11],"string":"Shoulders‡, upper arms‡"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"10 sp","Id":"TGFtaW5hciBQYXVsZHJvbnM=","CpCost":120},{"Type":"Laminar","Name":"Laminar Rerebrace","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[11],"halfProt":[],"weakSpot":[11],"string":"Upper arms‡"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"3 sp","Id":"TGFtaW5hciBSZXJlYnJhY2U=","CpCost":36},{"Type":"Mail","Name":"Brigandine Gloves","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[],"string":"Hands"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"3 sp","Id":"QnJpZ2FuZGluZSBHbG92ZXM=","CpCost":36},{"Type":"Mail","Name":"Brigandine Long Sleeves","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[5,11,12,13],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms, elbows, forearms"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"2 gp","Id":"QnJpZ2FuZGluZSBMb25nIFNsZWV2ZXM=","CpCost":480},{"Type":"Mail","Name":"Brigandine Short Sleeves","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"14 sp","Id":"QnJpZ2FuZGluZSBTaG9ydCBTbGVldmVz","CpCost":168},{"Type":"Mail","Name":"Lamellar Gloves","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[],"string":"Hands"},"Qualities":"Hard","Weight":1,"PP":null,"Cost":"3 sp","Id":"TGFtZWxsYXIgR2xvdmVz","CpCost":36},{"Type":"Mail","Name":"Lamellar Long Sleeves","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[5,11,12,13],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms, elbows, forearms"},"Qualities":"Hard","Weight":4,"PP":null,"Cost":"1 gp","Id":"TGFtZWxsYXIgTG9uZyBTbGVldmVz","CpCost":240},{"Type":"Mail","Name":"Lamellar Short Sleeves","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"12 sp","Id":"TGFtZWxsYXIgU2hvcnQgU2xlZXZlcw==","CpCost":144},{"Type":"Mail","Name":"Mail Gloves","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[],"string":"Hands"},"Qualities":"Hard, Layer 1, Mail","Weight":0.5,"PP":null,"Cost":"3 sp","Id":"TWFpbCBHbG92ZXM=","CpCost":36},{"Type":"Mail","Name":"Mail Long Sleeves","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[5,11,12,13],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms, elbows, forearms"},"Qualities":"Hard, Layer 1, Mail","Weight":1.5,"PP":null,"Cost":"1 gp","Id":"TWFpbCBMb25nIFNsZWV2ZXM=","CpCost":240},{"Type":"Mail","Name":"Mail Short Sleeves","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms"},"Qualities":"Hard, Layer 1, Mail","Weight":0.5,"PP":null,"Cost":"12 sp","Id":"TWFpbCBTaG9ydCBTbGVldmVz","CpCost":144},{"Type":"Textile","Name":"Quilted Gloves","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[],"string":"Hands"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"1 cp","Id":"UXVpbHRlZCBHbG92ZXM=","CpCost":1},{"Type":"Textile","Name":"Quilted Long Sleeves","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[5,11,12,13],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms, elbows, forearms"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"6 cp","Id":"UXVpbHRlZCBMb25nIFNsZWV2ZXM=","CpCost":6},{"Type":"Textile","Name":"Quilted Short Sleeves","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"3 cp","Id":"UXVpbHRlZCBTaG9ydCBTbGVldmVz","CpCost":3},{"Type":"Textile","Name":"Reinforced Quilted Gloves","AVC":4,"AVP":4,"AVB":5,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[],"string":"Hands"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"1 sp","Id":"UmVpbmZvcmNlZCBRdWlsdGVkIEdsb3Zlcw==","CpCost":12},{"Type":"Leather","Name":"Hardened Leather Pauldrons","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[11],"string":"Shoulders, upper arms‡"},"Qualities":"","Weight":0,"PP":null,"Cost":"5 sp","Id":"SGFyZGVuZWQgTGVhdGhlciBQYXVsZHJvbnM=","CpCost":60},{"Type":"Leather","Name":"Hardened Leather Rerebraces","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[11],"halfProt":[],"weakSpot":[],"string":"Upper arms"},"Qualities":"","Weight":0,"PP":null,"Cost":"3 sp","Id":"SGFyZGVuZWQgTGVhdGhlciBSZXJlYnJhY2Vz","CpCost":36},{"Type":"Leather","Name":"Hardened Leather Vambraces","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[13],"halfProt":[],"weakSpot":[],"string":"Forearms"},"Qualities":"","Weight":0,"PP":null,"Cost":"3 sp","Id":"SGFyZGVuZWQgTGVhdGhlciBWYW1icmFjZXM=","CpCost":36},{"Type":"Leather","Name":"Leather Gloves","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[],"string":"Hands"},"Qualities":"","Weight":0,"PP":null,"Cost":"1 sp","Id":"TGVhdGhlciBHbG92ZXM=","CpCost":12},{"Type":"Leather","Name":"Leather Sleeves","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[5,11,12,13],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms, elbows, forearms"},"Qualities":"","Weight":0,"PP":null,"Cost":"2 sp","Id":"TGVhdGhlciBTbGVldmVz","CpCost":24},{"Type":"Leather","Name":"Leather Lamellar Long Sleeves","AVC":3,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[5,11,12,13],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms, elbows, forearms"},"Qualities":"","Weight":0,"PP":null,"Cost":"3 sp","Id":"TGVhdGhlciBMYW1lbGxhciBMb25nIFNsZWV2ZXM=","CpCost":36},{"Type":"Leather","Name":"Leather Lamellar Short Sleeves","AVC":3,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[5,11],"halfProt":[],"weakSpot":[],"string":"Shoulders, upper arms"},"Qualities":"","Weight":0,"PP":null,"Cost":"1 sp","Id":"TGVhdGhlciBMYW1lbGxhciBTaG9ydCBTbGVldmVz","CpCost":12},{"Type":"Leather","Name":"Reinforced Leather Gloves","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[14],"halfProt":[],"weakSpot":[],"string":"Hands"},"Qualities":"","Weight":0,"PP":null,"Cost":"2 sp","Id":"UmVpbmZvcmNlZCBMZWF0aGVyIEdsb3Zlcw==","CpCost":24}],"Leg armor":[{"Type":"Plate","Name":"Bulletproof Cuisses","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[15],"halfProt":[],"weakSpot":[],"string":"Thighs"},"Qualities":"Bulletproof, Hard","Weight":4,"PP":null,"Cost":"2 gp","Id":"QnVsbGV0cHJvb2YgQ3Vpc3Nlcw==","CpCost":480},{"Type":"Plate","Name":"Bulletproof Greaves","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[17],"halfProt":[],"weakSpot":[],"string":"Shins"},"Qualities":"Bulletproof, Hard","Weight":2,"PP":null,"Cost":"2 gp","Id":"QnVsbGV0cHJvb2YgR3JlYXZlcw==","CpCost":480},{"Type":"Plate","Name":"Bulletproof Poleyns","AVC":10,"AVP":9,"AVB":8,"Coverage":{"special":"","locations":[16],"halfProt":[],"weakSpot":[],"string":"Knees"},"Qualities":"Bulletproof, Hard","Weight":2,"PP":null,"Cost":"1 gp","Id":"QnVsbGV0cHJvb2YgUG9sZXlucw==","CpCost":240},{"Type":"Plate","Name":"Cuisses","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[15],"halfProt":[],"weakSpot":[],"string":"Thighs"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"8 sp","Id":"Q3Vpc3Nlcw==","CpCost":96},{"Type":"Plate","Name":"Greaves","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[17],"halfProt":[],"weakSpot":[],"string":"Shins"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"6 sp","Id":"R3JlYXZlcw==","CpCost":72},{"Type":"Plate","Name":"Munitions Cuisses","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"","locations":[15],"halfProt":[],"weakSpot":[15],"string":"Thighs‡"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"4 sp","Id":"TXVuaXRpb25zIEN1aXNzZXM=","CpCost":48},{"Type":"Plate","Name":"Munitions Greaves","AVC":7,"AVP":6,"AVB":5,"Coverage":{"special":"","locations":[17],"halfProt":[],"weakSpot":[17],"string":"Shins‡"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"3 sp","Id":"TXVuaXRpb25zIEdyZWF2ZXM=","CpCost":36},{"Type":"Plate","Name":"Poleyns","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[16],"halfProt":[],"weakSpot":[16],"string":"Knees‡"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"5 sp","Id":"UG9sZXlucw==","CpCost":60},{"Type":"Plate","Name":"Sabatons","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"","locations":[18],"halfProt":[],"weakSpot":[],"string":"Feet"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"5 sp","Id":"U2FiYXRvbnM=","CpCost":60},{"Type":"Laminar","Name":"Anima Cuisses","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[15],"halfProt":[],"weakSpot":[],"string":"Thighs"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"1 gp","Id":"QW5pbWEgQ3Vpc3Nlcw==","CpCost":240},{"Type":"Laminar","Name":"Anima Greaves","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[17],"halfProt":[],"weakSpot":[],"string":"Shins"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"1 gp","Id":"QW5pbWEgR3JlYXZlcw==","CpCost":240},{"Type":"Laminar","Name":"Anima Poleyns","AVC":7,"AVP":7,"AVB":7,"Coverage":{"special":"","locations":[16],"halfProt":[],"weakSpot":[],"string":"Knees"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"10 sp","Id":"QW5pbWEgUG9sZXlucw==","CpCost":120},{"Type":"Laminar","Name":"Laminar Boots","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[18],"halfProt":[],"weakSpot":[],"string":"Feet"},"Qualities":"Hard","Weight":2,"PP":null,"Cost":"4 sp","Id":"TGFtaW5hciBCb290cw==","CpCost":48},{"Type":"Laminar","Name":"Laminar Cuisses","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[15],"halfProt":[],"weakSpot":[],"string":"Thighs"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"4 sp","Id":"TGFtaW5hciBDdWlzc2Vz","CpCost":48},{"Type":"Laminar","Name":"Laminar Greaves","AVC":8,"AVP":7,"AVB":5,"Coverage":{"special":"","locations":[17],"halfProt":[],"weakSpot":[],"string":"Shins"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"4 sp","Id":"TGFtaW5hciBHcmVhdmVz","CpCost":48},{"Type":"Mail","Name":"Brigandine Boots","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[18],"halfProt":[],"weakSpot":[],"string":"Feet"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"8 sp","Id":"QnJpZ2FuZGluZSBCb290cw==","CpCost":96},{"Type":"Mail","Name":"Brigandine Leggings","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"","locations":[9,10,15,16,17],"halfProt":[],"weakSpot":[],"string":"Hips, groin, thighs, knees, shins"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"10 sp","Id":"QnJpZ2FuZGluZSBMZWdnaW5ncw==","CpCost":120},{"Type":"Mail","Name":"Lamellar Leggings","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[9,10,15,16,17],"halfProt":[],"weakSpot":[],"string":"Hips, groin, thighs, knees, shins"},"Qualities":"Hard","Weight":3,"PP":null,"Cost":"12 sp","Id":"TGFtZWxsYXIgTGVnZ2luZ3M=","CpCost":144},{"Type":"Mail","Name":"Lamellar Boots","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"","locations":[18],"halfProt":[],"weakSpot":[],"string":"Feet"},"Qualities":"Hard","Weight":1.5,"PP":null,"Cost":"10 sp","Id":"TGFtZWxsYXIgQm9vdHM=","CpCost":120},{"Type":"Mail","Name":"Mail Boots","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[18],"halfProt":[],"weakSpot":[],"string":"Feet"},"Qualities":"Hard, Layer 1, Mail","Weight":1,"PP":null,"Cost":"3 sp","Id":"TWFpbCBCb290cw==","CpCost":36},{"Type":"Mail","Name":"Mail Groin Gusset","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[10],"halfProt":[],"weakSpot":[],"string":"Groin"},"Qualities":"Hard, Layer 1, Mail","Weight":0,"PP":null,"Cost":"3 sp","Id":"TWFpbCBHcm9pbiBHdXNzZXQ=","CpCost":36},{"Type":"Mail","Name":"Mail Leggings","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[9,10,15,16,17],"halfProt":[],"weakSpot":[],"string":"Hips, groin, thighs, knees, shins"},"Qualities":"Hard, Layer 1, Mail","Weight":2.5,"PP":null,"Cost":"8 sp","Id":"TWFpbCBMZWdnaW5ncw==","CpCost":96},{"Type":"Textile","Name":"Quilted Leggings","AVC":2,"AVP":3,"AVB":4,"Coverage":{"special":"","locations":[9,10,15,16,17],"halfProt":[],"weakSpot":[],"string":"Hips, groin, thighs, knees, shins"},"Qualities":"Textile","Weight":0,"PP":null,"Cost":"2 cp","Id":"UXVpbHRlZCBMZWdnaW5ncw==","CpCost":2},{"Type":"Leather","Name":"Leather Boots","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[18],"halfProt":[],"weakSpot":[],"string":"Feet"},"Qualities":"","Weight":0,"PP":null,"Cost":"1 sp","Id":"TGVhdGhlciBCb290cw==","CpCost":12},{"Type":"Leather","Name":"Leather Leggings","AVC":3,"AVP":2,"AVB":2,"Coverage":{"special":"","locations":[9,10,15,16,17],"halfProt":[],"weakSpot":[],"string":"Hips, groin, thighs, knees, shins"},"Qualities":"","Weight":0,"PP":null,"Cost":"2 sp","Id":"TGVhdGhlciBMZWdnaW5ncw==","CpCost":24},{"Type":"Leather","Name":"Hardened Leather Cuisses","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[9,15],"halfProt":[],"weakSpot":[],"string":"Hips, thighs"},"Qualities":"","Weight":0,"PP":null,"Cost":"8 cp","Id":"SGFyZGVuZWQgTGVhdGhlciBDdWlzc2Vz","CpCost":8},{"Type":"Leather","Name":"Hardened Leather Greaves","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[17],"halfProt":[],"weakSpot":[],"string":"Shins"},"Qualities":"","Weight":0,"PP":null,"Cost":"1 sp","Id":"SGFyZGVuZWQgTGVhdGhlciBHcmVhdmVz","CpCost":12},{"Type":"Leather","Name":"Hardened Leather Knee-Guards","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"","locations":[16],"halfProt":[],"weakSpot":[],"string":"Knees"},"Qualities":"","Weight":0,"PP":null,"Cost":"6 cp","Id":"SGFyZGVuZWQgTGVhdGhlciBLbmVlLUd1YXJkcw==","CpCost":6},{"Type":"Leather","Name":"Leather Lamellar Cuisses","AVC":3,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[9,15],"halfProt":[],"weakSpot":[],"string":"Hips, thighs"},"Qualities":"","Weight":0,"PP":null,"Cost":"3 sp","Id":"TGVhdGhlciBMYW1lbGxhciBDdWlzc2Vz","CpCost":36},{"Type":"Leather","Name":"Leather Lamellar Greaves","AVC":3,"AVP":4,"AVB":3,"Coverage":{"special":"","locations":[17],"halfProt":[],"weakSpot":[],"string":"Shins"},"Qualities":"","Weight":0,"PP":null,"Cost":"3 sp","Id":"TGVhdGhlciBMYW1lbGxhciBHcmVhdmVz","CpCost":36}],"Horse armor":[{"Type":"Plate","Name":"Plate Barding","AVC":8,"AVP":7,"AVB":6,"Coverage":{"special":"Horse"},"Qualities":"","Weight":12,"PP":null,"Cost":"30 gp","Id":"UGxhdGUgQmFyZGluZw==","CpCost":7200},{"Type":"Mail","Name":"Brigandine Barding","AVC":5,"AVP":6,"AVB":4,"Coverage":{"special":"Horse"},"Qualities":"","Weight":8,"PP":null,"Cost":"20 gp","Id":"QnJpZ2FuZGluZSBCYXJkaW5n","CpCost":4800},{"Type":"Mail","Name":"Lamellar Barding","AVC":5,"AVP":5,"AVB":5,"Coverage":{"special":"Horse"},"Qualities":"","Weight":8,"PP":null,"Cost":"15 gp","Id":"TGFtZWxsYXIgQmFyZGluZw==","CpCost":3600},{"Type":"Mail","Name":"Mail Barding","AVC":6,"AVP":4,"AVB":3,"Coverage":{"special":"Horse"},"Qualities":"","Weight":8,"PP":null,"Cost":"10 gp","Id":"TWFpbCBCYXJkaW5n","CpCost":2400},{"Type":"Textile","Name":"Caprisoning","AVC":2,"AVP":4,"AVB":5,"Coverage":{"special":"Horse"},"Qualities":"Textile","Weight":1,"PP":null,"Cost":"5 sp","Id":"Q2Fwcmlzb25pbmc=","CpCost":60},{"Type":"Leather","Name":"Hardened Leather Barding","AVC":4,"AVP":3,"AVB":3,"Coverage":{"special":"Horse"},"Qualities":"","Weight":3,"PP":null,"Cost":"1 gp","Id":"SGFyZGVuZWQgTGVhdGhlciBCYXJkaW5n","CpCost":240}]}
+{
+	"QXJtZXQ=": {
+		"Type": "Plate",
+		"Name": "Armet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				2,
+				3,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Full head, face‡, neck"
+		},
+		"Qualities": "Hard, Movable, Restrictive 2",
+		"Weight": 4,
+		"PP": -2,
+		"Cost": "2 gp",
+		"Id": "QXJtZXQ=",
+		"CpCost": 480,
+		"Category": "Head and Neck Armor"
+	},
+	"QmFyYnV0ZQ==": {
+		"Type": "Plate",
+		"Name": "Barbute",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				2,
+				3
+			],
+			"halfProt": [
+				2
+			],
+			"weakSpot": [
+				2
+			],
+			"string": "Upper head, face½ ‡, lower head"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": -1,
+		"Cost": "10 sp",
+		"Id": "QmFyYnV0ZQ==",
+		"CpCost": 120,
+		"Category": "Head and Neck Armor"
+	},
+	"QmFzY2luZXQ=": {
+		"Type": "Plate",
+		"Name": "Bascinet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "Wear great helm for Layer 1, +1 AV vs downward swings",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head, lower head"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": 0,
+		"Cost": "12 sp",
+		"Id": "QmFzY2luZXQ=",
+		"CpCost": 144,
+		"Category": "Head and Neck Armor"
+	},
+	"QnVyZ29uZXQ=": {
+		"Type": "Plate",
+		"Name": "Burgonet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "+1 AV vs downward swings",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head, lower head"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": -1,
+		"Cost": "10 sp",
+		"Id": "QnVyZ29uZXQ=",
+		"CpCost": 120,
+		"Category": "Head and Neck Armor"
+	},
+	"Q2xvc2UgSGVsbWV0": {
+		"Type": "Plate",
+		"Name": "Close Helmet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				2,
+				3,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Full head, face‡, neck"
+		},
+		"Qualities": "Hard, Movable",
+		"Weight": 3.5,
+		"PP": -1,
+		"Cost": "3 gp",
+		"Id": "Q2xvc2UgSGVsbWV0",
+		"CpCost": 720,
+		"Category": "Head and Neck Armor"
+	},
+	"Q2xvc2VkIFNhbGxldA==": {
+		"Type": "Plate",
+		"Name": "Closed Sallet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "No AV on face vs upward swings",
+			"locations": [
+				1,
+				2,
+				3
+			],
+			"halfProt": [
+				3
+			],
+			"weakSpot": [
+				2
+			],
+			"string": "Upper head, face‡, lower head½"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": -1,
+		"Cost": "10 sp",
+		"Id": "Q2xvc2VkIFNhbGxldA==",
+		"CpCost": 120,
+		"Category": "Head and Neck Armor"
+	},
+	"Q29uaWNhbCBIZWxt": {
+		"Type": "Plate",
+		"Name": "Conical Helm",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "+2 AV vs downward swings",
+			"locations": [
+				1
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": 0,
+		"Cost": "2 sp",
+		"Id": "Q29uaWNhbCBIZWxt",
+		"CpCost": 24,
+		"Category": "Head and Neck Armor"
+	},
+	"R3JlYXQgQmFzY2luZXQ=": {
+		"Type": "Plate",
+		"Name": "Great Bascinet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Full head, face‡, neck, shoulder"
+		},
+		"Qualities": "Hard, Movable, Restrictive 2",
+		"Weight": 3.5,
+		"PP": -2,
+		"Cost": "15 sp",
+		"Id": "R3JlYXQgQmFzY2luZXQ=",
+		"CpCost": 180,
+		"Category": "Head and Neck Armor"
+	},
+	"R3JlYXQgSGVsbQ==": {
+		"Type": "Plate",
+		"Name": "Great Helm",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "Wear skullcap or bascinet for Layer 1",
+			"locations": [
+				1,
+				2,
+				3,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2,
+				4
+			],
+			"string": "Full head, face‡, neck‡"
+		},
+		"Qualities": "Hard, Restrictive 3",
+		"Weight": 5,
+		"PP": -3,
+		"Cost": "30 sp",
+		"Id": "R3JlYXQgSGVsbQ==",
+		"CpCost": 360,
+		"Category": "Head and Neck Armor"
+	},
+	"SGF0L0NhcA==": {
+		"Type": "Textile",
+		"Name": "Hat/Cap",
+		"AVC": 1,
+		"AVP": 1,
+		"AVB": 1,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "1 cp",
+		"Id": "SGF0L0NhcA==",
+		"CpCost": 1,
+		"Category": "Head and Neck Armor"
+	},
+	"S2V0dGxlIEhlbG0=": {
+		"Type": "Plate",
+		"Name": "Kettle Helm",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "No AV vs upward swings",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [
+				3
+			],
+			"weakSpot": [],
+			"string": "Upper head, lower head½"
+		},
+		"Qualities": "Hard",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "3 sp",
+		"Id": "S2V0dGxlIEhlbG0=",
+		"CpCost": 36,
+		"Category": "Head and Neck Armor"
+	},
+	"TGFtZWxsYXIgUG90IEhlbG0=": {
+		"Type": "Mail",
+		"Name": "Lamellar Pot Helm",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head, lower head"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": -1,
+		"Cost": "8 sp",
+		"Id": "TGFtZWxsYXIgUG90IEhlbG0=",
+		"CpCost": 96,
+		"Category": "Head and Neck Armor"
+	},
+	"TGVhdGhlciBQb3QgSGVsbQ==": {
+		"Type": "Leather",
+		"Name": "Leather Pot Helm",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head, lower head"
+		},
+		"Qualities": "",
+		"Weight": 1,
+		"PP": -1,
+		"Cost": "10 cp",
+		"Id": "TGVhdGhlciBQb3QgSGVsbQ==",
+		"CpCost": 10,
+		"Category": "Head and Neck Armor"
+	},
+	"TGVhdGhlciBTa3VsbGNhcA==": {
+		"Type": "Leather",
+		"Name": "Leather Skullcap",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "6 cp",
+		"Id": "TGVhdGhlciBTa3VsbGNhcA==",
+		"CpCost": 6,
+		"Category": "Head and Neck Armor"
+	},
+	"TW9yaW9u": {
+		"Type": "Plate",
+		"Name": "Morion",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "+1 AV vs downward swings",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [
+				3
+			],
+			"weakSpot": [],
+			"string": "Upper head, lower head½"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": 0,
+		"Cost": "12 sp",
+		"Id": "TW9yaW9u",
+		"CpCost": 144,
+		"Category": "Head and Neck Armor"
+	},
+	"T3BlbiBTYWxsZXQ=": {
+		"Type": "Plate",
+		"Name": "Open Sallet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [
+				3
+			],
+			"weakSpot": [],
+			"string": "Upper head, lower head½"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": 0,
+		"Cost": "5 sp",
+		"Id": "T3BlbiBTYWxsZXQ=",
+		"CpCost": 60,
+		"Category": "Head and Neck Armor"
+	},
+	"UXVpbHRlZCBIZWxtZXQ=": {
+		"Type": "Textile",
+		"Name": "Quilted Helmet",
+		"AVC": 2,
+		"AVP": 4,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				3
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head, lower head"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "8 cp",
+		"Id": "UXVpbHRlZCBIZWxtZXQ=",
+		"CpCost": 8,
+		"Category": "Head and Neck Armor"
+	},
+	"UmVpbmZvcmNlZCBSb21hbiBIZWxt": {
+		"Type": "Plate",
+		"Name": "Reinforced Roman Helm",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "+4 AV on upper head",
+			"locations": [
+				1,
+				3,
+				4,
+				5
+			],
+			"halfProt": [
+				4,
+				5
+			],
+			"weakSpot": [],
+			"string": "Upper head, lower head, neck½, shoulders½"
+		},
+		"Qualities": "Hard",
+		"Weight": 2.5,
+		"PP": 0,
+		"Cost": "1 gp",
+		"Id": "UmVpbmZvcmNlZCBSb21hbiBIZWxt",
+		"CpCost": 240,
+		"Category": "Head and Neck Armor"
+	},
+	"Um9tYW4gSGVsbSAoR2FsbGljIFN0eWxlKQ==": {
+		"Type": "Plate",
+		"Name": "Roman Helm (Gallic Style)",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				3,
+				4,
+				5
+			],
+			"halfProt": [
+				4,
+				5
+			],
+			"weakSpot": [],
+			"string": "Upper head, lower head, neck½, shoulders½"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": 0,
+		"Cost": "15 sp",
+		"Id": "Um9tYW4gSGVsbSAoR2FsbGljIFN0eWxlKQ==",
+		"CpCost": 180,
+		"Category": "Head and Neck Armor"
+	},
+	"U2t1bGxjYXA=": {
+		"Type": "Plate",
+		"Name": "Skullcap",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "Wear great helm for Layer 2",
+			"locations": [
+				1
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head"
+		},
+		"Qualities": "Hard",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "1 sp",
+		"Id": "U2t1bGxjYXA=",
+		"CpCost": 12,
+		"Category": "Head and Neck Armor"
+	},
+	"U3RlY2hoZWxt": {
+		"Type": "Plate",
+		"Name": "Stechhelm",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "+4 AV on lower head, face, and neck",
+			"locations": [
+				1,
+				2,
+				3,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full head, neck"
+		},
+		"Qualities": "Hard, Restrictive 3",
+		"Weight": 8,
+		"PP": -3,
+		"Cost": "1 gp",
+		"Id": "U3RlY2hoZWxt",
+		"CpCost": 240,
+		"Category": "Head and Neck Armor"
+	},
+	"VGFpbGVkIFNhbGxldA==": {
+		"Type": "Plate",
+		"Name": "Tailed Sallet",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "No AV on face vs upward swings",
+			"locations": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"halfProt": [
+				3,
+				4,
+				5
+			],
+			"weakSpot": [
+				2
+			],
+			"string": "Upper head, face‡, lower head½, neck½, shoulders½"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": -1,
+		"Cost": "12 sp",
+		"Id": "VGFpbGVkIFNhbGxldA==",
+		"CpCost": 144,
+		"Category": "Head and Neck Armor"
+	},
+	"WmlzY2hhZ2dlL1N6eXN6YWs=": {
+		"Type": "Plate",
+		"Name": "Zischagge/Szyszak",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "+4 AV on upper head",
+			"locations": [
+				1,
+				3,
+				4,
+				5
+			],
+			"halfProt": [
+				4,
+				5
+			],
+			"weakSpot": [],
+			"string": "Upper head, lower head, neck½, shoulders½"
+		},
+		"Qualities": "Hard",
+		"Weight": 2.5,
+		"PP": 0,
+		"Cost": "10 sp",
+		"Id": "WmlzY2hhZ2dlL1N6eXN6YWs=",
+		"CpCost": 120,
+		"Category": "Head and Neck Armor"
+	},
+	"QmFyLU5hc2Vs": {
+		"Type": "Plate",
+		"Name": "Bar-Nasel",
+		"AVC": 4,
+		"AVP": 2,
+		"AVB": 1,
+		"Coverage": {
+			"special": "no AV vs upward swings",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "1 sp",
+		"Id": "QmFyLU5hc2Vs",
+		"CpCost": 12,
+		"Category": "Visors"
+	},
+	"Q2FnZSBWaXNvcg==": {
+		"Type": "Plate",
+		"Name": "Cage Visor",
+		"AVC": 7,
+		"AVP": 3,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Hard, Movable",
+		"Weight": 1,
+		"PP": 0,
+		"Cost": "5 sp",
+		"Id": "Q2FnZSBWaXNvcg==",
+		"CpCost": 60,
+		"Category": "Visors"
+	},
+	"RmFsbGluZyBCdWZmIChIaW5nZWQgR29yZ2V0KQ==": {
+		"Type": "Plate",
+		"Name": "Falling Buff (Hinged Gorget)",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡, neck"
+		},
+		"Qualities": "Hard, Movable, Restrictive 2",
+		"Weight": 2,
+		"PP": -1,
+		"Cost": "1 gp",
+		"Id": "RmFsbGluZyBCdWZmIChIaW5nZWQgR29yZ2V0KQ==",
+		"CpCost": 240,
+		"Category": "Visors"
+	},
+	"RnVsbCBWaXNvcg==": {
+		"Type": "Plate",
+		"Name": "Full Visor",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Hard, Movable, Restrictive 2",
+		"Weight": 1.5,
+		"PP": -1,
+		"Cost": "10 sp",
+		"Id": "RnVsbCBWaXNvcg==",
+		"CpCost": 120,
+		"Category": "Visors"
+	},
+	"R29nZ2xlIFR5cGU=": {
+		"Type": "Plate",
+		"Name": "Goggle Type",
+		"AVC": 5,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "no AV vs upward swings",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 0.5,
+		"PP": -1,
+		"Cost": "3 sp",
+		"Id": "R29nZ2xlIFR5cGU=",
+		"CpCost": 36,
+		"Category": "Visors"
+	},
+	"TWFpbCBWZW50YWls": {
+		"Type": "Mail",
+		"Name": "Mail Ventail",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 1.5,
+		"PP": -1,
+		"Cost": "1 sp",
+		"Id": "TWFpbCBWZW50YWls",
+		"CpCost": 12,
+		"Category": "Non-helmet Head Protection"
+	},
+	"VHJpLUJhciBOYXNlbA==": {
+		"Type": "Plate",
+		"Name": "Tri-Bar Nasel",
+		"AVC": 6,
+		"AVP": 3,
+		"AVB": 2,
+		"Coverage": {
+			"special": "no AV vs upward swings",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 0.5,
+		"PP": 0,
+		"Cost": "3 sp",
+		"Id": "VHJpLUJhciBOYXNlbA==",
+		"CpCost": 36,
+		"Category": "Visors"
+	},
+	"TGFtZWxsYXIgVmVudGFpbA==": {
+		"Type": "Mail",
+		"Name": "Lamellar Ventail",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡, neck"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": -1,
+		"Cost": "2 sp",
+		"Id": "TGFtZWxsYXIgVmVudGFpbA==",
+		"CpCost": 24,
+		"Category": "Non-helmet Head Protection"
+	},
+	"TWFpbCBDYW1haWw=": {
+		"Type": "Mail",
+		"Name": "Mail Camail",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				3,
+				4,
+				5
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Lower head, neck, shoulders"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 1,
+		"PP": 0,
+		"Cost": "4 sp",
+		"Id": "TWFpbCBDYW1haWw=",
+		"CpCost": 48,
+		"Category": "Non-helmet Head Protection"
+	},
+	"TWFpbCBDb2lm": {
+		"Type": "Mail",
+		"Name": "Mail Coif",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				3,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head, lower head, neck"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 1,
+		"PP": 0,
+		"Cost": "2 sp",
+		"Id": "TWFpbCBDb2lm",
+		"CpCost": 24,
+		"Category": "Non-helmet Head Protection"
+	},
+	"UXVpbHRlZCBDYW1haWw=": {
+		"Type": "Textile",
+		"Name": "Quilted Camail",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				3,
+				4,
+				5
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Lower head, neck, shoulders"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "8 cp",
+		"Id": "UXVpbHRlZCBDYW1haWw=",
+		"CpCost": 8,
+		"Category": "Non-helmet Head Protection"
+	},
+	"UXVpbHRlZCBDb2lm": {
+		"Type": "Textile",
+		"Name": "Quilted Coif",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				1,
+				3,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper head, lower head, neck"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "4 cp",
+		"Id": "UXVpbHRlZCBDb2lm",
+		"CpCost": 4,
+		"Category": "Non-helmet Head Protection"
+	},
+	"UXVpbHRlZCBWZW50YWls": {
+		"Type": "Textile",
+		"Name": "Quilted Ventail",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": -1,
+		"Cost": "1 cp",
+		"Id": "UXVpbHRlZCBWZW50YWls",
+		"CpCost": 1,
+		"Category": "Non-helmet Head Protection"
+	},
+	"U3RlZWwgRmFjZW1hc2s=": {
+		"Type": "Plate",
+		"Name": "Steel Facemask",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡"
+		},
+		"Qualities": "Restrictive 1, Hard",
+		"Weight": 2,
+		"PP": -1,
+		"Cost": "8 sp",
+		"Id": "U3RlZWwgRmFjZW1hc2s=",
+		"CpCost": 96,
+		"Category": "Non-helmet Head Protection"
+	},
+	"QmV2b3I=": {
+		"Type": "Plate",
+		"Name": "Bevor",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				2,
+				3,
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [
+				2
+			],
+			"string": "Face‡, lower head, neck"
+		},
+		"Qualities": "Restrictive 1, Hard",
+		"Weight": 2,
+		"PP": 0,
+		"Cost": "12 sp",
+		"Id": "QmV2b3I=",
+		"CpCost": 144,
+		"Category": "Neck protection"
+	},
+	"R29yZ2V0": {
+		"Type": "Plate",
+		"Name": "Gorget",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Neck"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": 0,
+		"Cost": "10 sp",
+		"Id": "R29yZ2V0",
+		"CpCost": 120,
+		"Category": "Neck protection"
+	},
+	"TGVhdGhlciBOZWNrLVN0b2Nr": {
+		"Type": "Leather",
+		"Name": "Leather Neck-Stock",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Neck"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "8 cp",
+		"Id": "TGVhdGhlciBOZWNrLVN0b2Nr",
+		"CpCost": 8,
+		"Category": "Neck protection"
+	},
+	"TmVjay1XcmFwIChTY2FyZik=": {
+		"Type": "Textile",
+		"Name": "Neck-Wrap (Scarf)",
+		"AVC": 1,
+		"AVP": 1,
+		"AVB": 1,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Neck"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "1 cp",
+		"Id": "TmVjay1XcmFwIChTY2FyZik=",
+		"CpCost": 1,
+		"Category": "Neck protection"
+	},
+	"UmVpbmZvcmNlZCBMZWF0aGVyIE5lY2stU3RvY2s=": {
+		"Type": "Leather",
+		"Name": "Reinforced Leather Neck-Stock",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				4
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Neck"
+		},
+		"Qualities": "Hard",
+		"Weight": 0,
+		"PP": 0,
+		"Cost": "1 sp",
+		"Id": "UmVpbmZvcmNlZCBMZWF0aGVyIE5lY2stU3RvY2s=",
+		"CpCost": 12,
+		"Category": "Neck protection"
+	},
+	"QnJlYXN0cGxhdGU=": {
+		"Type": "Plate",
+		"Name": "Breastplate",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest, belly, sides"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QnJlYXN0cGxhdGU=",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"QnVsbGV0cHJvb2YgQnJlYXN0cGxhdGU=": {
+		"Type": "Plate",
+		"Name": "Bulletproof Breastplate",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest, belly, sides"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 3.5,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "QnVsbGV0cHJvb2YgQnJlYXN0cGxhdGU=",
+		"CpCost": 480,
+		"Category": "Torso armour"
+	},
+	"QnVsbGV0cHJvb2YgQ3VpcmFzcw==": {
+		"Type": "Plate",
+		"Name": "Bulletproof Cuirass",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest, belly, sides, upper back, lower back"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 4.5,
+		"PP": null,
+		"Cost": "4 gp",
+		"Id": "QnVsbGV0cHJvb2YgQ3VpcmFzcw==",
+		"CpCost": 960,
+		"Category": "Torso armour"
+	},
+	"QnVsbGV0cHJvb2YgQ29kcGllY2U=": {
+		"Type": "Plate",
+		"Name": "Bulletproof Codpiece",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				10
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Groin"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QnVsbGV0cHJvb2YgQ29kcGllY2U=",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"Q3VpcmFzcw==": {
+		"Type": "Plate",
+		"Name": "Cuirass",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest, belly, sides, upper back, lower back"
+		},
+		"Qualities": "Hard",
+		"Weight": 2.5,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "Q3VpcmFzcw==",
+		"CpCost": 480,
+		"Category": "Torso armour"
+	},
+	"Q29kcGllY2U=": {
+		"Type": "Plate",
+		"Name": "Codpiece",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				10
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Groin"
+		},
+		"Qualities": "Hard",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "Q29kcGllY2U=",
+		"CpCost": 60,
+		"Category": "Torso armour"
+	},
+	"RmF1bGQ=": {
+		"Type": "Plate",
+		"Name": "Fauld",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [
+				9,
+				10,
+				15
+			],
+			"string": "Hips‡, groin‡, thighs‡"
+		},
+		"Qualities": "Hard, Layers 2",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "10 sp",
+		"Id": "RmF1bGQ=",
+		"CpCost": 120,
+		"Category": "Torso armour"
+	},
+	"SGVhcnRndWFyZA==": {
+		"Type": "Plate",
+		"Name": "Heartguard",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6
+			],
+			"halfProt": [],
+			"weakSpot": [
+				6
+			],
+			"string": "Chest‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "SGVhcnRndWFyZA==",
+		"CpCost": 12,
+		"Category": "Torso armour"
+	},
+	"TWlycm9yIFBsYXRl": {
+		"Type": "Plate",
+		"Name": "Mirror Plate",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6
+			],
+			"halfProt": [],
+			"weakSpot": [
+				6
+			],
+			"string": "Chest‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "TWlycm9yIFBsYXRl",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"TXVuaXRpb25zIEJyZWFzdHBsYXRl": {
+		"Type": "Plate",
+		"Name": "Munitions Breastplate",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest"
+		},
+		"Qualities": "Hard",
+		"Weight": 2.5,
+		"PP": null,
+		"Cost": "10 sp",
+		"Id": "TXVuaXRpb25zIEJyZWFzdHBsYXRl",
+		"CpCost": 120,
+		"Category": "Torso armour"
+	},
+	"TXVuaXRpb25zIEN1aXJhc3M=": {
+		"Type": "Plate",
+		"Name": "Munitions Cuirass",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7
+			],
+			"halfProt": [],
+			"weakSpot": [
+				6,
+				8,
+				7
+			],
+			"string": "Chest‡, belly‡, sides‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 3.5,
+		"PP": null,
+		"Cost": "15 sp",
+		"Id": "TXVuaXRpb25zIEN1aXJhc3M=",
+		"CpCost": 180,
+		"Category": "Torso armour"
+	},
+	"TXVuaXRpb25zIEZhdWxk": {
+		"Type": "Plate",
+		"Name": "Munitions Fauld",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [
+				9,
+				10,
+				15
+			],
+			"string": "Hips‡, groin‡, thighs‡"
+		},
+		"Qualities": "Hard, Layers 1",
+		"Weight": 2.5,
+		"PP": null,
+		"Cost": "10 sp",
+		"Id": "TXVuaXRpb25zIEZhdWxk",
+		"CpCost": 120,
+		"Category": "Torso armour"
+	},
+	"UGxhY2thcnQ=": {
+		"Type": "Plate",
+		"Name": "Plackart",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7
+			],
+			"halfProt": [],
+			"weakSpot": [
+				6,
+				8,
+				7
+			],
+			"string": "Chest‡, belly‡, sides‡"
+		},
+		"Qualities": "Hard, Layers 2 (belly, sides)",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "UGxhY2thcnQ=",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"QW5pbWEgQ3VpcmFzcw==": {
+		"Type": "Laminar",
+		"Name": "Anima Cuirass",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest, belly, sides"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "48 sp",
+		"Id": "QW5pbWEgQ3VpcmFzcw==",
+		"CpCost": 576,
+		"Category": "Torso armour"
+	},
+	"QW5pbWEgRmF1bGQ=": {
+		"Type": "Laminar",
+		"Name": "Anima Fauld",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [
+				10,
+				15
+			],
+			"string": "Hips, groin‡, thighs‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QW5pbWEgRmF1bGQ=",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"TGFtaW5hciBDdWlyYXNz": {
+		"Type": "Laminar",
+		"Name": "Laminar Cuirass",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7
+			],
+			"halfProt": [],
+			"weakSpot": [
+				6,
+				8,
+				7
+			],
+			"string": "Chest‡, belly‡, sides‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "TGFtaW5hciBDdWlyYXNz",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"U2VnbWVudGVkIFRhc3NldHM=": {
+		"Type": "Laminar",
+		"Name": "Segmented Tassets",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, groin"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "12 sp",
+		"Id": "U2VnbWVudGVkIFRhc3NldHM=",
+		"CpCost": 144,
+		"Category": "Torso armour"
+	},
+	"QnJpZ2FuZGluZSBDb2F0": {
+		"Type": "Mail",
+		"Name": "Brigandine Coat",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				5,
+				10,
+				15,
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, shoulders, hips, groin, thighs, knees"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "3 gp",
+		"Id": "QnJpZ2FuZGluZSBDb2F0",
+		"CpCost": 720,
+		"Category": "Torso armour"
+	},
+	"QnJpZ2FuZGluZSBTaGlydA==": {
+		"Type": "Mail",
+		"Name": "Brigandine Shirt",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, hips, groin, thighs"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "30 sp",
+		"Id": "QnJpZ2FuZGluZSBTaGlydA==",
+		"CpCost": 360,
+		"Category": "Torso armour"
+	},
+	"QnJpZ2FuZGluZSBWZXN0": {
+		"Type": "Mail",
+		"Name": "Brigandine Vest",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QnJpZ2FuZGluZSBWZXN0",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"TGFtZWxsYXIgQ29hdA==": {
+		"Type": "Mail",
+		"Name": "Lamellar Coat",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				5,
+				10,
+				15,
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, shoulders, hips, groin, thighs, knees"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "3 gp",
+		"Id": "TGFtZWxsYXIgQ29hdA==",
+		"CpCost": 720,
+		"Category": "Torso armour"
+	},
+	"TGFtZWxsYXIgU2hpcnQ=": {
+		"Type": "Mail",
+		"Name": "Lamellar Shirt",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, hips, groin, thighs"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "TGFtZWxsYXIgU2hpcnQ=",
+		"CpCost": 480,
+		"Category": "Torso armour"
+	},
+	"TGFtZWxsYXIgVmVzdA==": {
+		"Type": "Mail",
+		"Name": "Lamellar Vest",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "TGFtZWxsYXIgVmVzdA==",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"TWFpbCBDb2F0": {
+		"Type": "Mail",
+		"Name": "Mail Coat",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				5,
+				10,
+				15,
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, shoulders, hips, groin, thighs, knees"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 2.5,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "TWFpbCBDb2F0",
+		"CpCost": 480,
+		"Category": "Torso armour"
+	},
+	"TWFpbCBTaGlydA==": {
+		"Type": "Mail",
+		"Name": "Mail Shirt",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, hips, groin, thighs"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "TWFpbCBTaGlydA==",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"TWFpbCBWZXN0": {
+		"Type": "Mail",
+		"Name": "Mail Vest",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "18 sp",
+		"Id": "TWFpbCBWZXN0",
+		"CpCost": 216,
+		"Category": "Torso armour"
+	},
+	"SGVhdnkgUXVpbHRlZCBDb2F0": {
+		"Type": "Textile",
+		"Name": "Heavy Quilted Coat",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				5,
+				10,
+				15,
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, shoulders, hips, groin, thighs, knees"
+		},
+		"Qualities": "Textile",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "SGVhdnkgUXVpbHRlZCBDb2F0",
+		"CpCost": 60,
+		"Category": "Torso armour"
+	},
+	"SGVhdnkgUXVpbHRlZCBTaGlydA==": {
+		"Type": "Textile",
+		"Name": "Heavy Quilted Shirt",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, hips, groin, thighs"
+		},
+		"Qualities": "Textile",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "SGVhdnkgUXVpbHRlZCBTaGlydA==",
+		"CpCost": 36,
+		"Category": "Torso armour"
+	},
+	"SGVhdnkgUXVpbHRlZCBWZXN0": {
+		"Type": "Textile",
+		"Name": "Heavy Quilted Vest",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "2 sp",
+		"Id": "SGVhdnkgUXVpbHRlZCBWZXN0",
+		"CpCost": 24,
+		"Category": "Torso armour"
+	},
+	"UXVpbHRlZCBDb2F0": {
+		"Type": "Textile",
+		"Name": "Quilted Coat",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				5,
+				10,
+				15,
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, shoulders, hips, groin, thighs, knees"
+		},
+		"Qualities": "Textile",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "17 cp",
+		"Id": "UXVpbHRlZCBDb2F0",
+		"CpCost": 17,
+		"Category": "Torso armour"
+	},
+	"UXVpbHRlZCBTaGlydA==": {
+		"Type": "Textile",
+		"Name": "Quilted Shirt",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, hips, groin, thighs"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "UXVpbHRlZCBTaGlydA==",
+		"CpCost": 12,
+		"Category": "Torso armour"
+	},
+	"UXVpbHRlZCBWZXN0": {
+		"Type": "Textile",
+		"Name": "Quilted Vest",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "5 cp",
+		"Id": "UXVpbHRlZCBWZXN0",
+		"CpCost": 5,
+		"Category": "Torso armour"
+	},
+	"TGVhdGhlciBCdWZmY29hdA==": {
+		"Type": "Leather",
+		"Name": "Leather Buffcoat",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				5,
+				10,
+				15,
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, shoulders, hips, groin, thighs, knees"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "TGVhdGhlciBCdWZmY29hdA==",
+		"CpCost": 60,
+		"Category": "Torso armour"
+	},
+	"TGVhdGhlciBKYWNr": {
+		"Type": "Leather",
+		"Name": "Leather Jack",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, hips, groin, thighs"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "2 sp",
+		"Id": "TGVhdGhlciBKYWNr",
+		"CpCost": 24,
+		"Category": "Torso armour"
+	},
+	"TGVhdGhlciBMYW1lbGxhciBDb2F0": {
+		"Type": "Leather",
+		"Name": "Leather Lamellar Coat",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				5,
+				10,
+				15,
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, shoulders, hips, groin, thighs, knees"
+		},
+		"Qualities": "",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "9 sp",
+		"Id": "TGVhdGhlciBMYW1lbGxhciBDb2F0",
+		"CpCost": 108,
+		"Category": "Torso armour"
+	},
+	"TGVhdGhlciBMYW1lbGxhciBTaGlydA==": {
+		"Type": "Leather",
+		"Name": "Leather Lamellar Shirt",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, hips, groin, thighs"
+		},
+		"Qualities": "",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "6 sp",
+		"Id": "TGVhdGhlciBMYW1lbGxhciBTaGlydA==",
+		"CpCost": 72,
+		"Category": "Torso armour"
+	},
+	"TGVhdGhlciBMYW1lbGxhciBWZXN0": {
+		"Type": "Leather",
+		"Name": "Leather Lamellar Vest",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGVhdGhlciBMYW1lbGxhciBWZXN0",
+		"CpCost": 36,
+		"Category": "Torso armour"
+	},
+	"TGVhdGhlciBWZXN0": {
+		"Type": "Leather",
+		"Name": "Leather Vest",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				7,
+				8,
+				9,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "TGVhdGhlciBWZXN0",
+		"CpCost": 12,
+		"Category": "Torso armour"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBCcmVhc3RwbGF0ZQ==": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Breastplate",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest, belly, sides"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBCcmVhc3RwbGF0ZQ==",
+		"CpCost": 60,
+		"Category": "Torso armour"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBDdWlyYXNz": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Cuirass",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				6,
+				8,
+				7,
+				19,
+				20
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Chest, belly, sides, upper back, lower back"
+		},
+		"Qualities": "",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "8 sp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBDdWlyYXNz",
+		"CpCost": 96,
+		"Category": "Torso armour"
+	},
+	"U2hhZ3JlZW4gR3JlYXRjb2F0": {
+		"Type": "Leather",
+		"Name": "Shagreen Greatcoat",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11,
+				12,
+				13,
+				14,
+				6,
+				7,
+				8,
+				9,
+				19,
+				20,
+				10,
+				15,
+				16,
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Full torso, full arms, hips, groin, thighs, knees, shins"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "U2hhZ3JlZW4gR3JlYXRjb2F0",
+		"CpCost": 240,
+		"Category": "Torso armour"
+	},
+	"QmVzYWdld3M=": {
+		"Type": "Plate",
+		"Name": "Besagews",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "When layered with spaulders use besagews value against Th",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [
+				11
+			],
+			"weakSpot": [],
+			"string": "Shoulders (Th), upper arms½ (Th)"
+		},
+		"Qualities": "Hard",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "8 sp",
+		"Id": "QmVzYWdld3M=",
+		"CpCost": 96,
+		"Category": "Arm armor"
+	},
+	"QnVsbGV0cHJvb2YgVmFtYnJhY2Vz": {
+		"Type": "Plate",
+		"Name": "Bulletproof Vambraces",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Forearms"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QnVsbGV0cHJvb2YgVmFtYnJhY2Vz",
+		"CpCost": 240,
+		"Category": "Arm armor"
+	},
+	"Q291dGVycw==": {
+		"Type": "Plate",
+		"Name": "Couters",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				12
+			],
+			"halfProt": [],
+			"weakSpot": [
+				12
+			],
+			"string": "Elbows‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "Q291dGVycw==",
+		"CpCost": 60,
+		"Category": "Arm armor"
+	},
+	"R2F1bnRsZXRz": {
+		"Type": "Plate",
+		"Name": "Gauntlets",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [
+				14
+			],
+			"string": "Hands‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "R2F1bnRsZXRz",
+		"CpCost": 60,
+		"Category": "Arm armor"
+	},
+	"SmFjayBDaGFpbnM=": {
+		"Type": "Plate",
+		"Name": "Jack Chains",
+		"AVC": 6,
+		"AVP": 0,
+		"AVB": 3,
+		"Coverage": {
+			"special": "No AV against Th attacks of any damage type",
+			"locations": [
+				11,
+				12,
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [
+				11,
+				12,
+				13
+			],
+			"string": "Upper arms‡, elbows‡, forearms‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "SmFjayBDaGFpbnM=",
+		"CpCost": 12,
+		"Category": "Arm armor"
+	},
+	"TXVuaXRpb25zIFBhdWxkcm9ucw==": {
+		"Type": "Plate",
+		"Name": "Munitions Pauldrons",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [
+				5,
+				11
+			],
+			"string": "Shoulders‡, upper arms‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 4,
+		"PP": null,
+		"Cost": "8 sp",
+		"Id": "TXVuaXRpb25zIFBhdWxkcm9ucw==",
+		"CpCost": 96,
+		"Category": "Arm armor"
+	},
+	"TXVuaXRpb25zIFJlcmVicmFjZXM=": {
+		"Type": "Plate",
+		"Name": "Munitions Rerebraces",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [
+				11
+			],
+			"string": "Upper arms‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "2 sp",
+		"Id": "TXVuaXRpb25zIFJlcmVicmFjZXM=",
+		"CpCost": 24,
+		"Category": "Arm armor"
+	},
+	"TXVuaXRpb25zIFNwYXVsZGVycw==": {
+		"Type": "Plate",
+		"Name": "Munitions Spaulders",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "Half AV against Th to shoulders",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [
+				11
+			],
+			"weakSpot": [
+				5,
+				11
+			],
+			"string": "Shoulders‡, upper arms½ ‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "4 sp",
+		"Id": "TXVuaXRpb25zIFNwYXVsZGVycw==",
+		"CpCost": 48,
+		"Category": "Arm armor"
+	},
+	"TXVuaXRpb25zIFZhbWJyYWNlcw==": {
+		"Type": "Plate",
+		"Name": "Munitions Vambraces",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [
+				13
+			],
+			"string": "Forearms‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "2 sp",
+		"Id": "TXVuaXRpb25zIFZhbWJyYWNlcw==",
+		"CpCost": 24,
+		"Category": "Arm armor"
+	},
+	"UGF1bGRyb25z": {
+		"Type": "Plate",
+		"Name": "Pauldrons",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "UGF1bGRyb25z",
+		"CpCost": 240,
+		"Category": "Arm armor"
+	},
+	"UmVyZWJyYWNlcw==": {
+		"Type": "Plate",
+		"Name": "Rerebraces",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper arms"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "UmVyZWJyYWNlcw==",
+		"CpCost": 60,
+		"Category": "Arm armor"
+	},
+	"U3BhdWxkZXJz": {
+		"Type": "Plate",
+		"Name": "Spaulders",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "Half AV against Th to shoulders",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [
+				11
+			],
+			"weakSpot": [
+				5,
+				11
+			],
+			"string": "Shoulders‡, upper arms½ ‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "6 sp",
+		"Id": "U3BhdWxkZXJz",
+		"CpCost": 72,
+		"Category": "Arm armor"
+	},
+	"VmFtYnJhY2Vz": {
+		"Type": "Plate",
+		"Name": "Vambraces",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Forearms"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "VmFtYnJhY2Vz",
+		"CpCost": 60,
+		"Category": "Arm armor"
+	},
+	"QW5pbWEgUGF1bGRyb25z": {
+		"Type": "Laminar",
+		"Name": "Anima Pauldrons",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "QW5pbWEgUGF1bGRyb25z",
+		"CpCost": 480,
+		"Category": "Arm armor"
+	},
+	"QW5pbWEgUmVyZWJyYWNlcw==": {
+		"Type": "Laminar",
+		"Name": "Anima Rerebraces",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper arms"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QW5pbWEgUmVyZWJyYWNlcw==",
+		"CpCost": 240,
+		"Category": "Arm armor"
+	},
+	"QW5pbWEgU3BhdWxkZXJz": {
+		"Type": "Laminar",
+		"Name": "Anima Spaulders",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "Half AV against Th to shoulders",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [
+				11
+			],
+			"weakSpot": [
+				11
+			],
+			"string": "Shoulders, upper arms½ ‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QW5pbWEgU3BhdWxkZXJz",
+		"CpCost": 240,
+		"Category": "Arm armor"
+	},
+	"QW5pbWEgVmFtYnJhY2U=": {
+		"Type": "Laminar",
+		"Name": "Anima Vambrace",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Forearms"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "3 gp",
+		"Id": "QW5pbWEgVmFtYnJhY2U=",
+		"CpCost": 720,
+		"Category": "Arm armor"
+	},
+	"TGFtaW5hciBGb3JlYXJtIEd1YXJk": {
+		"Type": "Laminar",
+		"Name": "Laminar Forearm Guard",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [
+				13
+			],
+			"string": "Forearms‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGFtaW5hciBGb3JlYXJtIEd1YXJk",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"TGFtaW5hciBFbGJvdyBKb2ludA==": {
+		"Type": "Laminar",
+		"Name": "Laminar Elbow Joint",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				12
+			],
+			"halfProt": [],
+			"weakSpot": [
+				12
+			],
+			"string": "Elbows‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGFtaW5hciBFbGJvdyBKb2ludA==",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"TGFtaW5hciBQYXVsZHJvbnM=": {
+		"Type": "Laminar",
+		"Name": "Laminar Pauldrons",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [
+				5,
+				11
+			],
+			"string": "Shoulders‡, upper arms‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "10 sp",
+		"Id": "TGFtaW5hciBQYXVsZHJvbnM=",
+		"CpCost": 120,
+		"Category": "Arm armor"
+	},
+	"TGFtaW5hciBSZXJlYnJhY2U=": {
+		"Type": "Laminar",
+		"Name": "Laminar Rerebrace",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [
+				11
+			],
+			"string": "Upper arms‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGFtaW5hciBSZXJlYnJhY2U=",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"QnJpZ2FuZGluZSBHbG92ZXM=": {
+		"Type": "Mail",
+		"Name": "Brigandine Gloves",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hands"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "QnJpZ2FuZGluZSBHbG92ZXM=",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"QnJpZ2FuZGluZSBMb25nIFNsZWV2ZXM=": {
+		"Type": "Mail",
+		"Name": "Brigandine Long Sleeves",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11,
+				12,
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms, elbows, forearms"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "QnJpZ2FuZGluZSBMb25nIFNsZWV2ZXM=",
+		"CpCost": 480,
+		"Category": "Arm armor"
+	},
+	"QnJpZ2FuZGluZSBTaG9ydCBTbGVldmVz": {
+		"Type": "Mail",
+		"Name": "Brigandine Short Sleeves",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "14 sp",
+		"Id": "QnJpZ2FuZGluZSBTaG9ydCBTbGVldmVz",
+		"CpCost": 168,
+		"Category": "Arm armor"
+	},
+	"TGFtZWxsYXIgR2xvdmVz": {
+		"Type": "Mail",
+		"Name": "Lamellar Gloves",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hands"
+		},
+		"Qualities": "Hard",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGFtZWxsYXIgR2xvdmVz",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"TGFtZWxsYXIgTG9uZyBTbGVldmVz": {
+		"Type": "Mail",
+		"Name": "Lamellar Long Sleeves",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11,
+				12,
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms, elbows, forearms"
+		},
+		"Qualities": "Hard",
+		"Weight": 4,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "TGFtZWxsYXIgTG9uZyBTbGVldmVz",
+		"CpCost": 240,
+		"Category": "Arm armor"
+	},
+	"TGFtZWxsYXIgU2hvcnQgU2xlZXZlcw==": {
+		"Type": "Mail",
+		"Name": "Lamellar Short Sleeves",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "12 sp",
+		"Id": "TGFtZWxsYXIgU2hvcnQgU2xlZXZlcw==",
+		"CpCost": 144,
+		"Category": "Arm armor"
+	},
+	"TWFpbCBHbG92ZXM=": {
+		"Type": "Mail",
+		"Name": "Mail Gloves",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hands"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TWFpbCBHbG92ZXM=",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"TWFpbCBMb25nIFNsZWV2ZXM=": {
+		"Type": "Mail",
+		"Name": "Mail Long Sleeves",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11,
+				12,
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms, elbows, forearms"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "TWFpbCBMb25nIFNsZWV2ZXM=",
+		"CpCost": 240,
+		"Category": "Arm armor"
+	},
+	"TWFpbCBTaG9ydCBTbGVldmVz": {
+		"Type": "Mail",
+		"Name": "Mail Short Sleeves",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 0.5,
+		"PP": null,
+		"Cost": "12 sp",
+		"Id": "TWFpbCBTaG9ydCBTbGVldmVz",
+		"CpCost": 144,
+		"Category": "Arm armor"
+	},
+	"UXVpbHRlZCBHbG92ZXM=": {
+		"Type": "Textile",
+		"Name": "Quilted Gloves",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hands"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 cp",
+		"Id": "UXVpbHRlZCBHbG92ZXM=",
+		"CpCost": 1,
+		"Category": "Arm armor"
+	},
+	"UXVpbHRlZCBMb25nIFNsZWV2ZXM=": {
+		"Type": "Textile",
+		"Name": "Quilted Long Sleeves",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11,
+				12,
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms, elbows, forearms"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "6 cp",
+		"Id": "UXVpbHRlZCBMb25nIFNsZWV2ZXM=",
+		"CpCost": 6,
+		"Category": "Arm armor"
+	},
+	"UXVpbHRlZCBTaG9ydCBTbGVldmVz": {
+		"Type": "Textile",
+		"Name": "Quilted Short Sleeves",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 cp",
+		"Id": "UXVpbHRlZCBTaG9ydCBTbGVldmVz",
+		"CpCost": 3,
+		"Category": "Arm armor"
+	},
+	"UmVpbmZvcmNlZCBRdWlsdGVkIEdsb3Zlcw==": {
+		"Type": "Textile",
+		"Name": "Reinforced Quilted Gloves",
+		"AVC": 4,
+		"AVP": 4,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hands"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "UmVpbmZvcmNlZCBRdWlsdGVkIEdsb3Zlcw==",
+		"CpCost": 12,
+		"Category": "Arm armor"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBQYXVsZHJvbnM=": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Pauldrons",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [
+				11
+			],
+			"string": "Shoulders, upper arms‡"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBQYXVsZHJvbnM=",
+		"CpCost": 60,
+		"Category": "Arm armor"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBSZXJlYnJhY2Vz": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Rerebraces",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Upper arms"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBSZXJlYnJhY2Vz",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBWYW1icmFjZXM=": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Vambraces",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Forearms"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBWYW1icmFjZXM=",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"TGVhdGhlciBHbG92ZXM=": {
+		"Type": "Leather",
+		"Name": "Leather Gloves",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hands"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "TGVhdGhlciBHbG92ZXM=",
+		"CpCost": 12,
+		"Category": "Arm armor"
+	},
+	"TGVhdGhlciBTbGVldmVz": {
+		"Type": "Leather",
+		"Name": "Leather Sleeves",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11,
+				12,
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms, elbows, forearms"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "2 sp",
+		"Id": "TGVhdGhlciBTbGVldmVz",
+		"CpCost": 24,
+		"Category": "Arm armor"
+	},
+	"TGVhdGhlciBMYW1lbGxhciBMb25nIFNsZWV2ZXM=": {
+		"Type": "Leather",
+		"Name": "Leather Lamellar Long Sleeves",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11,
+				12,
+				13
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms, elbows, forearms"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGVhdGhlciBMYW1lbGxhciBMb25nIFNsZWV2ZXM=",
+		"CpCost": 36,
+		"Category": "Arm armor"
+	},
+	"TGVhdGhlciBMYW1lbGxhciBTaG9ydCBTbGVldmVz": {
+		"Type": "Leather",
+		"Name": "Leather Lamellar Short Sleeves",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				5,
+				11
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shoulders, upper arms"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "TGVhdGhlciBMYW1lbGxhciBTaG9ydCBTbGVldmVz",
+		"CpCost": 12,
+		"Category": "Arm armor"
+	},
+	"UmVpbmZvcmNlZCBMZWF0aGVyIEdsb3Zlcw==": {
+		"Type": "Leather",
+		"Name": "Reinforced Leather Gloves",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				14
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hands"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "2 sp",
+		"Id": "UmVpbmZvcmNlZCBMZWF0aGVyIEdsb3Zlcw==",
+		"CpCost": 24,
+		"Category": "Arm armor"
+	},
+	"QnVsbGV0cHJvb2YgQ3Vpc3Nlcw==": {
+		"Type": "Plate",
+		"Name": "Bulletproof Cuisses",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Thighs"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 4,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "QnVsbGV0cHJvb2YgQ3Vpc3Nlcw==",
+		"CpCost": 480,
+		"Category": "Leg armor"
+	},
+	"QnVsbGV0cHJvb2YgR3JlYXZlcw==": {
+		"Type": "Plate",
+		"Name": "Bulletproof Greaves",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shins"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "2 gp",
+		"Id": "QnVsbGV0cHJvb2YgR3JlYXZlcw==",
+		"CpCost": 480,
+		"Category": "Leg armor"
+	},
+	"QnVsbGV0cHJvb2YgUG9sZXlucw==": {
+		"Type": "Plate",
+		"Name": "Bulletproof Poleyns",
+		"AVC": 10,
+		"AVP": 9,
+		"AVB": 8,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Knees"
+		},
+		"Qualities": "Bulletproof, Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QnVsbGV0cHJvb2YgUG9sZXlucw==",
+		"CpCost": 240,
+		"Category": "Leg armor"
+	},
+	"Q3Vpc3Nlcw==": {
+		"Type": "Plate",
+		"Name": "Cuisses",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Thighs"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "8 sp",
+		"Id": "Q3Vpc3Nlcw==",
+		"CpCost": 96,
+		"Category": "Leg armor"
+	},
+	"R3JlYXZlcw==": {
+		"Type": "Plate",
+		"Name": "Greaves",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shins"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "6 sp",
+		"Id": "R3JlYXZlcw==",
+		"CpCost": 72,
+		"Category": "Leg armor"
+	},
+	"TXVuaXRpb25zIEN1aXNzZXM=": {
+		"Type": "Plate",
+		"Name": "Munitions Cuisses",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [
+				15
+			],
+			"string": "Thighs‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "4 sp",
+		"Id": "TXVuaXRpb25zIEN1aXNzZXM=",
+		"CpCost": 48,
+		"Category": "Leg armor"
+	},
+	"TXVuaXRpb25zIEdyZWF2ZXM=": {
+		"Type": "Plate",
+		"Name": "Munitions Greaves",
+		"AVC": 7,
+		"AVP": 6,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [
+				17
+			],
+			"string": "Shins‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TXVuaXRpb25zIEdyZWF2ZXM=",
+		"CpCost": 36,
+		"Category": "Leg armor"
+	},
+	"UG9sZXlucw==": {
+		"Type": "Plate",
+		"Name": "Poleyns",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [
+				16
+			],
+			"string": "Knees‡"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "UG9sZXlucw==",
+		"CpCost": 60,
+		"Category": "Leg armor"
+	},
+	"U2FiYXRvbnM=": {
+		"Type": "Plate",
+		"Name": "Sabatons",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				18
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Feet"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "U2FiYXRvbnM=",
+		"CpCost": 60,
+		"Category": "Leg armor"
+	},
+	"QW5pbWEgQ3Vpc3Nlcw==": {
+		"Type": "Laminar",
+		"Name": "Anima Cuisses",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Thighs"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QW5pbWEgQ3Vpc3Nlcw==",
+		"CpCost": 240,
+		"Category": "Leg armor"
+	},
+	"QW5pbWEgR3JlYXZlcw==": {
+		"Type": "Laminar",
+		"Name": "Anima Greaves",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shins"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "QW5pbWEgR3JlYXZlcw==",
+		"CpCost": 240,
+		"Category": "Leg armor"
+	},
+	"QW5pbWEgUG9sZXlucw==": {
+		"Type": "Laminar",
+		"Name": "Anima Poleyns",
+		"AVC": 7,
+		"AVP": 7,
+		"AVB": 7,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Knees"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "10 sp",
+		"Id": "QW5pbWEgUG9sZXlucw==",
+		"CpCost": 120,
+		"Category": "Leg armor"
+	},
+	"TGFtaW5hciBCb290cw==": {
+		"Type": "Laminar",
+		"Name": "Laminar Boots",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				18
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Feet"
+		},
+		"Qualities": "Hard",
+		"Weight": 2,
+		"PP": null,
+		"Cost": "4 sp",
+		"Id": "TGFtaW5hciBCb290cw==",
+		"CpCost": 48,
+		"Category": "Leg armor"
+	},
+	"TGFtaW5hciBDdWlzc2Vz": {
+		"Type": "Laminar",
+		"Name": "Laminar Cuisses",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Thighs"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "4 sp",
+		"Id": "TGFtaW5hciBDdWlzc2Vz",
+		"CpCost": 48,
+		"Category": "Leg armor"
+	},
+	"TGFtaW5hciBHcmVhdmVz": {
+		"Type": "Laminar",
+		"Name": "Laminar Greaves",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shins"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "4 sp",
+		"Id": "TGFtaW5hciBHcmVhdmVz",
+		"CpCost": 48,
+		"Category": "Leg armor"
+	},
+	"QnJpZ2FuZGluZSBCb290cw==": {
+		"Type": "Mail",
+		"Name": "Brigandine Boots",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				18
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Feet"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "8 sp",
+		"Id": "QnJpZ2FuZGluZSBCb290cw==",
+		"CpCost": 96,
+		"Category": "Leg armor"
+	},
+	"QnJpZ2FuZGluZSBMZWdnaW5ncw==": {
+		"Type": "Mail",
+		"Name": "Brigandine Leggings",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15,
+				16,
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, groin, thighs, knees, shins"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "10 sp",
+		"Id": "QnJpZ2FuZGluZSBMZWdnaW5ncw==",
+		"CpCost": 120,
+		"Category": "Leg armor"
+	},
+	"TGFtZWxsYXIgTGVnZ2luZ3M=": {
+		"Type": "Mail",
+		"Name": "Lamellar Leggings",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15,
+				16,
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, groin, thighs, knees, shins"
+		},
+		"Qualities": "Hard",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "12 sp",
+		"Id": "TGFtZWxsYXIgTGVnZ2luZ3M=",
+		"CpCost": 144,
+		"Category": "Leg armor"
+	},
+	"TGFtZWxsYXIgQm9vdHM=": {
+		"Type": "Mail",
+		"Name": "Lamellar Boots",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				18
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Feet"
+		},
+		"Qualities": "Hard",
+		"Weight": 1.5,
+		"PP": null,
+		"Cost": "10 sp",
+		"Id": "TGFtZWxsYXIgQm9vdHM=",
+		"CpCost": 120,
+		"Category": "Leg armor"
+	},
+	"TWFpbCBCb290cw==": {
+		"Type": "Mail",
+		"Name": "Mail Boots",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				18
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Feet"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TWFpbCBCb290cw==",
+		"CpCost": 36,
+		"Category": "Leg armor"
+	},
+	"TWFpbCBHcm9pbiBHdXNzZXQ=": {
+		"Type": "Mail",
+		"Name": "Mail Groin Gusset",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				10
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Groin"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TWFpbCBHcm9pbiBHdXNzZXQ=",
+		"CpCost": 36,
+		"Category": "Leg armor"
+	},
+	"TWFpbCBMZWdnaW5ncw==": {
+		"Type": "Mail",
+		"Name": "Mail Leggings",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15,
+				16,
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, groin, thighs, knees, shins"
+		},
+		"Qualities": "Hard, Layer 1, Mail",
+		"Weight": 2.5,
+		"PP": null,
+		"Cost": "8 sp",
+		"Id": "TWFpbCBMZWdnaW5ncw==",
+		"CpCost": 96,
+		"Category": "Leg armor"
+	},
+	"UXVpbHRlZCBMZWdnaW5ncw==": {
+		"Type": "Textile",
+		"Name": "Quilted Leggings",
+		"AVC": 2,
+		"AVP": 3,
+		"AVB": 4,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15,
+				16,
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, groin, thighs, knees, shins"
+		},
+		"Qualities": "Textile",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "2 cp",
+		"Id": "UXVpbHRlZCBMZWdnaW5ncw==",
+		"CpCost": 2,
+		"Category": "Leg armor"
+	},
+	"TGVhdGhlciBCb290cw==": {
+		"Type": "Leather",
+		"Name": "Leather Boots",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				18
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Feet"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "TGVhdGhlciBCb290cw==",
+		"CpCost": 12,
+		"Category": "Leg armor"
+	},
+	"TGVhdGhlciBMZWdnaW5ncw==": {
+		"Type": "Leather",
+		"Name": "Leather Leggings",
+		"AVC": 3,
+		"AVP": 2,
+		"AVB": 2,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				10,
+				15,
+				16,
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, groin, thighs, knees, shins"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "2 sp",
+		"Id": "TGVhdGhlciBMZWdnaW5ncw==",
+		"CpCost": 24,
+		"Category": "Leg armor"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBDdWlzc2Vz": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Cuisses",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, thighs"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "8 cp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBDdWlzc2Vz",
+		"CpCost": 8,
+		"Category": "Leg armor"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBHcmVhdmVz": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Greaves",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shins"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "1 sp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBHcmVhdmVz",
+		"CpCost": 12,
+		"Category": "Leg armor"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBLbmVlLUd1YXJkcw==": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Knee-Guards",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				16
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Knees"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "6 cp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBLbmVlLUd1YXJkcw==",
+		"CpCost": 6,
+		"Category": "Leg armor"
+	},
+	"TGVhdGhlciBMYW1lbGxhciBDdWlzc2Vz": {
+		"Type": "Leather",
+		"Name": "Leather Lamellar Cuisses",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				9,
+				15
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Hips, thighs"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGVhdGhlciBMYW1lbGxhciBDdWlzc2Vz",
+		"CpCost": 36,
+		"Category": "Leg armor"
+	},
+	"TGVhdGhlciBMYW1lbGxhciBHcmVhdmVz": {
+		"Type": "Leather",
+		"Name": "Leather Lamellar Greaves",
+		"AVC": 3,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "",
+			"locations": [
+				17
+			],
+			"halfProt": [],
+			"weakSpot": [],
+			"string": "Shins"
+		},
+		"Qualities": "",
+		"Weight": 0,
+		"PP": null,
+		"Cost": "3 sp",
+		"Id": "TGVhdGhlciBMYW1lbGxhciBHcmVhdmVz",
+		"CpCost": 36,
+		"Category": "Leg armor"
+	},
+	"UGxhdGUgQmFyZGluZw==": {
+		"Type": "Plate",
+		"Name": "Plate Barding",
+		"AVC": 8,
+		"AVP": 7,
+		"AVB": 6,
+		"Coverage": {
+			"special": "Horse"
+		},
+		"Qualities": "",
+		"Weight": 12,
+		"PP": null,
+		"Cost": "30 gp",
+		"Id": "UGxhdGUgQmFyZGluZw==",
+		"CpCost": 7200,
+		"Category": "Horse armor"
+	},
+	"QnJpZ2FuZGluZSBCYXJkaW5n": {
+		"Type": "Mail",
+		"Name": "Brigandine Barding",
+		"AVC": 5,
+		"AVP": 6,
+		"AVB": 4,
+		"Coverage": {
+			"special": "Horse"
+		},
+		"Qualities": "",
+		"Weight": 8,
+		"PP": null,
+		"Cost": "20 gp",
+		"Id": "QnJpZ2FuZGluZSBCYXJkaW5n",
+		"CpCost": 4800,
+		"Category": "Horse armor"
+	},
+	"TGFtZWxsYXIgQmFyZGluZw==": {
+		"Type": "Mail",
+		"Name": "Lamellar Barding",
+		"AVC": 5,
+		"AVP": 5,
+		"AVB": 5,
+		"Coverage": {
+			"special": "Horse"
+		},
+		"Qualities": "",
+		"Weight": 8,
+		"PP": null,
+		"Cost": "15 gp",
+		"Id": "TGFtZWxsYXIgQmFyZGluZw==",
+		"CpCost": 3600,
+		"Category": "Horse armor"
+	},
+	"TWFpbCBCYXJkaW5n": {
+		"Type": "Mail",
+		"Name": "Mail Barding",
+		"AVC": 6,
+		"AVP": 4,
+		"AVB": 3,
+		"Coverage": {
+			"special": "Horse"
+		},
+		"Qualities": "",
+		"Weight": 8,
+		"PP": null,
+		"Cost": "10 gp",
+		"Id": "TWFpbCBCYXJkaW5n",
+		"CpCost": 2400,
+		"Category": "Horse armor"
+	},
+	"Q2Fwcmlzb25pbmc=": {
+		"Type": "Textile",
+		"Name": "Caprisoning",
+		"AVC": 2,
+		"AVP": 4,
+		"AVB": 5,
+		"Coverage": {
+			"special": "Horse"
+		},
+		"Qualities": "Textile",
+		"Weight": 1,
+		"PP": null,
+		"Cost": "5 sp",
+		"Id": "Q2Fwcmlzb25pbmc=",
+		"CpCost": 60,
+		"Category": "Horse armor"
+	},
+	"SGFyZGVuZWQgTGVhdGhlciBCYXJkaW5n": {
+		"Type": "Leather",
+		"Name": "Hardened Leather Barding",
+		"AVC": 4,
+		"AVP": 3,
+		"AVB": 3,
+		"Coverage": {
+			"special": "Horse"
+		},
+		"Qualities": "",
+		"Weight": 3,
+		"PP": null,
+		"Cost": "1 gp",
+		"Id": "SGFyZGVuZWQgTGVhdGhlciBCYXJkaW5n",
+		"CpCost": 240,
+		"Category": "Horse armor"
+	}
+}

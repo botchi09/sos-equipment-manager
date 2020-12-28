@@ -1,10 +1,16 @@
 var armorData = null
 var armorList = null
-var filteredArmorCategories = {}
+var equippedCategoryStr = "E"
+var filteredArmorCategories = {equipped: false}
 var equippedArmor = {}
 var armorDisplayBoxes = {}
 var dollSizeMultiplier = 0.5 //Full size image would be really silly huge. Due to lib limitations we can't dynamically resize.
 
+//HTML strings to represent weak spots and half protection
+var weakSpot = decodeURIComponent("%E2%80%A1")
+var notWeakSpot = " "
+var halfProt = decodeURIComponent("%C2%BD")
+	
 //Purely for creating and deciding the positions of armour display divs
 function armorDisplayBox(id, x, y, mapAtEnd) {
 	
@@ -18,6 +24,11 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 	if (mapAtEnd) {
 		mapPos = 5
 	}
+	
+	var dropListY = (y + boxWidth*2) * dollSizeMultiplier
+	$("<div></div>").attr("id", "droplist-" + id).css("left", (x * dollSizeMultiplier)).css("top", dropListY).css("position", "absolute")
+	.addClass("droplist-container")
+	.prependTo("#avbox-container")
 	
 	var boxTypes = ["c", "p", "b", "m", "w"]
 	for (var i=0;i<6;i++) {
@@ -35,10 +46,11 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.css("height", dollSizeMultiplier*boxWidth)
 			.attr("id", "avbox-" + id + "-" + boxTypes[0]) //TODO: identify type of box in ID too
 			.text("0")
-			.prependTo("#armor-doll")
+			.prependTo("#avbox-container")
 			boxTypes.splice(0, 1)
 		}
 	}
+	
 	
 }
 
@@ -50,8 +62,7 @@ function loadArmorData() {
 
 function generateCoverageNumberString(coverage) {
 	var coverageString = ""
-	var weakSpot = decodeURIComponent("%E2%80%A1")
-	var halfProt = decodeURIComponent("%C2%BD")
+
 	for (var i=0;i<coverage.locations.length;i++) {
 		var num = coverage.locations[i]
 		coverageString += num
@@ -68,6 +79,13 @@ function generateCoverageNumberString(coverage) {
 	coverageString = coverageString.substring(0, coverageString.length-2)
 	
 	return coverageString
+}
+
+function addFilterButton(category, buttonText) {
+	
+	$("#filter-template").clone().css("display", "").appendTo("#filters").attr("data-filtercat", category).text(buttonText || category)
+	.mousedown(function(e){ e.preventDefault() })
+
 }
 
 function initArmorList() {
@@ -95,50 +113,60 @@ function initArmorList() {
 			{ data: ["cpcost"] },
 			{ data: ["category"] },
 			{ data: ["fudged_pp"] }, //Negative number sort workaround
-			{ data: ["coverage_data"] }
+			{ data: ["coverage_data"] },
+			{ data: ["index"] }
 		]
 	}
 	armorList = new List("armor-list", options)
-	for (var armorCategoryIndex in armorData) {
-		var armorCategory = armorData[armorCategoryIndex]
-		for (var armorIndex in armorCategory) {
-			var armorPiece = armorCategory[armorIndex]
-			if (armorPiece.Id != null) {
-				//console.log("item", armorPiece)
-				var coverageCount = 0
-				var coverageLocations = armorPiece.Coverage.locations
-				var armorCoverageNumbers = ""
+	var curIndex = 0
+	for (var armorIndex in armorData) {
 
-				if (coverageLocations !== null && coverageLocations !== undefined && coverageLocations !== "undefined") {
-					coverageCount = (coverageLocations.length || 0)
-					armorCoverageNumbers = generateCoverageNumberString(armorPiece.Coverage)
-					//console.log("GENERATING COVERAGE", armorCoverageNumbers)
-				}
-				
-				var pp = (parseInt(armorPiece.PP) || 0)
-				var fudgedPp = pp+100
-		
-				armorList.add({
-					armor_type: armorPiece.Type, 
-					armor_name: armorPiece.Name, id: armorPiece.Id, 
-					armor_AVC: armorPiece.AVC, armor_AVP: armorPiece.AVP, armor_AVB: armorPiece.AVB,
-					armor_coverage: armorPiece.Coverage.string || "", armor_coverage_numbers: armorCoverageNumbers, coverage_data: coverageLocations || [],
-					armor_qualities: armorPiece.Qualities,
-					armor_weight: armorPiece.Weight,
-					armor_pp: pp, fudged_pp: fudgedPp,
-					armor_cost: armorPiece.Cost, cpcost: armorPiece.CpCost, 
-					qualitycount: armorPiece.Qualities.length,
-					coveragecount: coverageCount,
-					category: armorCategoryIndex
-				})
+		var armorPiece = armorData[armorIndex]
+		if (armorPiece.Id != null) {
+			//console.log("item", armorPiece)
+			var coverageCount = 0
+			var coverageLocations = armorPiece.Coverage.locations
+			var armorCoverageNumbers = ""
+
+			if (coverageLocations !== null && coverageLocations !== undefined && coverageLocations !== "undefined") {
+				coverageCount = (coverageLocations.length || 0)
+				armorCoverageNumbers = generateCoverageNumberString(armorPiece.Coverage)
+				//console.log("GENERATING COVERAGE", armorCoverageNumbers)
 			}
+			
+			var pp = (parseInt(armorPiece.PP) || 0)
+			var fudgedPp = pp+100
+	
+			
+			armorList.add({
+				armor_type: armorPiece.Type, 
+				armor_name: armorPiece.Name, id: armorPiece.Id, 
+				armor_AVC: armorPiece.AVC, armor_AVP: armorPiece.AVP, armor_AVB: armorPiece.AVB,
+				armor_coverage: armorPiece.Coverage.string || "", armor_coverage_numbers: armorCoverageNumbers, coverage_data: coverageLocations || [],
+				armor_qualities: armorPiece.Qualities,
+				armor_weight: armorPiece.Weight,
+				armor_pp: pp, fudged_pp: fudgedPp,
+				armor_cost: armorPiece.Cost, cpcost: armorPiece.CpCost, 
+				qualitycount: armorPiece.Qualities.length,
+				coveragecount: coverageCount,
+				category: armorPiece.Category,
+				index: curIndex
+			})
+			curIndex++
 		}
-		filteredArmorCategories[armorCategoryIndex] = false
-		$("#filter-template").clone().css("display", "").appendTo("#filters").attr("data-filtercat", armorCategoryIndex).text(armorCategoryIndex)
+		
+		if (filteredArmorCategories[armorPiece.Category]==null)
+		{
+			filteredArmorCategories[armorPiece.Category] = false
+			addFilterButton(armorPiece.Category)
+		}
 	}
+	//Equipped filter is just too buggy.
+	//addFilterButton(equippedCategoryStr, "Equipped")
 	initHiddenColumns()
 	initImageMapResize()
 	initImageMapHighlights()
+	$("#default-sort-btn").click()
 	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
 	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
 		if (a > b) { return 1 }
@@ -150,6 +178,55 @@ function initArmorList() {
 
 function initImageMapResize() {
 	imageMapResize()
+}
+
+/*armorList.filter(function(item) {
+		var itemValues = item.values()
+		if (category !== equippedCategoryStr) {
+			console.log(category, doFilter)
+			if ((equippedArmor[itemValues.id] == null) && filteredArmorCategories[itemValues.category] == true) {
+				return false
+			} else {
+				return true
+			}
+		} else {
+			
+		}
+	})*/
+	
+function doHitZoneFilter(hitZone) {
+}
+	
+function getAllArmorItemsByHitZone(hitZone) {
+	var items = {}
+	
+	for (armorIndex in armorData) {
+		var armor = armorData[armorIndex]
+		if (armor.Coverage.locations != null) {
+			if (armor.Coverage.locations.indexOf(parseInt(hitZone)) > -1) {
+				items[armor.Id] = armor
+			}
+		}
+	}
+	return items
+}
+
+function getAllListItemsByHitZone(hitZone) {
+	var items = []
+	
+	var armorItems = getAllArmorItemsByHitZone(hitZone)
+	for (armorIndex in armorItems) {	
+				items.push($("tr[data-id='"+armorItems[armorIndex].Id+"']"))	
+	}
+	return $(items).map(function() {return this.toArray()})	
+}
+
+function doArmorItemListHover(hitZone, add) {
+	if (add) {
+		getAllListItemsByHitZone(hitZone).addClass("armor-list-highlight")
+	} else {
+		getAllListItemsByHitZone(hitZone).removeClass("armor-list-highlight")
+	}
 }
 
 function initImageMapHighlights() {
@@ -173,14 +250,19 @@ function initImageMapHighlights() {
 		$("[id^=armor-map-" + i +"-]").each(function(index) {
 			this.addEventListener("mouseover", function(e) {
 				var this2 = this
+				//doArmorItemListHover(this.alt, true)
 				//We re-scope and must redeclare our selector
 				$("[id^=armor-map-" + this.alt +"-]").each(function(index2) {		
-						if (e.target != this) {
-							
-							console.log("target", e.target, this, e.target == this)
+						if (e.target != this) {						
+							//console.log("target", e.target, this, e.target == this)
 							$(this).mouseover()
+							doArmorItemListHover(this.alt, true)
 						}
 				})
+			})
+			this.addEventListener("mouseout", function(e) {
+				var this2 = this
+				doArmorItemListHover(this.alt, false)
 			})
 		})	
 	}
@@ -197,10 +279,22 @@ function initHiddenColumns() {
 function applyArmorFilter(category, doFilter) {
 	filteredArmorCategories[category] = (doFilter == null)
 	armorList.filter(function(item) {
-		if (filteredArmorCategories[item.values().category] == true) {
-			return false
+		var itemValues = item.values()
+		if (category !== equippedCategoryStr) {
+			console.log(category, doFilter)
+			if ((equippedArmor[itemValues.id] == null) && filteredArmorCategories[itemValues.category] == true) {
+				return false
+			} else {
+				return true
+			}
 		} else {
-			return true
+			/*if (filteredArmorCategories[category] == true && equippedArmor[itemValues.id] != null) {
+				return false
+			} else {
+				return true
+			}*/
+			
+			//return (filteredArmorCategories[category] == true && equippedArmor[itemValues.id] == null)
 		}
 	})
 }
@@ -235,7 +329,60 @@ function armorFilterClicked(btn) {
 }
 
 function armorItemClick(item) {
-	console.log(item.getAttribute("data-id"))
+	var id = item.getAttribute("data-id")
+	$(item).toggleClass("armor-list-item-equipped")
+	$(item).toggleClass("armor-list-item")
+	if (equippedArmor[id] == null) {
+		equippedArmor[id] = armorData[id]
+	} else {
+		delete equippedArmor[id]
+	}
+	recalculateLocationValues()
+}
+
+function resetAllLocations() {
+	$("[id^=avbox-]").not("#avbox-container").not("#avbox-template").html("0")
+	//TODO: clear out the dropdown lists
+}
+
+function expandProtType(type) {
+	return "AV"+type.toUpperCase()
+}
+
+function recalculateLocationValues() {
+	resetAllLocations()
+	for (equippedIndex in equippedArmor) {
+		var curArmor = equippedArmor[equippedIndex]
+		console.log("curArmor", curArmor)
+		if (curArmor.Coverage.locations != null) {
+			for (var coverageIndex in curArmor.Coverage.locations) {
+				var curHitZone = curArmor.Coverage.locations[coverageIndex]
+				var protArray = ["c","p","b"]
+				var isHalfProt = false
+				
+				if (curArmor.Coverage.halfProt.indexOf(curHitZone) > -1) {
+					isHalfProt = true
+				}
+				var weakZone = $("#avbox-"+curHitZone+"-w")
+				if (curArmor.Coverage.weakSpot.indexOf(curHitZone) > -1) {
+					//Weakspots carry down
+					weakZone.html(weakSpot)
+					
+				}
+
+				for (protArrayIndex in protArray) {
+					curProtType = protArray[protArrayIndex]
+					var curProt = parseInt($("#avbox-"+curHitZone+"-"+curProtType).html())
+					var armorProt = curArmor[expandProtType(curProtType)]
+					if (isHalfProt) {
+						armorProt = Math.floor(armorProt/2)
+						console.log("weak!", curHitZone)
+					}
+					$("#avbox-"+curHitZone+"-"+curProtType).html(Math.max(curProt, armorProt))
+				}
+			}
+		}
+	}
 }
 
 function armorItemMouseOver(item) {

@@ -19,8 +19,37 @@ tbody {
 tbody td{
 }
 
-tbody tr:nth-child(odd){
+.armor-list-item {
+	
+}
+
+.armor-list-item:nth-child(odd){
   background-color: #d7f1fc;
+}
+
+#armor-list: {
+	
+}
+
+.armor-list-item-equipped {
+	background-color: darkseagreen;
+}
+
+.armor-list-item-equipped:nth-child(odd){
+	background-color: darkseagreen; /*#aabfaa was confusing*/
+}
+
+
+.armor-list-item-equipped:hover {
+	background-color: #d2fcd3;
+}
+
+.armor-list-item:hover {
+	background-color: #98b2fa;
+}
+
+.armor-list-highlight {
+	background-color: #faa8a5 !important;
 }
 
 tbody {
@@ -51,6 +80,7 @@ button {
 	background-color:#4eb5f1;
 	text-align:center;
 	transition: all 0.2s;
+	width: fit-content;
 }
 
 .filterButton:hover {
@@ -82,9 +112,17 @@ button {
 }
 
 
-#armor-list: {
-	
+.droplist-container {
+	z-index: 1;
+	border: solid;	
 }
+.droplist-item {
+}
+
+.droplist-box {
+	border: solid;
+}
+
 
 .doll-container {
 
