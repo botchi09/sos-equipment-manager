@@ -195,6 +195,11 @@ function initImageMapResize() {
 	})*/
 	
 function doHitZoneFilter(hitZone) {
+	armorList.filter(function(item) {
+		var allHitZoneItems = getAllArmorItemsByHitZone(hitZone)
+		var itemValues = item.values()
+		return allHitZoneItems[itemValues.id] != null
+	})
 }
 	
 function getAllArmorItemsByHitZone(hitZone) {
@@ -229,6 +234,10 @@ function doArmorItemListHover(hitZone, add) {
 	}
 }
 
+//Unused
+function armorMapClick(map) {
+}
+
 function initImageMapHighlights() {
 	
 	var intervalLeft = 74*dollSizeMultiplier
@@ -248,6 +257,9 @@ function initImageMapHighlights() {
 	//20 possible hitzones, so 1-20
 	for (var i=1;i<=20;i++) {
 		$("[id^=armor-map-" + i +"-]").each(function(index) {
+			this.addEventListener("click", function(e) {
+				doHitZoneFilter(this.alt)
+			})
 			this.addEventListener("mouseover", function(e) {
 				var this2 = this
 				//doArmorItemListHover(this.alt, true)
@@ -264,7 +276,7 @@ function initImageMapHighlights() {
 				var this2 = this
 				doArmorItemListHover(this.alt, false)
 			})
-		})	
+		})
 	}
 	$(".map").maphilight({fillOpacity: 0.5, strokeWidth: 3})
 }
