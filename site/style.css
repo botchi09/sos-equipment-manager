@@ -122,7 +122,10 @@ button {
 
 .droplist-container {
 	z-index: 1;
-	border: solid;	
+	outline: solid;	
+	background-color: white;
+	width: fit-content;
+
 }
 .droplist-item {
 }
@@ -130,9 +133,8 @@ button {
 .droplist-box {
 	text-align: center;
     display: inline-block;
-    margin: -0.5;
-    outline: 3px solid black;
-    float: left;
+    margin: 0;
+    outline: 0.1px solid black;
 }
 
 

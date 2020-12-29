@@ -11,12 +11,22 @@ var boxWidth = 59 //Doll box width
 var weakSpot = decodeURIComponent("%E2%80%A1")
 var notWeakSpot = " "
 var halfProt = decodeURIComponent("%C2%BD")
-	
+var noDropList = false
 	
 function loadArmorData() {
 	var loader = require("./dataloader")
 	armorData = loader.loadArmorData()
 	console.log("armorData loaded!", Object.keys(armorData).length, "armor categories!")
+}
+
+function unhideDroplist() {
+	if (!noDropList) {
+		$("#droplist-"+$(this).attr("data-hitzone")).removeClass("hidden")
+	}
+}
+
+function hideDroplist() {
+	$("#droplist-"+$(this).attr("data-hitzone")).addClass("hidden")
 }
 
 //Purely for creating and deciding the positions of armour display divs
@@ -34,9 +44,17 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 	}
 	
 	var dropListY = (y + boxWidth*2) * dollSizeMultiplier
-	$("<div></div>").attr("id", "droplist-" + id).css("left", (x * dollSizeMultiplier)).css("top", dropListY).css("position", "absolute")
-	.addClass("droplist-container")
+	var dropListX = x
+	if (!mapAtEnd) {
+		dropListX -= 500
+	}
+	$("<div></div>").attr("id", "droplist-" + id).css("left", (dropListX * dollSizeMultiplier)).css("top", dropListY).css("position", "absolute")
+	.addClass("droplist-container").addClass("hidden")
+	.mouseover(unhideDroplist)
+	.mouseout(hideDroplist)
+	.attr("data-hitzone", id)
 	.prependTo("#avbox-container")
+	
 	
 	var boxTypes = ["c", "p", "b", "m", "w"]
 	for (var i=0;i<6;i++) {
@@ -46,17 +64,34 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			var curBoxW = (curX+dollSizeMultiplier*boxWidth)
 			var curBoxH = (curY+dollSizeMultiplier*boxWidth)
 			$("<area target='' alt='"+id+"' shape='rect' id='armor-map-"+id+"-num' coords='"+curX + ","+curY+","+curBoxW+","+curBoxH+"'>")
+			.mouseover(unhideDroplist)
+			.mouseout(hideDroplist)
+			.attr("data-hitzone", id)
 			.appendTo("#armor-map")
+			
 		} else {
 			$("#avbox-template").clone().css("display", "block")
+			.mouseover(unhideDroplist)
+			.mouseout(hideDroplist)
 			.css("top", curY).css("left", curX)
 			.css("width", dollSizeMultiplier*boxWidth)
 			.css("height", dollSizeMultiplier*boxWidth)
 			.attr("id", "avbox-" + id + "-" + boxTypes[0])
+			.attr("data-hitzone", id)
 			.prependTo("#avbox-container")
 			boxTypes.splice(0, 1)
 		}
 	}
+}
+
+
+function getMissileProt(armorId) {
+	var armor = armorData[armorId]
+	var missileProt = armor.AVP
+	if (armor.Qualities["Textile"] != null) {
+		missileProt = missileProt * 2
+	}
+	return missileProt
 }
 
 function addArmorDroplistItem(id, armorId) {
@@ -65,16 +100,31 @@ function addArmorDroplistItem(id, armorId) {
 	if (armor.Coverage.locations !== null) {
 		var isHalfProt = armor.Coverage.halfProt.indexOf(id) > -1
 		var isWeakSpot = armor.Coverage.weakSpot.indexOf(id) > -1
-		//var isTextile = 
 		
 		var templated = $("#droplist-item-template").clone().attr("id","droplist-item-"+armorId).removeClass("hidden")
+		.attr("data-hitzone", id)
+		.attr("data-id", armorId)
 		.appendTo("#droplist-" + id)
 		var realWidth = boxWidth*dollSizeMultiplier
 		templated.find("#droplist-box-c").html(isHalfProt ? Math.floor(armor.AVC/2) : armor.AVC).css("width", realWidth+"px")
 		templated.find("#droplist-box-p").html(isHalfProt ? Math.floor(armor.AVP/2) : armor.AVP).css("width", realWidth+"px")
 		templated.find("#droplist-box-b").html(isHalfProt ? Math.floor(armor.AVB/2) : armor.AVB).css("width", realWidth+"px")
-		templated.find("#droplist-box-m").html(isHalfProt ? Math.floor(armor.AVB/2) : armor.AVB).css("width", realWidth+"px")
+		templated.find("#droplist-box-m").html(getMissileProt(armorId)).css("width", realWidth+"px")
+		templated.find("#droplist-box-w").html(isWeakSpot ? weakSpot : "").css("width", realWidth+"px")
 		templated.find("#droplist-box-name").html(armor.Name)
+		templated.find("#droplist-box-qualities").html(armor.QualitiesString)
+		templated.find("#droplist-box-special").html(armor.Coverage.special)
+		
+		templated.mouseover(function() {
+			highlightElement(getArmorItemListRowByArmorId($(this).attr("data-id")), true)		
+		})
+		templated.mouseout(function() {
+			highlightElement(getArmorItemListRowByArmorId($(this).attr("data-id")), false)
+		})
+		
+		templated.click(function() {
+			armorItemClick(getArmorItemListRowByArmorId($(this).attr("data-id")))
+		})
 		
 	}
 	
@@ -205,20 +255,6 @@ function initArmorList() {
 function initImageMapResize() {
 	imageMapResize()
 }
-
-/*armorList.filter(function(item) {
-		var itemValues = item.values()
-		if (category !== equippedCategoryStr) {
-			console.log(category, doFilter)
-			if ((equippedArmor[itemValues.id] == null) && filteredArmorCategories[itemValues.category] == true) {
-				return false
-			} else {
-				return true
-			}
-		} else {
-			
-		}
-	})*/
 	
 function doHitZoneFilter(hitZone) {
 	armorList.filter(function(item) {
@@ -247,17 +283,22 @@ function getAllListItemsByHitZone(hitZone) {
 	
 	var armorItems = getAllArmorItemsByHitZone(hitZone)
 	for (armorIndex in armorItems) {	
-				items.push($("tr[data-id='"+armorItems[armorIndex].Id+"']"))	
+		//items.push($("tr[data-id='"+armorItems[armorIndex].Id+"']"))	
+		items.push(getArmorItemListRowByArmorId(armorItems[armorIndex].Id))	
 	}
 	return $(items).map(function() {return this.toArray()})	
 }
 
+function getArmorItemListRowByArmorId(armorId) {
+		return $("tr[data-id='"+armorId+"']")
+}
+
+function highlightElement(elem, doHighlight) {
+	doHighlight ? elem.addClass("armor-list-highlight") : elem.removeClass("armor-list-highlight")
+}
+
 function doArmorItemListHover(hitZone, add) {
-	if (add) {
-		getAllListItemsByHitZone(hitZone).addClass("armor-list-highlight")
-	} else {
-		getAllListItemsByHitZone(hitZone).removeClass("armor-list-highlight")
-	}
+	highlightElement(getAllListItemsByHitZone(hitZone), add)
 }
 
 //Unused
@@ -283,6 +324,9 @@ function initImageMapHighlights() {
 	//20 possible hitzones, so 1-20
 	for (var i=1;i<=20;i++) {
 		$("[id^=armor-map-" + i +"-]").each(function(index) {
+			$(this).mouseover(unhideDroplist)
+			$(this).mouseout(hideDroplist)
+			$(this).attr("data-hitzone", this.alt) //divs cannot have alt tags
 			this.addEventListener("click", function(e) {
 				doHitZoneFilter(this.alt)
 			})
@@ -384,15 +428,19 @@ function armorFilterClicked(btn) {
 }
 
 function armorItemClick(item) {
-	var id = item.getAttribute("data-id")
+	//var id = item.getAttribute("data-id")
+	var id = $(item).attr("data-id")
 	$(item).toggleClass("armor-list-item-equipped")
 	$(item).toggleClass("armor-list-item")
 	if (equippedArmor[id] == null) {
 		equippedArmor[id] = armorData[id]
 		$(item).attr("data-equipped", 1)
+
 	} else {
 		$(item).attr("data-equipped", 0)
+		highlightElement($(item), false)
 		delete equippedArmor[id]
+		
 	}
 	recalculateLocationValues()
 }
@@ -405,7 +453,13 @@ function resetAllLocations() {
 			$(this).html(" ")
 		}
 	})
+	
+}
+
+function resetAllDroplists() {
 	//TODO: clear out the dropdown lists
+	
+	$("[id^=droplist-item-]").not("#droplist-item-template").remove()
 }
 
 function expandProtType(type) {
@@ -414,12 +468,13 @@ function expandProtType(type) {
 
 function recalculateLocationValues() {
 	resetAllLocations()
+	resetAllDroplists()
 	for (equippedIndex in equippedArmor) {
 		var curArmor = equippedArmor[equippedIndex]
 		if (curArmor.Coverage.locations != null) {
 			for (var coverageIndex in curArmor.Coverage.locations) {
 				var curHitZone = curArmor.Coverage.locations[coverageIndex]
-				var protArray = ["c","p","b"]
+				var protArray = ["c","p","b","m"]
 				var isHalfProt = false
 				
 				if (curArmor.Coverage.halfProt.indexOf(curHitZone) > -1) {
@@ -436,18 +491,23 @@ function recalculateLocationValues() {
 					curProtType = protArray[protArrayIndex]
 					var curProt = parseInt($("#avbox-"+curHitZone+"-"+curProtType).html())
 					var armorProt = curArmor[expandProtType(curProtType)]
+					if (curProtType === "m") {
+						armorProt = getMissileProt(curArmor.Id)
+					}
 					if (isHalfProt) {
 						armorProt = Math.floor(armorProt/2)
-						console.log("weak!", curHitZone)
 					}
 					$("#avbox-"+curHitZone+"-"+curProtType).html(Math.max(curProt, armorProt))
 				}
+				//TODO: Investigate potential repeated code here
+				addArmorDroplistItem(curHitZone, curArmor.Id)
 			}
 		}
 	}
 }
 
 function armorItemMouseOver(item) {
+	noDropList = true
 	var coverage = item.getAttribute("data-coverage_data").split(",")
 	if (coverage[0] !== "") {
 		for (var i=0;i<coverage.length;i++) {
@@ -457,6 +517,7 @@ function armorItemMouseOver(item) {
 }
 
 function armorItemMouseOut(item) {
+	noDropList = false
 	var coverage = item.getAttribute("data-coverage_data").split(",")
 	if (coverage[0] !== "") {
 		for (var i=0;i<coverage.length;i++) {

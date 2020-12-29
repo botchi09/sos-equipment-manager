@@ -1820,7 +1820,7 @@
 			},
 			"Layer": {
 				"level": 2,
-				"special": "(belly, sides)"
+				"special": "belly, sides"
 			}
 		},
 		"Weight": 0.5,
