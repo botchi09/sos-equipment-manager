@@ -5,16 +5,24 @@ var filteredArmorCategories = {equipped: false}
 var equippedArmor = {}
 var armorDisplayBoxes = {}
 var dollSizeMultiplier = 0.5 //Full size image would be really silly huge. Due to lib limitations we can't dynamically resize.
+var boxWidth = 59 //Doll box width
 
 //HTML strings to represent weak spots and half protection
 var weakSpot = decodeURIComponent("%E2%80%A1")
 var notWeakSpot = " "
 var halfProt = decodeURIComponent("%C2%BD")
 	
+	
+function loadArmorData() {
+	var loader = require("./dataloader")
+	armorData = loader.loadArmorData()
+	console.log("armorData loaded!", Object.keys(armorData).length, "armor categories!")
+}
+
 //Purely for creating and deciding the positions of armour display divs
 function armorDisplayBox(id, x, y, mapAtEnd) {
 	
-	var boxWidth = 59
+	
 	var box = {}
 	box.id = id
 	box.x = x
@@ -44,21 +52,36 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.css("top", curY).css("left", curX)
 			.css("width", dollSizeMultiplier*boxWidth)
 			.css("height", dollSizeMultiplier*boxWidth)
-			.attr("id", "avbox-" + id + "-" + boxTypes[0]) //TODO: identify type of box in ID too
-			.text("0")
+			.attr("id", "avbox-" + id + "-" + boxTypes[0])
 			.prependTo("#avbox-container")
 			boxTypes.splice(0, 1)
 		}
+	}
+}
+
+function addArmorDroplistItem(id, armorId) {
+	
+	var armor = armorData[armorId]
+	if (armor.Coverage.locations !== null) {
+		var isHalfProt = armor.Coverage.halfProt.indexOf(id) > -1
+		var isWeakSpot = armor.Coverage.weakSpot.indexOf(id) > -1
+		//var isTextile = 
+		
+		var templated = $("#droplist-item-template").clone().attr("id","droplist-item-"+armorId).removeClass("hidden")
+		.appendTo("#droplist-" + id)
+		var realWidth = boxWidth*dollSizeMultiplier
+		templated.find("#droplist-box-c").html(isHalfProt ? Math.floor(armor.AVC/2) : armor.AVC).css("width", realWidth+"px")
+		templated.find("#droplist-box-p").html(isHalfProt ? Math.floor(armor.AVP/2) : armor.AVP).css("width", realWidth+"px")
+		templated.find("#droplist-box-b").html(isHalfProt ? Math.floor(armor.AVB/2) : armor.AVB).css("width", realWidth+"px")
+		templated.find("#droplist-box-m").html(isHalfProt ? Math.floor(armor.AVB/2) : armor.AVB).css("width", realWidth+"px")
+		templated.find("#droplist-box-name").html(armor.Name)
+		
 	}
 	
 	
 }
 
-function loadArmorData() {
-	var loader = require("./dataloader")
-	armorData = loader.loadArmorData()
-	console.log("armorData loaded!", Object.keys(armorData).length, "armor categories!")
-}
+
 
 function generateCoverageNumberString(coverage) {
 	var coverageString = ""
@@ -114,7 +137,8 @@ function initArmorList() {
 			{ data: ["category"] },
 			{ data: ["fudged_pp"] }, //Negative number sort workaround
 			{ data: ["coverage_data"] },
-			{ data: ["index"] }
+			{ data: ["index"] },
+			{ data: ["equipped"] }
 		]
 	}
 	armorList = new List("armor-list", options)
@@ -143,14 +167,15 @@ function initArmorList() {
 				armor_name: armorPiece.Name, id: armorPiece.Id, 
 				armor_AVC: armorPiece.AVC, armor_AVP: armorPiece.AVP, armor_AVB: armorPiece.AVB,
 				armor_coverage: armorPiece.Coverage.string || "", armor_coverage_numbers: armorCoverageNumbers, coverage_data: coverageLocations || [],
-				armor_qualities: armorPiece.Qualities,
+				armor_qualities: armorPiece.QualitiesString,
 				armor_weight: armorPiece.Weight,
 				armor_pp: pp, fudged_pp: fudgedPp,
 				armor_cost: armorPiece.Cost, cpcost: armorPiece.CpCost, 
-				qualitycount: armorPiece.Qualities.length,
+				qualitycount: Object.keys(armorPiece.Qualities).length,
 				coveragecount: coverageCount,
 				category: armorPiece.Category,
-				index: curIndex
+				index: curIndex,
+				equipped: 0,
 			})
 			curIndex++
 		}
@@ -167,6 +192,7 @@ function initArmorList() {
 	initImageMapResize()
 	initImageMapHighlights()
 	$("#default-sort-btn").click()
+	resetAllLocations()
 	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
 	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
 		if (a > b) { return 1 }
@@ -288,6 +314,22 @@ function initHiddenColumns() {
 
 }
 
+var isEquipFilter = false
+
+function toggleEquippedFilter(btn) {
+	$(btn).toggleClass("filterClicked")
+	if (isEquipFilter) {
+		removeAllArmorFilters()
+		isEquipFilter = false
+	} else {
+		armorList.filter(function(item) {
+			var itemValues = item.values()
+			isEquipFilter = true
+			return (equippedArmor[itemValues.id] != null)
+		})
+	}
+}
+
 function applyArmorFilter(category, doFilter) {
 	filteredArmorCategories[category] = (doFilter == null)
 	armorList.filter(function(item) {
@@ -316,6 +358,7 @@ function removeArmorFilter(category) {
 }
 
 function removeAllArmorFilters() {
+	//TODO: reset all buttons (remove filterClicked class)
 	for (var filterIndex in filteredArmorCategories) {
 		filteredArmorCategories[filterIndex] = false
 	}
@@ -346,14 +389,22 @@ function armorItemClick(item) {
 	$(item).toggleClass("armor-list-item")
 	if (equippedArmor[id] == null) {
 		equippedArmor[id] = armorData[id]
+		$(item).attr("data-equipped", 1)
 	} else {
+		$(item).attr("data-equipped", 0)
 		delete equippedArmor[id]
 	}
 	recalculateLocationValues()
 }
 
 function resetAllLocations() {
-	$("[id^=avbox-]").not("#avbox-container").not("#avbox-template").html("0")
+	$("[id^=avbox-]").not("#avbox-container").not("#avbox-template").each(function() {
+		if ($(this).attr("id").slice(-1) !== "w") {
+			$(this).html("0")
+		} else {
+			$(this).html(" ")
+		}
+	})
 	//TODO: clear out the dropdown lists
 }
 
@@ -365,7 +416,6 @@ function recalculateLocationValues() {
 	resetAllLocations()
 	for (equippedIndex in equippedArmor) {
 		var curArmor = equippedArmor[equippedIndex]
-		console.log("curArmor", curArmor)
 		if (curArmor.Coverage.locations != null) {
 			for (var coverageIndex in curArmor.Coverage.locations) {
 				var curHitZone = curArmor.Coverage.locations[coverageIndex]

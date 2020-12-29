@@ -19,11 +19,25 @@
 			],
 			"string": "Full head, face‡, neck"
 		},
-		"Qualities": "Hard, Movable, Restrictive 2",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Movable": {
+				"level": 0,
+				"special": ""
+			},
+			"Restrictive": {
+				"level": 2,
+				"special": ""
+			}
+		},
 		"Weight": 4,
 		"PP": -2,
 		"Cost": "2 gp",
 		"Id": "QXJtZXQ=",
+		"QualitiesString": "Hard, Movable, Restrictive 2",
 		"CpCost": 480,
 		"Category": "Head and Neck Armor"
 	},
@@ -48,11 +62,17 @@
 			],
 			"string": "Upper head, face½ ‡, lower head"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": -1,
 		"Cost": "10 sp",
 		"Id": "QmFyYnV0ZQ==",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Head and Neck Armor"
 	},
@@ -72,11 +92,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": 0,
 		"Cost": "12 sp",
 		"Id": "QmFzY2luZXQ=",
+		"QualitiesString": "Hard",
 		"CpCost": 144,
 		"Category": "Head and Neck Armor"
 	},
@@ -96,11 +122,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": -1,
 		"Cost": "10 sp",
 		"Id": "QnVyZ29uZXQ=",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Head and Neck Armor"
 	},
@@ -124,11 +156,21 @@
 			],
 			"string": "Full head, face‡, neck"
 		},
-		"Qualities": "Hard, Movable",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Movable": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3.5,
 		"PP": -1,
 		"Cost": "3 gp",
 		"Id": "Q2xvc2UgSGVsbWV0",
+		"QualitiesString": "Hard, Movable",
 		"CpCost": 720,
 		"Category": "Head and Neck Armor"
 	},
@@ -153,11 +195,17 @@
 			],
 			"string": "Upper head, face‡, lower head½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": -1,
 		"Cost": "10 sp",
 		"Id": "Q2xvc2VkIFNhbGxldA==",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Head and Neck Armor"
 	},
@@ -176,11 +224,17 @@
 			"weakSpot": [],
 			"string": "Upper head"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": 0,
 		"Cost": "2 sp",
 		"Id": "Q29uaWNhbCBIZWxt",
+		"QualitiesString": "Hard",
 		"CpCost": 24,
 		"Category": "Head and Neck Armor"
 	},
@@ -205,11 +259,25 @@
 			],
 			"string": "Full head, face‡, neck, shoulder"
 		},
-		"Qualities": "Hard, Movable, Restrictive 2",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Movable": {
+				"level": 0,
+				"special": ""
+			},
+			"Restrictive": {
+				"level": 2,
+				"special": ""
+			}
+		},
 		"Weight": 3.5,
 		"PP": -2,
 		"Cost": "15 sp",
 		"Id": "R3JlYXQgQmFzY2luZXQ=",
+		"QualitiesString": "Hard, Movable, Restrictive 2",
 		"CpCost": 180,
 		"Category": "Head and Neck Armor"
 	},
@@ -234,11 +302,21 @@
 			],
 			"string": "Full head, face‡, neck‡"
 		},
-		"Qualities": "Hard, Restrictive 3",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Restrictive": {
+				"level": 3,
+				"special": ""
+			}
+		},
 		"Weight": 5,
 		"PP": -3,
 		"Cost": "30 sp",
 		"Id": "R3JlYXQgSGVsbQ==",
+		"QualitiesString": "Hard, Restrictive 3",
 		"CpCost": 360,
 		"Category": "Head and Neck Armor"
 	},
@@ -257,11 +335,12 @@
 			"weakSpot": [],
 			"string": "Upper head"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "1 cp",
 		"Id": "SGF0L0NhcA==",
+		"QualitiesString": "",
 		"CpCost": 1,
 		"Category": "Head and Neck Armor"
 	},
@@ -283,11 +362,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "3 sp",
 		"Id": "S2V0dGxlIEhlbG0=",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Head and Neck Armor"
 	},
@@ -307,11 +392,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": -1,
 		"Cost": "8 sp",
 		"Id": "TGFtZWxsYXIgUG90IEhlbG0=",
+		"QualitiesString": "Hard",
 		"CpCost": 96,
 		"Category": "Head and Neck Armor"
 	},
@@ -331,11 +422,12 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 1,
 		"PP": -1,
 		"Cost": "10 cp",
 		"Id": "TGVhdGhlciBQb3QgSGVsbQ==",
+		"QualitiesString": "",
 		"CpCost": 10,
 		"Category": "Head and Neck Armor"
 	},
@@ -354,11 +446,12 @@
 			"weakSpot": [],
 			"string": "Upper head"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "6 cp",
 		"Id": "TGVhdGhlciBTa3VsbGNhcA==",
+		"QualitiesString": "",
 		"CpCost": 6,
 		"Category": "Head and Neck Armor"
 	},
@@ -380,11 +473,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": 0,
 		"Cost": "12 sp",
 		"Id": "TW9yaW9u",
+		"QualitiesString": "Hard",
 		"CpCost": 144,
 		"Category": "Head and Neck Armor"
 	},
@@ -406,11 +505,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": 0,
 		"Cost": "5 sp",
 		"Id": "T3BlbiBTYWxsZXQ=",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Head and Neck Armor"
 	},
@@ -430,11 +535,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "8 cp",
 		"Id": "UXVpbHRlZCBIZWxtZXQ=",
+		"QualitiesString": "Textile",
 		"CpCost": 8,
 		"Category": "Head and Neck Armor"
 	},
@@ -459,11 +570,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head, neck½, shoulders½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2.5,
 		"PP": 0,
 		"Cost": "1 gp",
 		"Id": "UmVpbmZvcmNlZCBSb21hbiBIZWxt",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Head and Neck Armor"
 	},
@@ -488,11 +605,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head, neck½, shoulders½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": 0,
 		"Cost": "15 sp",
 		"Id": "Um9tYW4gSGVsbSAoR2FsbGljIFN0eWxlKQ==",
+		"QualitiesString": "Hard",
 		"CpCost": 180,
 		"Category": "Head and Neck Armor"
 	},
@@ -511,11 +634,17 @@
 			"weakSpot": [],
 			"string": "Upper head"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "1 sp",
 		"Id": "U2t1bGxjYXA=",
+		"QualitiesString": "Hard",
 		"CpCost": 12,
 		"Category": "Head and Neck Armor"
 	},
@@ -537,11 +666,21 @@
 			"weakSpot": [],
 			"string": "Full head, neck"
 		},
-		"Qualities": "Hard, Restrictive 3",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Restrictive": {
+				"level": 3,
+				"special": ""
+			}
+		},
 		"Weight": 8,
 		"PP": -3,
 		"Cost": "1 gp",
 		"Id": "U3RlY2hoZWxt",
+		"QualitiesString": "Hard, Restrictive 3",
 		"CpCost": 240,
 		"Category": "Head and Neck Armor"
 	},
@@ -570,11 +709,17 @@
 			],
 			"string": "Upper head, face‡, lower head½, neck½, shoulders½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": -1,
 		"Cost": "12 sp",
 		"Id": "VGFpbGVkIFNhbGxldA==",
+		"QualitiesString": "Hard",
 		"CpCost": 144,
 		"Category": "Head and Neck Armor"
 	},
@@ -599,11 +744,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head, neck½, shoulders½"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2.5,
 		"PP": 0,
 		"Cost": "10 sp",
 		"Id": "WmlzY2hhZ2dlL1N6eXN6YWs=",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Head and Neck Armor"
 	},
@@ -624,11 +775,17 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "1 sp",
 		"Id": "QmFyLU5hc2Vs",
+		"QualitiesString": "Hard",
 		"CpCost": 12,
 		"Category": "Visors"
 	},
@@ -649,11 +806,21 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Hard, Movable",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Movable": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": 0,
 		"Cost": "5 sp",
 		"Id": "Q2FnZSBWaXNvcg==",
+		"QualitiesString": "Hard, Movable",
 		"CpCost": 60,
 		"Category": "Visors"
 	},
@@ -675,11 +842,25 @@
 			],
 			"string": "Face‡, neck"
 		},
-		"Qualities": "Hard, Movable, Restrictive 2",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Movable": {
+				"level": 0,
+				"special": ""
+			},
+			"Restrictive": {
+				"level": 2,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": -1,
 		"Cost": "1 gp",
 		"Id": "RmFsbGluZyBCdWZmIChIaW5nZWQgR29yZ2V0KQ==",
+		"QualitiesString": "Hard, Movable, Restrictive 2",
 		"CpCost": 240,
 		"Category": "Visors"
 	},
@@ -700,11 +881,25 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Hard, Movable, Restrictive 2",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Movable": {
+				"level": 0,
+				"special": ""
+			},
+			"Restrictive": {
+				"level": 2,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": -1,
 		"Cost": "10 sp",
 		"Id": "RnVsbCBWaXNvcg==",
+		"QualitiesString": "Hard, Movable, Restrictive 2",
 		"CpCost": 120,
 		"Category": "Visors"
 	},
@@ -725,11 +920,17 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": -1,
 		"Cost": "3 sp",
 		"Id": "R29nZ2xlIFR5cGU=",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Visors"
 	},
@@ -750,11 +951,25 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": -1,
 		"Cost": "1 sp",
 		"Id": "TWFpbCBWZW50YWls",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 12,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -775,11 +990,17 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": 0,
 		"Cost": "3 sp",
 		"Id": "VHJpLUJhciBOYXNlbA==",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Visors"
 	},
@@ -801,11 +1022,17 @@
 			],
 			"string": "Face‡, neck"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": -1,
 		"Cost": "2 sp",
 		"Id": "TGFtZWxsYXIgVmVudGFpbA==",
+		"QualitiesString": "Hard",
 		"CpCost": 24,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -826,11 +1053,25 @@
 			"weakSpot": [],
 			"string": "Lower head, neck, shoulders"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": 0,
 		"Cost": "4 sp",
 		"Id": "TWFpbCBDYW1haWw=",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 48,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -851,11 +1092,25 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head, neck"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": 0,
 		"Cost": "2 sp",
 		"Id": "TWFpbCBDb2lm",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 24,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -876,11 +1131,17 @@
 			"weakSpot": [],
 			"string": "Lower head, neck, shoulders"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "8 cp",
 		"Id": "UXVpbHRlZCBDYW1haWw=",
+		"QualitiesString": "Textile",
 		"CpCost": 8,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -901,11 +1162,17 @@
 			"weakSpot": [],
 			"string": "Upper head, lower head, neck"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "4 cp",
 		"Id": "UXVpbHRlZCBDb2lm",
+		"QualitiesString": "Textile",
 		"CpCost": 4,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -926,11 +1193,17 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": -1,
 		"Cost": "1 cp",
 		"Id": "UXVpbHRlZCBWZW50YWls",
+		"QualitiesString": "Textile",
 		"CpCost": 1,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -951,11 +1224,21 @@
 			],
 			"string": "Face‡"
 		},
-		"Qualities": "Restrictive 1, Hard",
+		"Qualities": {
+			"Restrictive": {
+				"level": 1,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": -1,
 		"Cost": "8 sp",
 		"Id": "U3RlZWwgRmFjZW1hc2s=",
+		"QualitiesString": "Restrictive 1, Hard",
 		"CpCost": 96,
 		"Category": "Non-helmet Head Protection"
 	},
@@ -978,11 +1261,21 @@
 			],
 			"string": "Face‡, lower head, neck"
 		},
-		"Qualities": "Restrictive 1, Hard",
+		"Qualities": {
+			"Restrictive": {
+				"level": 1,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": 0,
 		"Cost": "12 sp",
 		"Id": "QmV2b3I=",
+		"QualitiesString": "Restrictive 1, Hard",
 		"CpCost": 144,
 		"Category": "Neck protection"
 	},
@@ -1001,11 +1294,17 @@
 			"weakSpot": [],
 			"string": "Neck"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": 0,
 		"Cost": "10 sp",
 		"Id": "R29yZ2V0",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Neck protection"
 	},
@@ -1024,11 +1323,12 @@
 			"weakSpot": [],
 			"string": "Neck"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "8 cp",
 		"Id": "TGVhdGhlciBOZWNrLVN0b2Nr",
+		"QualitiesString": "",
 		"CpCost": 8,
 		"Category": "Neck protection"
 	},
@@ -1047,11 +1347,17 @@
 			"weakSpot": [],
 			"string": "Neck"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "1 cp",
 		"Id": "TmVjay1XcmFwIChTY2FyZik=",
+		"QualitiesString": "Textile",
 		"CpCost": 1,
 		"Category": "Neck protection"
 	},
@@ -1070,11 +1376,17 @@
 			"weakSpot": [],
 			"string": "Neck"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": 0,
 		"Cost": "1 sp",
 		"Id": "UmVpbmZvcmNlZCBMZWF0aGVyIE5lY2stU3RvY2s=",
+		"QualitiesString": "Hard",
 		"CpCost": 12,
 		"Category": "Neck protection"
 	},
@@ -1095,11 +1407,17 @@
 			"weakSpot": [],
 			"string": "Chest, belly, sides"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QnJlYXN0cGxhdGU=",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1120,11 +1438,21 @@
 			"weakSpot": [],
 			"string": "Chest, belly, sides"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3.5,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "QnVsbGV0cHJvb2YgQnJlYXN0cGxhdGU=",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 480,
 		"Category": "Torso armour"
 	},
@@ -1147,11 +1475,21 @@
 			"weakSpot": [],
 			"string": "Chest, belly, sides, upper back, lower back"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 4.5,
 		"PP": null,
 		"Cost": "4 gp",
 		"Id": "QnVsbGV0cHJvb2YgQ3VpcmFzcw==",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 960,
 		"Category": "Torso armour"
 	},
@@ -1170,11 +1508,21 @@
 			"weakSpot": [],
 			"string": "Groin"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QnVsbGV0cHJvb2YgQ29kcGllY2U=",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1197,11 +1545,17 @@
 			"weakSpot": [],
 			"string": "Chest, belly, sides, upper back, lower back"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2.5,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "Q3VpcmFzcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 480,
 		"Category": "Torso armour"
 	},
@@ -1220,11 +1574,17 @@
 			"weakSpot": [],
 			"string": "Groin"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "Q29kcGllY2U=",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Torso armour"
 	},
@@ -1249,11 +1609,21 @@
 			],
 			"string": "Hips‡, groin‡, thighs‡"
 		},
-		"Qualities": "Hard, Layers 2",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 2,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "10 sp",
 		"Id": "RmF1bGQ=",
+		"QualitiesString": "Hard, Layers 2",
 		"CpCost": 120,
 		"Category": "Torso armour"
 	},
@@ -1274,11 +1644,17 @@
 			],
 			"string": "Chest‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "SGVhcnRndWFyZA==",
+		"QualitiesString": "Hard",
 		"CpCost": 12,
 		"Category": "Torso armour"
 	},
@@ -1299,11 +1675,17 @@
 			],
 			"string": "Chest‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "TWlycm9yIFBsYXRl",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1322,11 +1704,17 @@
 			"weakSpot": [],
 			"string": "Chest"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2.5,
 		"PP": null,
 		"Cost": "10 sp",
 		"Id": "TXVuaXRpb25zIEJyZWFzdHBsYXRl",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Torso armour"
 	},
@@ -1351,11 +1739,17 @@
 			],
 			"string": "Chest‡, belly‡, sides‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3.5,
 		"PP": null,
 		"Cost": "15 sp",
 		"Id": "TXVuaXRpb25zIEN1aXJhc3M=",
+		"QualitiesString": "Hard",
 		"CpCost": 180,
 		"Category": "Torso armour"
 	},
@@ -1380,11 +1774,21 @@
 			],
 			"string": "Hips‡, groin‡, thighs‡"
 		},
-		"Qualities": "Hard, Layers 1",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			}
+		},
 		"Weight": 2.5,
 		"PP": null,
 		"Cost": "10 sp",
 		"Id": "TXVuaXRpb25zIEZhdWxk",
+		"QualitiesString": "Hard, Layers 1",
 		"CpCost": 120,
 		"Category": "Torso armour"
 	},
@@ -1409,11 +1813,21 @@
 			],
 			"string": "Chest‡, belly‡, sides‡"
 		},
-		"Qualities": "Hard, Layers 2 (belly, sides)",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 2,
+				"special": "(belly, sides)"
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "UGxhY2thcnQ=",
+		"QualitiesString": "Hard, Layers 2 (belly, sides)",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1434,11 +1848,17 @@
 			"weakSpot": [],
 			"string": "Chest, belly, sides"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "48 sp",
 		"Id": "QW5pbWEgQ3VpcmFzcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 576,
 		"Category": "Torso armour"
 	},
@@ -1462,11 +1882,17 @@
 			],
 			"string": "Hips, groin‡, thighs‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QW5pbWEgRmF1bGQ=",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1491,11 +1917,17 @@
 			],
 			"string": "Chest‡, belly‡, sides‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "TGFtaW5hciBDdWlyYXNz",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1515,11 +1947,17 @@
 			"weakSpot": [],
 			"string": "Hips, groin"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "12 sp",
 		"Id": "U2VnbWVudGVkIFRhc3NldHM=",
+		"QualitiesString": "Hard",
 		"CpCost": 144,
 		"Category": "Torso armour"
 	},
@@ -1547,11 +1985,17 @@
 			"weakSpot": [],
 			"string": "Full torso, shoulders, hips, groin, thighs, knees"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "3 gp",
 		"Id": "QnJpZ2FuZGluZSBDb2F0",
+		"QualitiesString": "Hard",
 		"CpCost": 720,
 		"Category": "Torso armour"
 	},
@@ -1577,11 +2021,17 @@
 			"weakSpot": [],
 			"string": "Full torso, hips, groin, thighs"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "30 sp",
 		"Id": "QnJpZ2FuZGluZSBTaGlydA==",
+		"QualitiesString": "Hard",
 		"CpCost": 360,
 		"Category": "Torso armour"
 	},
@@ -1605,11 +2055,17 @@
 			"weakSpot": [],
 			"string": "Full torso"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QnJpZ2FuZGluZSBWZXN0",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1637,11 +2093,17 @@
 			"weakSpot": [],
 			"string": "Full torso, shoulders, hips, groin, thighs, knees"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "3 gp",
 		"Id": "TGFtZWxsYXIgQ29hdA==",
+		"QualitiesString": "Hard",
 		"CpCost": 720,
 		"Category": "Torso armour"
 	},
@@ -1667,11 +2129,17 @@
 			"weakSpot": [],
 			"string": "Full torso, hips, groin, thighs"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "TGFtZWxsYXIgU2hpcnQ=",
+		"QualitiesString": "Hard",
 		"CpCost": 480,
 		"Category": "Torso armour"
 	},
@@ -1695,11 +2163,17 @@
 			"weakSpot": [],
 			"string": "Full torso"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "TGFtZWxsYXIgVmVzdA==",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1727,11 +2201,25 @@
 			"weakSpot": [],
 			"string": "Full torso, shoulders, hips, groin, thighs, knees"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2.5,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "TWFpbCBDb2F0",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 480,
 		"Category": "Torso armour"
 	},
@@ -1757,11 +2245,25 @@
 			"weakSpot": [],
 			"string": "Full torso, hips, groin, thighs"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "TWFpbCBTaGlydA==",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -1785,11 +2287,25 @@
 			"weakSpot": [],
 			"string": "Full torso"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "18 sp",
 		"Id": "TWFpbCBWZXN0",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 216,
 		"Category": "Torso armour"
 	},
@@ -1817,11 +2333,17 @@
 			"weakSpot": [],
 			"string": "Full torso, shoulders, hips, groin, thighs, knees"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "SGVhdnkgUXVpbHRlZCBDb2F0",
+		"QualitiesString": "Textile",
 		"CpCost": 60,
 		"Category": "Torso armour"
 	},
@@ -1847,11 +2369,17 @@
 			"weakSpot": [],
 			"string": "Full torso, hips, groin, thighs"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "SGVhdnkgUXVpbHRlZCBTaGlydA==",
+		"QualitiesString": "Textile",
 		"CpCost": 36,
 		"Category": "Torso armour"
 	},
@@ -1875,11 +2403,17 @@
 			"weakSpot": [],
 			"string": "Full torso"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "2 sp",
 		"Id": "SGVhdnkgUXVpbHRlZCBWZXN0",
+		"QualitiesString": "Textile",
 		"CpCost": 24,
 		"Category": "Torso armour"
 	},
@@ -1907,11 +2441,17 @@
 			"weakSpot": [],
 			"string": "Full torso, shoulders, hips, groin, thighs, knees"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "17 cp",
 		"Id": "UXVpbHRlZCBDb2F0",
+		"QualitiesString": "Textile",
 		"CpCost": 17,
 		"Category": "Torso armour"
 	},
@@ -1937,11 +2477,17 @@
 			"weakSpot": [],
 			"string": "Full torso, hips, groin, thighs"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "UXVpbHRlZCBTaGlydA==",
+		"QualitiesString": "Textile",
 		"CpCost": 12,
 		"Category": "Torso armour"
 	},
@@ -1965,11 +2511,17 @@
 			"weakSpot": [],
 			"string": "Full torso"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "5 cp",
 		"Id": "UXVpbHRlZCBWZXN0",
+		"QualitiesString": "Textile",
 		"CpCost": 5,
 		"Category": "Torso armour"
 	},
@@ -1997,11 +2549,12 @@
 			"weakSpot": [],
 			"string": "Full torso, shoulders, hips, groin, thighs, knees"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "TGVhdGhlciBCdWZmY29hdA==",
+		"QualitiesString": "",
 		"CpCost": 60,
 		"Category": "Torso armour"
 	},
@@ -2027,11 +2580,12 @@
 			"weakSpot": [],
 			"string": "Full torso, hips, groin, thighs"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "2 sp",
 		"Id": "TGVhdGhlciBKYWNr",
+		"QualitiesString": "",
 		"CpCost": 24,
 		"Category": "Torso armour"
 	},
@@ -2059,11 +2613,12 @@
 			"weakSpot": [],
 			"string": "Full torso, shoulders, hips, groin, thighs, knees"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "9 sp",
 		"Id": "TGVhdGhlciBMYW1lbGxhciBDb2F0",
+		"QualitiesString": "",
 		"CpCost": 108,
 		"Category": "Torso armour"
 	},
@@ -2089,11 +2644,12 @@
 			"weakSpot": [],
 			"string": "Full torso, hips, groin, thighs"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "6 sp",
 		"Id": "TGVhdGhlciBMYW1lbGxhciBTaGlydA==",
+		"QualitiesString": "",
 		"CpCost": 72,
 		"Category": "Torso armour"
 	},
@@ -2117,11 +2673,12 @@
 			"weakSpot": [],
 			"string": "Full torso"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGVhdGhlciBMYW1lbGxhciBWZXN0",
+		"QualitiesString": "",
 		"CpCost": 36,
 		"Category": "Torso armour"
 	},
@@ -2145,11 +2702,12 @@
 			"weakSpot": [],
 			"string": "Full torso"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "TGVhdGhlciBWZXN0",
+		"QualitiesString": "",
 		"CpCost": 12,
 		"Category": "Torso armour"
 	},
@@ -2170,11 +2728,12 @@
 			"weakSpot": [],
 			"string": "Chest, belly, sides"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBCcmVhc3RwbGF0ZQ==",
+		"QualitiesString": "",
 		"CpCost": 60,
 		"Category": "Torso armour"
 	},
@@ -2197,11 +2756,12 @@
 			"weakSpot": [],
 			"string": "Chest, belly, sides, upper back, lower back"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "8 sp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBDdWlyYXNz",
+		"QualitiesString": "",
 		"CpCost": 96,
 		"Category": "Torso armour"
 	},
@@ -2234,11 +2794,12 @@
 			"weakSpot": [],
 			"string": "Full torso, full arms, hips, groin, thighs, knees, shins"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "U2hhZ3JlZW4gR3JlYXRjb2F0",
+		"QualitiesString": "",
 		"CpCost": 240,
 		"Category": "Torso armour"
 	},
@@ -2260,11 +2821,17 @@
 			"weakSpot": [],
 			"string": "Shoulders (Th), upper arms½ (Th)"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "8 sp",
 		"Id": "QmVzYWdld3M=",
+		"QualitiesString": "Hard",
 		"CpCost": 96,
 		"Category": "Arm armor"
 	},
@@ -2283,11 +2850,21 @@
 			"weakSpot": [],
 			"string": "Forearms"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QnVsbGV0cHJvb2YgVmFtYnJhY2Vz",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 240,
 		"Category": "Arm armor"
 	},
@@ -2308,11 +2885,17 @@
 			],
 			"string": "Elbows‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "Q291dGVycw==",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Arm armor"
 	},
@@ -2333,11 +2916,17 @@
 			],
 			"string": "Hands‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "R2F1bnRsZXRz",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Arm armor"
 	},
@@ -2362,11 +2951,17 @@
 			],
 			"string": "Upper arms‡, elbows‡, forearms‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "SmFjayBDaGFpbnM=",
+		"QualitiesString": "Hard",
 		"CpCost": 12,
 		"Category": "Arm armor"
 	},
@@ -2389,11 +2984,17 @@
 			],
 			"string": "Shoulders‡, upper arms‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 4,
 		"PP": null,
 		"Cost": "8 sp",
 		"Id": "TXVuaXRpb25zIFBhdWxkcm9ucw==",
+		"QualitiesString": "Hard",
 		"CpCost": 96,
 		"Category": "Arm armor"
 	},
@@ -2414,11 +3015,17 @@
 			],
 			"string": "Upper arms‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "2 sp",
 		"Id": "TXVuaXRpb25zIFJlcmVicmFjZXM=",
+		"QualitiesString": "Hard",
 		"CpCost": 24,
 		"Category": "Arm armor"
 	},
@@ -2443,11 +3050,17 @@
 			],
 			"string": "Shoulders‡, upper arms½ ‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "4 sp",
 		"Id": "TXVuaXRpb25zIFNwYXVsZGVycw==",
+		"QualitiesString": "Hard",
 		"CpCost": 48,
 		"Category": "Arm armor"
 	},
@@ -2468,11 +3081,17 @@
 			],
 			"string": "Forearms‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "2 sp",
 		"Id": "TXVuaXRpb25zIFZhbWJyYWNlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 24,
 		"Category": "Arm armor"
 	},
@@ -2492,11 +3111,21 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "UGF1bGRyb25z",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 240,
 		"Category": "Arm armor"
 	},
@@ -2515,11 +3144,17 @@
 			"weakSpot": [],
 			"string": "Upper arms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "UmVyZWJyYWNlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Arm armor"
 	},
@@ -2544,11 +3179,17 @@
 			],
 			"string": "Shoulders‡, upper arms½ ‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "6 sp",
 		"Id": "U3BhdWxkZXJz",
+		"QualitiesString": "Hard",
 		"CpCost": 72,
 		"Category": "Arm armor"
 	},
@@ -2567,11 +3208,17 @@
 			"weakSpot": [],
 			"string": "Forearms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "VmFtYnJhY2Vz",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Arm armor"
 	},
@@ -2591,11 +3238,17 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "QW5pbWEgUGF1bGRyb25z",
+		"QualitiesString": "Hard",
 		"CpCost": 480,
 		"Category": "Arm armor"
 	},
@@ -2614,11 +3267,17 @@
 			"weakSpot": [],
 			"string": "Upper arms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QW5pbWEgUmVyZWJyYWNlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Arm armor"
 	},
@@ -2642,11 +3301,17 @@
 			],
 			"string": "Shoulders, upper arms½ ‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QW5pbWEgU3BhdWxkZXJz",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Arm armor"
 	},
@@ -2665,11 +3330,17 @@
 			"weakSpot": [],
 			"string": "Forearms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "3 gp",
 		"Id": "QW5pbWEgVmFtYnJhY2U=",
+		"QualitiesString": "Hard",
 		"CpCost": 720,
 		"Category": "Arm armor"
 	},
@@ -2690,11 +3361,17 @@
 			],
 			"string": "Forearms‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGFtaW5hciBGb3JlYXJtIEd1YXJk",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -2715,11 +3392,17 @@
 			],
 			"string": "Elbows‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGFtaW5hciBFbGJvdyBKb2ludA==",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -2742,11 +3425,17 @@
 			],
 			"string": "Shoulders‡, upper arms‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "10 sp",
 		"Id": "TGFtaW5hciBQYXVsZHJvbnM=",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Arm armor"
 	},
@@ -2767,11 +3456,17 @@
 			],
 			"string": "Upper arms‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGFtaW5hciBSZXJlYnJhY2U=",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -2790,11 +3485,17 @@
 			"weakSpot": [],
 			"string": "Hands"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "QnJpZ2FuZGluZSBHbG92ZXM=",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -2816,11 +3517,17 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms, elbows, forearms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "QnJpZ2FuZGluZSBMb25nIFNsZWV2ZXM=",
+		"QualitiesString": "Hard",
 		"CpCost": 480,
 		"Category": "Arm armor"
 	},
@@ -2840,11 +3547,17 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "14 sp",
 		"Id": "QnJpZ2FuZGluZSBTaG9ydCBTbGVldmVz",
+		"QualitiesString": "Hard",
 		"CpCost": 168,
 		"Category": "Arm armor"
 	},
@@ -2863,11 +3576,17 @@
 			"weakSpot": [],
 			"string": "Hands"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGFtZWxsYXIgR2xvdmVz",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -2889,11 +3608,17 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms, elbows, forearms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 4,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "TGFtZWxsYXIgTG9uZyBTbGVldmVz",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Arm armor"
 	},
@@ -2913,11 +3638,17 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "12 sp",
 		"Id": "TGFtZWxsYXIgU2hvcnQgU2xlZXZlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 144,
 		"Category": "Arm armor"
 	},
@@ -2936,11 +3667,25 @@
 			"weakSpot": [],
 			"string": "Hands"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TWFpbCBHbG92ZXM=",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -2962,11 +3707,25 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms, elbows, forearms"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "TWFpbCBMb25nIFNsZWV2ZXM=",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 240,
 		"Category": "Arm armor"
 	},
@@ -2986,11 +3745,25 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0.5,
 		"PP": null,
 		"Cost": "12 sp",
 		"Id": "TWFpbCBTaG9ydCBTbGVldmVz",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 144,
 		"Category": "Arm armor"
 	},
@@ -3009,11 +3782,17 @@
 			"weakSpot": [],
 			"string": "Hands"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 cp",
 		"Id": "UXVpbHRlZCBHbG92ZXM=",
+		"QualitiesString": "Textile",
 		"CpCost": 1,
 		"Category": "Arm armor"
 	},
@@ -3035,11 +3814,17 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms, elbows, forearms"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "6 cp",
 		"Id": "UXVpbHRlZCBMb25nIFNsZWV2ZXM=",
+		"QualitiesString": "Textile",
 		"CpCost": 6,
 		"Category": "Arm armor"
 	},
@@ -3059,11 +3844,17 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 cp",
 		"Id": "UXVpbHRlZCBTaG9ydCBTbGVldmVz",
+		"QualitiesString": "Textile",
 		"CpCost": 3,
 		"Category": "Arm armor"
 	},
@@ -3082,11 +3873,17 @@
 			"weakSpot": [],
 			"string": "Hands"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "UmVpbmZvcmNlZCBRdWlsdGVkIEdsb3Zlcw==",
+		"QualitiesString": "Textile",
 		"CpCost": 12,
 		"Category": "Arm armor"
 	},
@@ -3108,11 +3905,12 @@
 			],
 			"string": "Shoulders, upper arms‡"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBQYXVsZHJvbnM=",
+		"QualitiesString": "",
 		"CpCost": 60,
 		"Category": "Arm armor"
 	},
@@ -3131,11 +3929,12 @@
 			"weakSpot": [],
 			"string": "Upper arms"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBSZXJlYnJhY2Vz",
+		"QualitiesString": "",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -3154,11 +3953,12 @@
 			"weakSpot": [],
 			"string": "Forearms"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBWYW1icmFjZXM=",
+		"QualitiesString": "",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -3177,11 +3977,12 @@
 			"weakSpot": [],
 			"string": "Hands"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "TGVhdGhlciBHbG92ZXM=",
+		"QualitiesString": "",
 		"CpCost": 12,
 		"Category": "Arm armor"
 	},
@@ -3203,11 +4004,12 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms, elbows, forearms"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "2 sp",
 		"Id": "TGVhdGhlciBTbGVldmVz",
+		"QualitiesString": "",
 		"CpCost": 24,
 		"Category": "Arm armor"
 	},
@@ -3229,11 +4031,12 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms, elbows, forearms"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGVhdGhlciBMYW1lbGxhciBMb25nIFNsZWV2ZXM=",
+		"QualitiesString": "",
 		"CpCost": 36,
 		"Category": "Arm armor"
 	},
@@ -3253,11 +4056,12 @@
 			"weakSpot": [],
 			"string": "Shoulders, upper arms"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "TGVhdGhlciBMYW1lbGxhciBTaG9ydCBTbGVldmVz",
+		"QualitiesString": "",
 		"CpCost": 12,
 		"Category": "Arm armor"
 	},
@@ -3276,11 +4080,12 @@
 			"weakSpot": [],
 			"string": "Hands"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "2 sp",
 		"Id": "UmVpbmZvcmNlZCBMZWF0aGVyIEdsb3Zlcw==",
+		"QualitiesString": "",
 		"CpCost": 24,
 		"Category": "Arm armor"
 	},
@@ -3299,11 +4104,21 @@
 			"weakSpot": [],
 			"string": "Thighs"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 4,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "QnVsbGV0cHJvb2YgQ3Vpc3Nlcw==",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 480,
 		"Category": "Leg armor"
 	},
@@ -3322,11 +4137,21 @@
 			"weakSpot": [],
 			"string": "Shins"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "2 gp",
 		"Id": "QnVsbGV0cHJvb2YgR3JlYXZlcw==",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 480,
 		"Category": "Leg armor"
 	},
@@ -3345,11 +4170,21 @@
 			"weakSpot": [],
 			"string": "Knees"
 		},
-		"Qualities": "Bulletproof, Hard",
+		"Qualities": {
+			"Bulletproof": {
+				"level": 0,
+				"special": ""
+			},
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QnVsbGV0cHJvb2YgUG9sZXlucw==",
+		"QualitiesString": "Bulletproof, Hard",
 		"CpCost": 240,
 		"Category": "Leg armor"
 	},
@@ -3368,11 +4203,17 @@
 			"weakSpot": [],
 			"string": "Thighs"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "8 sp",
 		"Id": "Q3Vpc3Nlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 96,
 		"Category": "Leg armor"
 	},
@@ -3391,11 +4232,17 @@
 			"weakSpot": [],
 			"string": "Shins"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "6 sp",
 		"Id": "R3JlYXZlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 72,
 		"Category": "Leg armor"
 	},
@@ -3416,11 +4263,17 @@
 			],
 			"string": "Thighs‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "4 sp",
 		"Id": "TXVuaXRpb25zIEN1aXNzZXM=",
+		"QualitiesString": "Hard",
 		"CpCost": 48,
 		"Category": "Leg armor"
 	},
@@ -3441,11 +4294,17 @@
 			],
 			"string": "Shins‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TXVuaXRpb25zIEdyZWF2ZXM=",
+		"QualitiesString": "Hard",
 		"CpCost": 36,
 		"Category": "Leg armor"
 	},
@@ -3466,11 +4325,17 @@
 			],
 			"string": "Knees‡"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "UG9sZXlucw==",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Leg armor"
 	},
@@ -3489,11 +4354,17 @@
 			"weakSpot": [],
 			"string": "Feet"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "U2FiYXRvbnM=",
+		"QualitiesString": "Hard",
 		"CpCost": 60,
 		"Category": "Leg armor"
 	},
@@ -3512,11 +4383,17 @@
 			"weakSpot": [],
 			"string": "Thighs"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QW5pbWEgQ3Vpc3Nlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Leg armor"
 	},
@@ -3535,11 +4412,17 @@
 			"weakSpot": [],
 			"string": "Shins"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "QW5pbWEgR3JlYXZlcw==",
+		"QualitiesString": "Hard",
 		"CpCost": 240,
 		"Category": "Leg armor"
 	},
@@ -3558,11 +4441,17 @@
 			"weakSpot": [],
 			"string": "Knees"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "10 sp",
 		"Id": "QW5pbWEgUG9sZXlucw==",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Leg armor"
 	},
@@ -3581,11 +4470,17 @@
 			"weakSpot": [],
 			"string": "Feet"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2,
 		"PP": null,
 		"Cost": "4 sp",
 		"Id": "TGFtaW5hciBCb290cw==",
+		"QualitiesString": "Hard",
 		"CpCost": 48,
 		"Category": "Leg armor"
 	},
@@ -3604,11 +4499,17 @@
 			"weakSpot": [],
 			"string": "Thighs"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "4 sp",
 		"Id": "TGFtaW5hciBDdWlzc2Vz",
+		"QualitiesString": "Hard",
 		"CpCost": 48,
 		"Category": "Leg armor"
 	},
@@ -3627,11 +4528,17 @@
 			"weakSpot": [],
 			"string": "Shins"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "4 sp",
 		"Id": "TGFtaW5hciBHcmVhdmVz",
+		"QualitiesString": "Hard",
 		"CpCost": 48,
 		"Category": "Leg armor"
 	},
@@ -3650,11 +4557,17 @@
 			"weakSpot": [],
 			"string": "Feet"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "8 sp",
 		"Id": "QnJpZ2FuZGluZSBCb290cw==",
+		"QualitiesString": "Hard",
 		"CpCost": 96,
 		"Category": "Leg armor"
 	},
@@ -3677,11 +4590,17 @@
 			"weakSpot": [],
 			"string": "Hips, groin, thighs, knees, shins"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "10 sp",
 		"Id": "QnJpZ2FuZGluZSBMZWdnaW5ncw==",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Leg armor"
 	},
@@ -3704,11 +4623,17 @@
 			"weakSpot": [],
 			"string": "Hips, groin, thighs, knees, shins"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "12 sp",
 		"Id": "TGFtZWxsYXIgTGVnZ2luZ3M=",
+		"QualitiesString": "Hard",
 		"CpCost": 144,
 		"Category": "Leg armor"
 	},
@@ -3727,11 +4652,17 @@
 			"weakSpot": [],
 			"string": "Feet"
 		},
-		"Qualities": "Hard",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1.5,
 		"PP": null,
 		"Cost": "10 sp",
 		"Id": "TGFtZWxsYXIgQm9vdHM=",
+		"QualitiesString": "Hard",
 		"CpCost": 120,
 		"Category": "Leg armor"
 	},
@@ -3750,11 +4681,25 @@
 			"weakSpot": [],
 			"string": "Feet"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TWFpbCBCb290cw==",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 36,
 		"Category": "Leg armor"
 	},
@@ -3773,11 +4718,25 @@
 			"weakSpot": [],
 			"string": "Groin"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TWFpbCBHcm9pbiBHdXNzZXQ=",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 36,
 		"Category": "Leg armor"
 	},
@@ -3800,11 +4759,25 @@
 			"weakSpot": [],
 			"string": "Hips, groin, thighs, knees, shins"
 		},
-		"Qualities": "Hard, Layer 1, Mail",
+		"Qualities": {
+			"Hard": {
+				"level": 0,
+				"special": ""
+			},
+			"Layer": {
+				"level": 1,
+				"special": ""
+			},
+			"Mail": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 2.5,
 		"PP": null,
 		"Cost": "8 sp",
 		"Id": "TWFpbCBMZWdnaW5ncw==",
+		"QualitiesString": "Hard, Layer 1, Mail",
 		"CpCost": 96,
 		"Category": "Leg armor"
 	},
@@ -3827,11 +4800,17 @@
 			"weakSpot": [],
 			"string": "Hips, groin, thighs, knees, shins"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "2 cp",
 		"Id": "UXVpbHRlZCBMZWdnaW5ncw==",
+		"QualitiesString": "Textile",
 		"CpCost": 2,
 		"Category": "Leg armor"
 	},
@@ -3850,11 +4829,12 @@
 			"weakSpot": [],
 			"string": "Feet"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "TGVhdGhlciBCb290cw==",
+		"QualitiesString": "",
 		"CpCost": 12,
 		"Category": "Leg armor"
 	},
@@ -3877,11 +4857,12 @@
 			"weakSpot": [],
 			"string": "Hips, groin, thighs, knees, shins"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "2 sp",
 		"Id": "TGVhdGhlciBMZWdnaW5ncw==",
+		"QualitiesString": "",
 		"CpCost": 24,
 		"Category": "Leg armor"
 	},
@@ -3901,11 +4882,12 @@
 			"weakSpot": [],
 			"string": "Hips, thighs"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "8 cp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBDdWlzc2Vz",
+		"QualitiesString": "",
 		"CpCost": 8,
 		"Category": "Leg armor"
 	},
@@ -3924,11 +4906,12 @@
 			"weakSpot": [],
 			"string": "Shins"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "1 sp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBHcmVhdmVz",
+		"QualitiesString": "",
 		"CpCost": 12,
 		"Category": "Leg armor"
 	},
@@ -3947,11 +4930,12 @@
 			"weakSpot": [],
 			"string": "Knees"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "6 cp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBLbmVlLUd1YXJkcw==",
+		"QualitiesString": "",
 		"CpCost": 6,
 		"Category": "Leg armor"
 	},
@@ -3971,11 +4955,12 @@
 			"weakSpot": [],
 			"string": "Hips, thighs"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGVhdGhlciBMYW1lbGxhciBDdWlzc2Vz",
+		"QualitiesString": "",
 		"CpCost": 36,
 		"Category": "Leg armor"
 	},
@@ -3994,11 +4979,12 @@
 			"weakSpot": [],
 			"string": "Shins"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 0,
 		"PP": null,
 		"Cost": "3 sp",
 		"Id": "TGVhdGhlciBMYW1lbGxhciBHcmVhdmVz",
+		"QualitiesString": "",
 		"CpCost": 36,
 		"Category": "Leg armor"
 	},
@@ -4011,11 +4997,12 @@
 		"Coverage": {
 			"special": "Horse"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 12,
 		"PP": null,
 		"Cost": "30 gp",
 		"Id": "UGxhdGUgQmFyZGluZw==",
+		"QualitiesString": "",
 		"CpCost": 7200,
 		"Category": "Horse armor"
 	},
@@ -4028,11 +5015,12 @@
 		"Coverage": {
 			"special": "Horse"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 8,
 		"PP": null,
 		"Cost": "20 gp",
 		"Id": "QnJpZ2FuZGluZSBCYXJkaW5n",
+		"QualitiesString": "",
 		"CpCost": 4800,
 		"Category": "Horse armor"
 	},
@@ -4045,11 +5033,12 @@
 		"Coverage": {
 			"special": "Horse"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 8,
 		"PP": null,
 		"Cost": "15 gp",
 		"Id": "TGFtZWxsYXIgQmFyZGluZw==",
+		"QualitiesString": "",
 		"CpCost": 3600,
 		"Category": "Horse armor"
 	},
@@ -4062,11 +5051,12 @@
 		"Coverage": {
 			"special": "Horse"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 8,
 		"PP": null,
 		"Cost": "10 gp",
 		"Id": "TWFpbCBCYXJkaW5n",
+		"QualitiesString": "",
 		"CpCost": 2400,
 		"Category": "Horse armor"
 	},
@@ -4079,11 +5069,17 @@
 		"Coverage": {
 			"special": "Horse"
 		},
-		"Qualities": "Textile",
+		"Qualities": {
+			"Textile": {
+				"level": 0,
+				"special": ""
+			}
+		},
 		"Weight": 1,
 		"PP": null,
 		"Cost": "5 sp",
 		"Id": "Q2Fwcmlzb25pbmc=",
+		"QualitiesString": "Textile",
 		"CpCost": 60,
 		"Category": "Horse armor"
 	},
@@ -4096,11 +5092,12 @@
 		"Coverage": {
 			"special": "Horse"
 		},
-		"Qualities": "",
+		"Qualities": {},
 		"Weight": 3,
 		"PP": null,
 		"Cost": "1 gp",
 		"Id": "SGFyZGVuZWQgTGVhdGhlciBCYXJkaW5n",
+		"QualitiesString": "",
 		"CpCost": 240,
 		"Category": "Horse armor"
 	}

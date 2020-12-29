@@ -27,8 +27,15 @@ tbody td{
   background-color: #d7f1fc;
 }
 
-#armor-list: {
-	
+div#armor-list {
+    background-color: white;
+	position: absolute;
+	right: 0;
+	top: 0; 
+	width: 730px; 
+	margin:0; 
+	padding: 0; 
+	z-index:2
 }
 
 .armor-list-item-equipped {
@@ -100,7 +107,8 @@ button {
 }
 
 .sort.asc, .sort.desc {
-	background-color: yellow;
+	background-color: #00ffdc;
+	color: black;
 }
 .sort.asc::after {
 	content: "\002B06";
@@ -120,7 +128,11 @@ button {
 }
 
 .droplist-box {
-	border: solid;
+	text-align: center;
+    display: inline-block;
+    margin: -0.5;
+    outline: 3px solid black;
+    float: left;
 }
 
 
