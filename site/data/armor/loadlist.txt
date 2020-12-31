@@ -1,0 +1,2 @@
+1,default_armors.json
+1,default_armors_abilities.json

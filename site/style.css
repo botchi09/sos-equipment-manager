@@ -2,6 +2,9 @@ body {
 	font-family:sans-serif;
 }
 
+.status {
+	font-size: small;
+}
 
 tbody {
 	box-shadow: 0 0 0 1px black;
@@ -121,7 +124,7 @@ button {
 
 
 .droplist-container {
-	z-index: 1;
+	z-index: 4;
 	outline: solid;	
 	background-color: white;
 	width: fit-content;

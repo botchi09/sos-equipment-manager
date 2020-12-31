@@ -1,3 +1,5 @@
+var utils = require("./utils")
+var hitZoneLib = require("./hitzones")
 var armorData = null
 var armorList = null
 var equippedCategoryStr = "E"
@@ -157,7 +159,10 @@ function generateCoverageNumberString(coverage) {
 function addFilterButton(category, buttonText) {
 	
 	$("#filter-template").clone().css("display", "").appendTo("#filters").attr("data-filtercat", category).text(buttonText || category)
+	.attr("id", "filter-"+category.split(" ").join("_"))
 	.mousedown(function(e){ e.preventDefault() })
+	
+	console.log(category, buttonText)
 
 }
 
@@ -216,7 +221,7 @@ function initArmorList() {
 				armor_type: armorPiece.Type, 
 				armor_name: armorPiece.Name, id: armorPiece.Id, 
 				armor_AVC: armorPiece.AVC, armor_AVP: armorPiece.AVP, armor_AVB: armorPiece.AVB,
-				armor_coverage: armorPiece.Coverage.string || "", armor_coverage_numbers: armorCoverageNumbers, coverage_data: coverageLocations || [],
+				armor_coverage: (armorPiece.Coverage.string || "") + (" " + armorPiece.Coverage.special || ""), armor_coverage_numbers: armorCoverageNumbers, coverage_data: coverageLocations || [], coverage_special: armorPiece.Coverage.special,
 				armor_qualities: armorPiece.QualitiesString,
 				armor_weight: armorPiece.Weight,
 				armor_pp: pp, fudged_pp: fudgedPp,
@@ -241,8 +246,8 @@ function initArmorList() {
 	initHiddenColumns()
 	initImageMapResize()
 	initImageMapHighlights()
-	$("#default-sort-btn").click()
 	resetAllLocations()
+	resetButtonClicked()
 	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
 	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
 		if (a > b) { return 1 }
@@ -264,11 +269,15 @@ function doHitZoneFilter(hitZone) {
 	})
 }
 	
-function getAllArmorItemsByHitZone(hitZone) {
+function getAllArmorItemsByHitZone(hitZone, equippedOnly) {
 	var items = {}
+	var armorArray = armorData
+	if (equippedOnly) {
+		armorArray = equippedArmor
+	}
 	
-	for (armorIndex in armorData) {
-		var armor = armorData[armorIndex]
+	for (armorIndex in armorArray) {
+		var armor = armorArray[armorIndex]
 		if (armor.Coverage.locations != null) {
 			if (armor.Coverage.locations.indexOf(parseInt(hitZone)) > -1) {
 				items[armor.Id] = armor
@@ -401,8 +410,14 @@ function removeArmorFilter(category) {
 	applyArmorFilter(category, false)
 }
 
+function resetButtonClicked(btn) {
+	removeAllArmorFilters()
+	$("#filter-Horse_armor").click()//Users probably don't want horse armour by default...
+	$("#default-sort-btn").click() //Default index sorting at start
+}
+
 function removeAllArmorFilters() {
-	//TODO: reset all buttons (remove filterClicked class)
+	$("[id^=filter-]").not("#filter-template").removeClass("filterClicked")
 	for (var filterIndex in filteredArmorCategories) {
 		filteredArmorCategories[filterIndex] = false
 	}
@@ -418,7 +433,7 @@ function toggleWordCoverage(btn) {
 
 function armorFilterClicked(btn) {
 	var category = btn.getAttribute("data-filtercat")
-	console.log("btn", btn, category)
+	//console.log("btn", btn, category)
 	$(btn).toggleClass("filterClicked")
 	if (filteredArmorCategories[category] == false) {
 		applyArmorFilter(category)
@@ -466,11 +481,108 @@ function expandProtType(type) {
 	return "AV"+type.toUpperCase()
 }
 
+function calcLayering(hitZone, protType, armorPiece) {
+	
+	var isMissile = protType === "m"
+	if (isMissile) {
+		protType = "p"
+	}
+	
+	var curProtType = expandProtType(protType)
+	
+	var equippedArmor = getAllArmorItemsByHitZone(hitZone, true)
+	
+	var curLayerValue = 0
+	
+	var highestLayer = 0
+	var highestLayerArmor = null
+	var highestLayerProt = 0
+	var highestLayerProtArmor = null
+	
+	var highestArmor = null
+	var highestArmorProt = 0
+	
+	
+	
+	//First pass: calculate highest layer
+	for (var equippedArmorIndex in equippedArmor) {
+		var armor = equippedArmor[equippedArmorIndex]
+		
+		if (armor.Qualities.Layer != null) {
+			if (highestLayer <= armor.Qualities.Layer.level) {
+				highestLayer = armor.Qualities.Layer.level
+				highestLayerArmor = armor
+				/*if (highestLayerProt <= armor[curProtType]) {		
+					highestLayerProt = armor
+					highestLayerProtArmor = armor[curProtType]
+				}*/
+
+			}
+		} else {
+			
+			//Unused code
+			/*var missileProt = 0
+			if (isMissile && armor.Qualities.Textile != null) {
+				missileProt = armor[curProtType]*2
+			}
+			highestArmorProt = Math.max(armor[curProtType], highestArmorProt, missileProt)*/
+		}
+		
+	}
+	
+	var finalProt = 0
+	
+	//If layering even applies in this scenario
+	if (highestLayerArmor != null) {
+		//Second pass- calculate highest layer + armor
+		for (var equippedArmorIndex in equippedArmor) {
+			var armor = equippedArmor[equippedArmorIndex]
+			var armorProt = armorPiece[curProtType]
+			if (armor.Id !== highestLayerArmor.Id) { //Don't layer with ourself!!
+				var compareProt = armor[curProtType] 
+				
+				if (isMissile && armor.Qualities.Textile != null) { //Missiles exception
+					compareProt = compareProt*2
+				}
+			
+				if (compareProt <= highestLayerArmor[curProtType]) { //If we have something to layer it with...
+					finalProt = highestLayerArmor[curProtType] + highestLayer //Highest layer armour AV increases by layer
+				}
+			}
+		}
+	}
+	
+	console.log(finalProt, highestLayerArmor, highestLayer)
+	
+	//TODO: go through equipped armours of a hitzone, get highest layer value, calc
+	//TODO: MISSILE ONLY: If textile, calculate missile prot, do layering with AVP
+	return finalProt
+}
+
+
+function calcSpecialProtection(hitZone, protType) {
+	//TODO: create individual definitions for items with special coverages and factor them in here...
+}
+
+function displayCost(cost) {
+	$("#cost").html(utils.CpToString(cost))
+}
+
+function displayWeight(weight) {
+	$("#weight").html(weight + "wt.")
+}
+
 function recalculateLocationValues() {
 	resetAllLocations()
 	resetAllDroplists()
+	
+	var curWeight = 0
+	var curCost = 0
+	
 	for (equippedIndex in equippedArmor) {
 		var curArmor = equippedArmor[equippedIndex]
+		curWeight+=curArmor.Weight
+		curCost+=curArmor.CpCost
 		if (curArmor.Coverage.locations != null) {
 			for (var coverageIndex in curArmor.Coverage.locations) {
 				var curHitZone = curArmor.Coverage.locations[coverageIndex]
@@ -497,13 +609,16 @@ function recalculateLocationValues() {
 					if (isHalfProt) {
 						armorProt = Math.floor(armorProt/2)
 					}
-					$("#avbox-"+curHitZone+"-"+curProtType).html(Math.max(curProt, armorProt))
+					
+					$("#avbox-"+curHitZone+"-"+curProtType).html(Math.max(curProt, armorProt, calcLayering(curHitZone, curProtType, curArmor)))
 				}
 				//TODO: Investigate potential repeated code here
 				addArmorDroplistItem(curHitZone, curArmor.Id)
 			}
 		}
 	}
+	displayWeight(curWeight)
+	displayCost(curCost)
 }
 
 function armorItemMouseOver(item) {
