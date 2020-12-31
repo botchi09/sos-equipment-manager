@@ -158,6 +158,8 @@ button {
     border: none;
     opacity: 0.9;
     z-index: 1;
+	background: none;
+    margin-left: 1%
 }
 
 .avbox-adjust {

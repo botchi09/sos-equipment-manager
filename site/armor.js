@@ -74,7 +74,13 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.appendTo("#armor-map")
 			
 		} else {
-			$("#avbox-template").clone().css("display", "block")
+			var isWeakSpot = false
+			var templateId = "#avbox-template"
+			if (boxTypes[0] === "w") {
+				templateId = "#avbox-template-w"
+				isWeakSpot = true
+			}
+			var templated = $(templateId).clone().css("display", "block")
 			.mouseover(unhideDroplist)
 			.mouseout(hideDroplist)
 			.css("top", curY).css("left", curX)
@@ -82,19 +88,54 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.css("height", dollSizeMultiplier*boxWidth)
 			.attr("id", "avbox-" + id + "-" + boxTypes[0])
 			.attr("data-hitzone", id)
+			.attr("data-type", boxTypes[0])
+
+			if (isWeakSpot) {
+				templated.css("margin-left", 0) //Little fix to centre the text
+				templated.click(function() {
+					var hitZone = parseInt($(this).attr("data-hitzone"))
+					var isClicked = customHitZoneValues[hitZone].Weakspot
+					if (!isClicked) {
+						$(this).html(weakSpot)
+						customHitZoneValues[hitZone].Weakspot = true
+					} else {
+						$(this).html(notWeakSpot)
+						customHitZoneValues[hitZone].Weakspot = false
+					}
+					recalculateLocationValues()
+				})
+			} else {
+				templated.change(function(ev) {
+					//console.log(ev)
+					//TODO: breaks down if numbers already assigned when we cahnge it.
+					var type = expandProtType($(this).attr("data-type"))
+					var hitZone = parseInt($(this).attr("data-hitzone"))
+					var subtractNum = hitZoneValues[hitZone][type]
+					var thisVal = parseInt($(this).val())
+					var newValue = thisVal - subtractNum
+					if (!isNaN(newValue)) {
+						//customHitZoneValues[hitZone][type] = newValue
+					}
+					
+					console.log(thisVal, subtractNum, newValue)
+					$(this).oldValue = thisVal
+					//recalculateLocationValues()
+					
+				})
+			}
+			
+			templated.prependTo("#avbox-container")
+	
+			//TODO: Manual adjustment item create id av-adjust-template
+			$("#av-adjust-template").clone().css("display", "block")
+			.css("top", curY-((boxWidth/2)*dollSizeMultiplier)).css("left", curX)
+			.css("width", dollSizeMultiplier*(boxWidth))
+			.css("height", dollSizeMultiplier*boxWidth/2)
+			.attr("id", "av-adjust-" + id + "-" + boxTypes[0])
+			.attr("data-hitzone", id)
+			.attr("data-type", id)
 			.prependTo("#avbox-container")
 			
-			if (boxTypes[0] !== "w") {
-				//TODO: Manual adjustment item create id av-adjust-template
-				$("#av-adjust-template").clone().css("display", "block")
-				.css("top", curY-((boxWidth/2)*dollSizeMultiplier)).css("left", curX)
-				.css("width", dollSizeMultiplier*(boxWidth))
-				.css("height", dollSizeMultiplier*boxWidth/2)
-				.attr("id", "av-adjust-" + id + "-" + boxTypes[0])
-				.attr("data-hitzone", id)
-				.attr("data-type", id)
-				.prependTo("#avbox-container")
-			}
 			boxTypes.splice(0, 1)
 		}
 	}
@@ -182,7 +223,6 @@ function addFilterButton(category, buttonText) {
 
 function initArmorList() {
 	
-
 	loadArmorData()
 
 
@@ -260,8 +300,10 @@ function initArmorList() {
 	initHiddenColumns()
 	initImageMapResize()
 	initImageMapHighlights()
+	resetHitZoneValues(true)
 	resetAllLocations()
 	resetButtonClicked()
+	
 	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
 	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
 		if (a > b) { return 1 }
@@ -476,8 +518,9 @@ function armorItemClick(item) {
 
 function resetAllLocations() {
 	$("[id^=avbox-]").not("#avbox-container").not("#avbox-template").each(function() {
+		
 		if ($(this).attr("id").slice(-1) !== "w") {
-			$(this).html("0")
+			$(this).val("0")
 		} else {
 			$(this).html(" ")
 		}
@@ -629,17 +672,42 @@ function displayWeight(weight) {
 var hitZoneValues = {}
 var customHitZoneValues = {}
 
-function resetHitZoneValues() {
+function resetHitZoneValues(doCustom) {
+	var template =  {AVC: 0, AVB: 0, AVP: 0, AVM: 0, Weakspot: false}
 	for (var i=1;i<=20;i++) {
-		hitZoneValues[i] = {AVC: 0, AVB: 0, AVP: 0, AVM: 0, Weakspot: false}
+		hitZoneValues[i] = {...template}
+		if (doCustom) {
+			customHitZoneValues[i] = {...template}
+		}
 	}
 }
 
+function setAvBoxesToCustomValues() {
+	for (var i=1;i<=20;i++) {
+		if (Object.keys(getAllArmorItemsByHitZone(i, true)).length == 0) { //Nothing is equipped here.
+			var values = customHitZoneValues[i]
+			$("#avbox-"+i+"-c").val(values.AVC)
+			$("#avbox-"+i+"-p").val(values.AVP)
+			$("#avbox-"+i+"-b").val(values.AVB)
+			$("#avbox-"+i+"-m").val(values.AVM)
 
+			if (values.Weakspot) {
+				$("#avbox-"+i+"-w").html(weakSpot)
+			}
+		}
+	}
+}
+
+function savePlayerData() {
+	
+}
+
+function loadPlayerData() {
+}
 
 function recalculateLocationValues() {
-	resetHitZoneValues()
 	resetAllLocations()
+	resetHitZoneValues(false)
 	resetAllDroplists()
 	
 	var curWeight = 0
@@ -659,16 +727,21 @@ function recalculateLocationValues() {
 					isHalfProt = true
 				}
 				var weakZone = $("#avbox-"+curHitZone+"-w")
-				if (curArmor.Coverage.weakSpot.indexOf(curHitZone) > -1) {
+				console.log("CUSTOM?", customHitZoneValues[curHitZone].Weakspot)
+				if (curArmor.Coverage.weakSpot.indexOf(curHitZone) > -1 || customHitZoneValues[curHitZone].Weakspot == true) {
 					//Weakspots carry down
 					weakZone.html(weakSpot)
 					
 				}
 
 				for (protArrayIndex in protArray) {
+					var curProtType = protArray[protArrayIndex]
+					var curProtFull = expandProtType(curProtType)
 					curProtType = protArray[protArrayIndex]
-					var curProt = hitZoneValues[curHitZone][expandProtType(curProtType)] //parseInt($("#avbox-"+curHitZone+"-"+curProtType).html())
-					var armorProt = curArmor[expandProtType(curProtType)]
+					var curProt = hitZoneValues[curHitZone][curProtFull] 
+					
+					//parseInt($("#avbox-"+curHitZone+"-"+curProtType).html())
+					var armorProt = curArmor[curProtFull]
 					
 					if (curArmor.Coverage.specialAV) {
 						armorProt += curArmor.Coverage.specialAV[curHitZone] || 0	
@@ -680,17 +753,24 @@ function recalculateLocationValues() {
 					if (isHalfProt) {
 						armorProt = Math.floor(armorProt/2)
 					}
+				
+					var userProt = customHitZoneValues[curHitZone][curProtFull] //Any user defined mods
+
+					var maxArmor = Math.max(curProt, armorProt, calcLayering(curHitZone, curProtType, curArmor)) + userProt
 					
-					var maxArmor = Math.max(curProt, armorProt, calcLayering(curHitZone, curProtType, curArmor))
-					$("#avbox-"+curHitZone+"-"+curProtType).html(maxArmor)
-					hitZoneValues[curHitZone][expandProtType(curProtType)] = maxArmor
+					
+					$("#avbox-"+curHitZone+"-"+curProtType).val(maxArmor)
+					hitZoneValues[curHitZone][curProtFull] = maxArmor
 					
 				}
 				//TODO: Investigate potential repeated code here
 				addArmorDroplistItem(curHitZone, curArmor.Id)
 			}
+		} else {
+			
 		}
 	}
+	setAvBoxesToCustomValues() //Default values
 	displayWeight(curWeight)
 	displayCost(curCost)
 }
