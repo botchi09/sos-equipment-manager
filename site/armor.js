@@ -1,3 +1,5 @@
+
+
 var utils = require("./utils")
 var hitZoneLib = require("./hitzones")
 var armorData = null
@@ -81,6 +83,18 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.attr("id", "avbox-" + id + "-" + boxTypes[0])
 			.attr("data-hitzone", id)
 			.prependTo("#avbox-container")
+			
+			if (boxTypes[0] !== "w") {
+				//TODO: Manual adjustment item create id av-adjust-template
+				$("#av-adjust-template").clone().css("display", "block")
+				.css("top", curY-((boxWidth/2)*dollSizeMultiplier)).css("left", curX)
+				.css("width", dollSizeMultiplier*(boxWidth))
+				.css("height", dollSizeMultiplier*boxWidth/2)
+				.attr("id", "av-adjust-" + id + "-" + boxTypes[0])
+				.attr("data-hitzone", id)
+				.attr("data-type", id)
+				.prependTo("#avbox-container")
+			}
 			boxTypes.splice(0, 1)
 		}
 	}
@@ -506,7 +520,7 @@ function calcLayering(hitZone, protType, armorPiece) {
 	
 	var curProtType = expandProtType(protType)
 	
-	var equippedArmor = getAllArmorItemsByHitZone(hitZone, true)
+	var equippedHitZoneArmor = getAllArmorItemsByHitZone(hitZone, true)
 	
 	var curLayerValue = 0
 	
@@ -521,8 +535,8 @@ function calcLayering(hitZone, protType, armorPiece) {
 	
 	
 	//First pass: calculate highest layer
-	for (var equippedArmorIndex in equippedArmor) {
-		var armor = equippedArmor[equippedArmorIndex]
+	for (var equippedHitZoneArmorIndex in equippedHitZoneArmor) {
+		var armor = equippedHitZoneArmor[equippedHitZoneArmorIndex]
 		
 		if (armor.Qualities.Layer != null || hasGreatHelmLayerQuality(armor)) {
 			var compareLayer = 0
@@ -534,16 +548,14 @@ function calcLayering(hitZone, protType, armorPiece) {
 			if (armor.Id === greatHelmId) {
 				if (hasSkullcapOrBascinet()) {
 					compareLayer = armor.Qualities.GreatHelmOnlyLayer.level
-					console.log("isgreathelm")
+					//console.log("isgreathelm")
 				}
 			}
 			
-			console.log(armor.Id, armor.Name)
 			if (armor.Id === bascinetId || armor.Id === skullcapId) {
-				console.log("is basc")
 				if (hasGreatHelm()) {
 					compareLayer = armor.Qualities.GreatHelmLayer.level
-					console.log("gh lvl", armor.Name, armor.Qualities.GreatHelmLayer.level)
+					//console.log("gh lvl", armor.Name, armor.Qualities.GreatHelmLayer.level)
 				}
 			}
 			
@@ -573,8 +585,8 @@ function calcLayering(hitZone, protType, armorPiece) {
 	//If layering even applies in this scenario
 	if (highestLayerArmor != null) {
 		//Second pass- calculate highest layer + armor
-		for (var equippedArmorIndex in equippedArmor) {
-			var armor = equippedArmor[equippedArmorIndex]
+		for (var equippedHitZoneArmorIndex in equippedHitZoneArmor) {
+			var armor = equippedHitZoneArmor[equippedHitZoneArmorIndex]
 			var armorProt = armorPiece[curProtType]
 			if (armor.Id !== highestLayerArmor.Id) { //Don't layer with ourself!!
 				var compareProt = armor[curProtType] 
@@ -614,7 +626,19 @@ function displayWeight(weight) {
 	$("#weight").html(weight + "wt.")
 }
 
+var hitZoneValues = {}
+var customHitZoneValues = {}
+
+function resetHitZoneValues() {
+	for (var i=1;i<=20;i++) {
+		hitZoneValues[i] = {AVC: 0, AVB: 0, AVP: 0, AVM: 0, Weakspot: false}
+	}
+}
+
+
+
 function recalculateLocationValues() {
+	resetHitZoneValues()
 	resetAllLocations()
 	resetAllDroplists()
 	
@@ -643,7 +667,7 @@ function recalculateLocationValues() {
 
 				for (protArrayIndex in protArray) {
 					curProtType = protArray[protArrayIndex]
-					var curProt = parseInt($("#avbox-"+curHitZone+"-"+curProtType).html())
+					var curProt = hitZoneValues[curHitZone][expandProtType(curProtType)] //parseInt($("#avbox-"+curHitZone+"-"+curProtType).html())
 					var armorProt = curArmor[expandProtType(curProtType)]
 					
 					if (curArmor.Coverage.specialAV) {
@@ -657,7 +681,10 @@ function recalculateLocationValues() {
 						armorProt = Math.floor(armorProt/2)
 					}
 					
-					$("#avbox-"+curHitZone+"-"+curProtType).html(Math.max(curProt, armorProt, calcLayering(curHitZone, curProtType, curArmor)))
+					var maxArmor = Math.max(curProt, armorProt, calcLayering(curHitZone, curProtType, curArmor))
+					$("#avbox-"+curHitZone+"-"+curProtType).html(maxArmor)
+					hitZoneValues[curHitZone][expandProtType(curProtType)] = maxArmor
+					
 				}
 				//TODO: Investigate potential repeated code here
 				addArmorDroplistItem(curHitZone, curArmor.Id)

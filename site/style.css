@@ -159,3 +159,14 @@ button {
     opacity: 0.9;
     z-index: 1;
 }
+
+.avbox-adjust {
+	font-size:9;
+	font-family:cursive;
+	font-weight:bolder;
+    position: absolute;
+	text-align:center;
+    border: none;
+    opacity: 0.9;
+    z-index: 1;
+}
