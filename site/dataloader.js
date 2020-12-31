@@ -1,4 +1,5 @@
 var fs = require("fs")
+const assignDeep = require("assign-deep")
 
 module.exports = {}
 module.exports.loadArmorData = function(){
@@ -16,7 +17,7 @@ module.exports.loadArmorData = function(){
 			try {
 				var fileData = fs.readFileSync(armorDir + fileName)
 				try {
-					Object.assign(armorData, JSON.parse(fileData))
+					assignDeep(armorData, JSON.parse(fileData))
 				} catch {
 					console.error("JSON parse error in", fileName)
 				}

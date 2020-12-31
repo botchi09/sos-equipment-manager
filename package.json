@@ -5,6 +5,7 @@
   "main": "index.js",
   "chromium-args": "--mixed-context",
   "dependencies": {
+    "assign-deep": "^1.0.1",
     "jquery": "^3.5.1",
     "listjs": "^0.1.1"
   },
@@ -15,7 +16,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-nw": "../nwjs-v0.50.2-win-x64/nw --disable-raf-throttling",
-	"dist": "build --tasks win-x86,win-x64,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ ."
+    "dist": "build --tasks win-x86,win-x64,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ ."
   },
   "author": "botchi09",
   "license": "ISC",

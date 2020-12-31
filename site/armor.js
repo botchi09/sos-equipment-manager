@@ -481,6 +481,22 @@ function expandProtType(type) {
 	return "AV"+type.toUpperCase()
 }
 
+var greatHelmId = "R3JlYXQgSGVsbQ=="
+var bascinetId = "QmFzY2luZXQ="
+var skullcapId = "U2t1bGxjYXA="
+
+function hasGreatHelm() {
+	return equippedArmor[greatHelmId] != null
+}
+
+function hasSkullcapOrBascinet() {
+	return (equippedArmor[bascinetId] != null || equippedArmor[skullcapId] != null)
+}
+
+function hasGreatHelmLayerQuality(armorPiece) {
+	return (armorPiece.Qualities.GreatHelmOnlyLayer != null || armorPiece.Qualities.GreatHelmLayer != null)
+}
+
 function calcLayering(hitZone, protType, armorPiece) {
 	
 	var isMissile = protType === "m"
@@ -508,9 +524,31 @@ function calcLayering(hitZone, protType, armorPiece) {
 	for (var equippedArmorIndex in equippedArmor) {
 		var armor = equippedArmor[equippedArmorIndex]
 		
-		if (armor.Qualities.Layer != null) {
-			if (highestLayer <= armor.Qualities.Layer.level) {
-				highestLayer = armor.Qualities.Layer.level
+		if (armor.Qualities.Layer != null || hasGreatHelmLayerQuality(armor)) {
+			var compareLayer = 0
+			if (armor.Qualities.Layer != null) {
+				compareLayer = armor.Qualities.Layer.level
+			}
+			
+			//Handle greathelm/bascinet/skullcap special case
+			if (armor.Id === greatHelmId) {
+				if (hasSkullcapOrBascinet()) {
+					compareLayer = armor.Qualities.GreatHelmOnlyLayer.level
+					console.log("isgreathelm")
+				}
+			}
+			
+			console.log(armor.Id, armor.Name)
+			if (armor.Id === bascinetId || armor.Id === skullcapId) {
+				console.log("is basc")
+				if (hasGreatHelm()) {
+					compareLayer = armor.Qualities.GreatHelmLayer.level
+					console.log("gh lvl", armor.Name, armor.Qualities.GreatHelmLayer.level)
+				}
+			}
+			
+			if (highestLayer <= compareLayer) {
+				highestLayer = compareLayer
 				highestLayerArmor = armor
 				/*if (highestLayerProt <= armor[curProtType]) {		
 					highestLayerProt = armor
@@ -541,6 +579,10 @@ function calcLayering(hitZone, protType, armorPiece) {
 			if (armor.Id !== highestLayerArmor.Id) { //Don't layer with ourself!!
 				var compareProt = armor[curProtType] 
 				
+				if (armor.Coverage.specialAV) { //Stechhelm, etc
+					compareProt += armor.Coverage.specialAV[hitZone] || 0	
+				}
+
 				if (isMissile && armor.Qualities.Textile != null) { //Missiles exception
 					compareProt = compareProt*2
 				}
@@ -552,7 +594,7 @@ function calcLayering(hitZone, protType, armorPiece) {
 		}
 	}
 	
-	console.log(finalProt, highestLayerArmor, highestLayer)
+	//console.log(finalProt, highestLayerArmor, highestLayer)
 	
 	//TODO: go through equipped armours of a hitzone, get highest layer value, calc
 	//TODO: MISSILE ONLY: If textile, calculate missile prot, do layering with AVP
@@ -603,6 +645,11 @@ function recalculateLocationValues() {
 					curProtType = protArray[protArrayIndex]
 					var curProt = parseInt($("#avbox-"+curHitZone+"-"+curProtType).html())
 					var armorProt = curArmor[expandProtType(curProtType)]
+					
+					if (curArmor.Coverage.specialAV) {
+						armorProt += curArmor.Coverage.specialAV[curHitZone] || 0	
+					}
+					
 					if (curProtType === "m") {
 						armorProt = getMissileProt(curArmor.Id)
 					}

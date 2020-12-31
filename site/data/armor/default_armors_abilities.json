@@ -1,0 +1,46 @@
+{
+	"U3RlY2hoZWxt": {
+		"Name": "Stechhelm",
+		"Coverage": {
+			"specialAV": {
+				"2": 4,
+				"3": 4,
+				"4": 4
+			}
+		}
+	},
+	"UmVpbmZvcmNlZCBSb21hbiBIZWxt": {
+		"Name": "Reinforced Roman Helm",
+		"Coverage": {
+			"specialAV": {
+				"1": 4
+			}
+		}
+	},
+	"WmlzY2hhZ2dlL1N6eXN6YWs=": {
+		"Name": "Zischagge/Szyszak",
+		"Coverage": {
+			"specialAV": {
+				"1": 4
+			}
+		}
+	},
+	"QmFzY2luZXQ=": {
+		"Name": "Bascinet",
+		"Qualities": {
+			"GreatHelmLayer": {"level": 1, "special":""}
+		}
+	},
+	"U2t1bGxjYXA=": {
+		"Name": "Skullcap",
+		"Qualities": {
+			"GreatHelmLayer": {"level": 2, "special":""}
+		}
+	},
+	"R3JlYXQgSGVsbQ==": {
+		"Name": "Great Helm",
+		"Qualities": {
+			"GreatHelmOnlyLayer": {"level": 1, "special":""}
+		}
+	}
+}
