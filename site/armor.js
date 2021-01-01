@@ -1,7 +1,7 @@
 
-
 var utils = require("./utils")
 var hitZoneLib = require("./hitzones")
+var materials = require("./materials")
 var armorData = null
 var armorList = null
 var equippedCategoryStr = "E"
