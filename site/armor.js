@@ -109,16 +109,21 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			} else {
 
 				templated.change(function(ev) {
+					//TODO: these are being calculated INCORRECTLY
 					var type = expandProtType($(this).attr("data-type"))
 					var hitZone = parseInt($(this).attr("data-hitzone"))
 					var subtractNum = hitZoneValues[hitZone][type]
 					var thisVal = parseInt($(this).val())
+					var noCustom = thisVal - customHitZoneValues[hitZone][type]
 					var newValue = thisVal - subtractNum
+					
+					console.log("now box "+thisVal, "stored hz "+subtractNum, "custom "+customHitZoneValues[hitZone][type], "calc " + newValue)
+
 					if (!isNaN(newValue)) {
 						customHitZoneValues[hitZone][type] = newValue
 					}
 					
-					console.log("now "+thisVal, "diff "+subtractNum, "new "+newValue)
+					
 					recalculateCustomIndicators()
 					
 				})
@@ -769,7 +774,6 @@ function recalculateLocationValues() {
 					isHalfProt = true
 				}
 				var weakZone = $("#avbox-"+curHitZone+"-w")
-				console.log("CUSTOM?", customHitZoneValues[curHitZone].Weakspot)
 				if (curArmor.Coverage.weakSpot.indexOf(curHitZone) > -1 || customHitZoneValues[curHitZone].Weakspot == true) {
 					//Weakspots carry down
 					weakZone.html(weakSpot)
@@ -798,11 +802,11 @@ function recalculateLocationValues() {
 				
 					var userProt = customHitZoneValues[curHitZone][curProtFull] //Any user defined mods
 
-					var maxArmor = Math.max(curProt, armorProt, calcLayering(curHitZone, curProtType, curArmor)) + userProt
+					var maxArmor = Math.max(curProt + userProt, armorProt + userProt, calcLayering(curHitZone, curProtType, curArmor) + userProt)
 					
 					
-					$("#avbox-"+curHitZone+"-"+curProtType).val(maxArmor)
-					hitZoneValues[curHitZone][curProtFull] = maxArmor
+					$("#avbox-"+curHitZone+"-"+curProtType).val(maxArmor) //Display only
+					hitZoneValues[curHitZone][curProtFull] = maxArmor - userProt //Do not store the custom value in the max armour too!
 					
 				}
 				//TODO: Investigate potential repeated code here
@@ -813,7 +817,8 @@ function recalculateLocationValues() {
 		}
 	}
 	setAvBoxesToCustomValues() //Default values
-	recalculateCustomIndicators()
+	//recalculateCustomIndicators()
+	//$("[id^=avbox-]").change()
 	displayWeight(curWeight)
 	displayCost(curCost)
 }
