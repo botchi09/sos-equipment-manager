@@ -1,4 +1,5 @@
 
+var saveLoad = require("./saveload")
 var utils = require("./utils")
 var hitZoneLib = require("./hitzones")
 var materials = require("./materials")
@@ -105,6 +106,7 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 						customHitZoneValues[hitZone].Weakspot = false
 					}
 					recalculateLocationValues()
+					recalculateCustomIndicators()
 				})
 			} else {
 
@@ -125,7 +127,7 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 					
 					
 					recalculateCustomIndicators()
-					
+					storeCharData()
 				})
 			}
 			
@@ -268,7 +270,7 @@ function addFilterButton(category, buttonText) {
 }
 
 function initArmorList() {
-	
+	storeCharData() //Initial data so JSON writes to file correctly
 	loadArmorData()
 
 
@@ -744,11 +746,18 @@ function setAvBoxesToCustomValues() {
 	}
 }
 
-function savePlayerData() {
+function storeCharData() {
+	playerData.equippedArmor = equippedArmor
+	playerData.customHitZoneValues = customHitZoneValues
+	changesSaved(false)
 	
 }
 
-function loadPlayerData() {
+function armorCharDataLoaded() {
+	equippedArmor = playerData.equippedArmor
+	customHitZoneValues = playerData.customHitZoneValues
+	recalculateLocationValues()
+	recalculateCustomIndicators()
 }
 
 function recalculateLocationValues() {
@@ -821,6 +830,7 @@ function recalculateLocationValues() {
 	//$("[id^=avbox-]").change()
 	displayWeight(curWeight)
 	displayCost(curCost)
+	storeCharData()
 }
 
 function armorItemMouseOver(item) {

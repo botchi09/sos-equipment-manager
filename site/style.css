@@ -172,3 +172,32 @@ button {
     opacity: 0.65;
     z-index: 2;
 }
+
+/*File selection, etc*/
+.menubox {
+	height: 70%;
+    width: 50%;
+    border: solid;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    z-index: 10;
+    background: white;
+	padding: 1%
+}
+
+.gear {
+	width: 1%;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.cross {
+	width: 3%;
+    position: absolute;
+    z-index: 10;
+    left: 97%;
+    top: 0;
+}

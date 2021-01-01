@@ -6,11 +6,16 @@
 		<script src="libs/jqueryloader.js"></script>
 		<script src="libs/imageMapResizer.min.js"></script>
 		<script src="libs/jquery.maphilight.min.js"></script>
+		<script src="optionsmenu.js"></script>
 		<script src="armor.js"></script>
+		
 		
 		
 	</head>
 	<body onload="initArmorList()">
+		<img src="assets/gear.svg" class="gear" onclick="openOptions()"/>
+		<div id="menucontainer"></div>
+	
 		<div id="status" class="status" style="z-index: 3;position:absolute;top:2%;left:1%;">
 			<div id="cost">0sp 0cp</div>
 			<div id="weight">0wt.</div>

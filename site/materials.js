@@ -22,29 +22,33 @@ function modifyAVs(armor, mod) {
 	}
 }
 
+function roundToDecimal(val) {
+	return (Math.floor(val * 2) / 2).toFixed(1)
+}
+
 module.exports.convertArmorToMaterial = function(armor, material) {
 	var newArmor = {}
 	assignDeep(newArmor, armor)
 	
 	switch (material) {
 		case this.materials.Bronze:
-			newArmor.CpCost *= 1.25
+			newArmor.CpCost = roundToDecimal(newArmor.CpCost *= 1.25)
 			modifyAVs(newArmor, -2)
 		break
 		case this.materials.Iron:
-			newArmor.CpCost *= 0.75
+			newArmor.CpCost = roundToDecimal(newArmor.CpCost *= 0.75)
 			modifyAVs(newArmor, -2)
 		break
 		case this.materials.Steel:
 			return newArmor //Same, but avoid byref
 		break
 		case this.materials.Silversteel:
+			newArmor.CpCost = roundToDecimal(newArmor.CpCost *= 10)
 			modifyAVs(newArmor, 2)
-			newArmor.CpCost += newArmor.CpCost*10
 		break
 		case this.materials.Orichalcum:
+			newArmor.CpCost = roundToDecimal(newArmor.CpCost *= 50)
 			modifyAVs(newArmor, 4)
-			newArmor.CpCost += newArmor.CpCost*50
 		break
 	}
 	if (material !== this.materials.Steel) {
