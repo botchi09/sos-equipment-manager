@@ -84,13 +84,15 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			.mouseover(unhideDroplist)
 			.mouseout(hideDroplist)
 			.css("top", curY).css("left", curX)
-			.css("width", dollSizeMultiplier*boxWidth)
 			.css("height", dollSizeMultiplier*boxWidth)
 			.attr("id", "avbox-" + id + "-" + boxTypes[0])
 			.attr("data-hitzone", id)
 			.attr("data-type", boxTypes[0])
+			
+			var avBoxWidth = boxWidth+boxWidth/2
 
 			if (isWeakSpot) {
+				avBoxWidth = boxWidth
 				templated.css("margin-left", 0) //Little fix to centre the text
 				templated.click(function() {
 					var hitZone = parseInt($(this).attr("data-hitzone"))
@@ -105,30 +107,30 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 					recalculateLocationValues()
 				})
 			} else {
+
 				templated.change(function(ev) {
-					//console.log(ev)
-					//TODO: breaks down if numbers already assigned when we cahnge it.
 					var type = expandProtType($(this).attr("data-type"))
 					var hitZone = parseInt($(this).attr("data-hitzone"))
 					var subtractNum = hitZoneValues[hitZone][type]
 					var thisVal = parseInt($(this).val())
 					var newValue = thisVal - subtractNum
 					if (!isNaN(newValue)) {
-						//customHitZoneValues[hitZone][type] = newValue
+						customHitZoneValues[hitZone][type] = newValue
 					}
 					
-					console.log(thisVal, subtractNum, newValue)
-					$(this).oldValue = thisVal
-					//recalculateLocationValues()
+					console.log("now "+thisVal, "diff "+subtractNum, "new "+newValue)
+					recalculateCustomIndicators()
 					
 				})
 			}
 			
+			templated.css("width", dollSizeMultiplier*(avBoxWidth)) //adjustment for input boxes being weird
+
 			templated.prependTo("#avbox-container")
 	
 			//TODO: Manual adjustment item create id av-adjust-template
-			$("#av-adjust-template").clone().css("display", "block")
-			.css("top", curY-((boxWidth/2)*dollSizeMultiplier)).css("left", curX)
+			$("#av-adjust-template").clone()
+			.css("top", curY-((boxWidth/2.5)*dollSizeMultiplier)).css("left", curX)
 			.css("width", dollSizeMultiplier*(boxWidth))
 			.css("height", dollSizeMultiplier*boxWidth/2)
 			.attr("id", "av-adjust-" + id + "-" + boxTypes[0])
@@ -141,6 +143,45 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 	}
 }
 
+function recalculateCustomIndicators() {
+	
+	for (var i=1;i<=20;i++) {
+		var boxTypes = ["c","p","b","m","w"]
+		for (var boxTypeIndex in boxTypes) {
+			var boxType = boxTypes[boxTypeIndex]
+			var fullBoxType = expandProtType(boxType)
+			var elem = $("#av-adjust-"+i+"-"+boxType)
+			var writeStr = null
+			
+			if (boxType !== "w") {
+				var value = customHitZoneValues[i][fullBoxType]
+				if (value != 0) {
+					if (value > 0) {
+						writeStr = "+" + value
+					} else {
+						writeStr = value
+					}
+				}
+			} else {
+				var value = customHitZoneValues[i].Weakspot
+				if (value != false) {
+					writeStr = weakSpot
+				} else {
+					writeStr = notWeakSpot
+				}
+			}
+			if (writeStr == null) {
+				$(elem).addClass("hidden")
+			} else {
+				$(elem).removeClass("hidden")
+				$(elem).html(writeStr)
+			}
+			
+		}
+				
+		
+	}
+}
 
 function getMissileProt(armorId) {
 	var armor = armorData[armorId]
@@ -706,6 +747,7 @@ function loadPlayerData() {
 }
 
 function recalculateLocationValues() {
+	
 	resetAllLocations()
 	resetHitZoneValues(false)
 	resetAllDroplists()
@@ -771,6 +813,7 @@ function recalculateLocationValues() {
 		}
 	}
 	setAvBoxesToCustomValues() //Default values
+	recalculateCustomIndicators()
 	displayWeight(curWeight)
 	displayCost(curCost)
 }
