@@ -29,7 +29,7 @@ module.exports.loadArmorData = function(){
 		}
 	}
 	
-	return armorData//JSON.parse(fs.readFileSync("site/data/armor/default_armors.json"))
+	return armorData
 }
 
 module.exports.loadArmorsWeapons = function(){console.log("TODO")}

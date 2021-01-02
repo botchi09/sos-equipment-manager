@@ -1,5 +1,5 @@
 var saveLoad = require("./saveload")
-var playerData = {}
+var playerData = {hasBeenSaved: false}
 
 
 function changesSaved(hasSaved) {
@@ -7,7 +7,8 @@ function changesSaved(hasSaved) {
 }
 
 function generateSaveInfo() {
-	playerData.saveDate = new Date().toDateString() //For logging purposes
+	playerData.saveDate = new Date().toString() //For logging purposes
+	playerData.hasBeenSaved = true
 }
 
 function saveToFile(file) {
