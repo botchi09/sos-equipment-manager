@@ -28,11 +28,11 @@ function loadFromFile(file) {
 }
 
 function openOptions() {
-	$("#menucontainer").load(("menu.html"))
+	$("#optionscontainer").load(("menu.html"))
 }
 
 function closeOptions() {
-	$("#menucontainer").empty()
+	$("#optionscontainer").empty()
 }
 
 function fileSaved(btn) {
