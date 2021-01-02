@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="menustyle.css">
 		<script>
-
+			
 			function bodyLoaded() {
 				/*$("#page-content-container").load("armor.html", function() {
 					initArmorList()
@@ -31,18 +31,33 @@
 				})
 			}
 			
+			function changesSavedCheck() {
+				return areChangesSaved() || confirm("Unsaved changes exist. Discard changes?")
+			}
+			
 			function simSaveClick() {
-				$('#savebtn').click()
+				$("#savebtn").click()
 			}
 			
 			function simLoadClick() {
-				$('#loadbtn').click()
+				if (changesSavedCheck()) {
+					$("#loadbtn").click()
+				}
+			}
+			
+			function simNewClick() {
+				if (changesSavedCheck()) {
+					//$("#newbtn").click()
+					generatePlayerData()
+					loadPage("armor.html")
+				}
+				
 			}
 			
 			// Register global desktop shortcut, which can work without focus.
-			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+S", active: simSaveClick}));
-			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+O", active: simLoadClick}));
-			
+			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+S", active: simSaveClick}))
+			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+O", active: simLoadClick}))
+			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+N", active: simNewClick}))
 		</script>
 		
 		<meta charset="UTF-8">
@@ -63,7 +78,7 @@
 					<li>
 						File
 						<ul>
-							<li onclick="function (e){newCharClicked(e)}">
+							<li onclick="simNewClick()">
 								<a href="javascript:void(0)">New<span>Ctrl+N</span></a>
 							</li>
 							<li class="separator"></li>

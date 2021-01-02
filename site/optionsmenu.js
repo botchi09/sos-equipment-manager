@@ -1,23 +1,34 @@
 var saveLoad = require("./saveload")
-var playerData = {hasBeenSaved: false}
+var playerData = null
 
+function generatePlayerData() {
+	playerData = {saveInfo: {hasBeenSaved: true}} //"New" files have nothing to lose.
+}
+generatePlayerData() //First, most initial JS. Requires nothing
 
 function changesSaved(hasSaved) {
 	//TODO: display some kind of "not saved" thingo
+	playerData.saveInfo.hasBeenSaved = hasSaved
+}
+
+function areChangesSaved() {
+	return playerData.saveInfo.hasBeenSaved
 }
 
 function generateSaveInfo() {
-	playerData.saveDate = new Date().toString() //For logging purposes
+	playerData.saveInfo.saveDate = new Date().toString() //For logging purposes
 	playerData.hasBeenSaved = true
 }
 
 function saveToFile(file) {
 	generateSaveInfo()
+	changesSaved(true)
 	var success = saveLoad.saveCharData(file, playerData)
 	if (success) {
-		changesSaved(true)
+		
 	} else {
 		console.error(file,"not saved???")
+		changesSaved(false)
 	}
 	
 }

@@ -351,7 +351,7 @@ function initArmorList() {
 	resetHitZoneValues(true)
 	resetAllLocations()
 	resetButtonClicked()
-	
+	changesSaved(true) //New data, so freely reset it to true!
 	//TODO: This does not sort negative numbers correctly... Use a number fudging workaround for the time being
 	/*armorList.sort("armor_pp", { sortFunction: function(a, b) {
 		if (a > b) { return 1 }
