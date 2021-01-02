@@ -13,14 +13,15 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="menustyle.css">
 		<script>
-			
+			var docTitle = "SoS Character Manager"
+			document.title = docTitle
+			var saveLoad = require("./saveload")
 			function bodyLoaded() {
 				/*$("#page-content-container").load("armor.html", function() {
 					initArmorList()
 				})*/
 				loadPage("armor.html")
 				
- 
 
 			}
 			
@@ -36,17 +37,28 @@
 			}
 			
 			function simSaveClick() {
+				if (document.hasFocus()) {
+				console.log("save status", curFile !== $("#savebtn").val() , curFile == null , curFile != null && saveLoad.fileExists(curFile))
+					if (curFile !== $("#savebtn").val() || curFile == null || !saveLoad.fileExists(curFile)) {
+						saveAsClick()
+					} else {
+						saveToFile(curFile)
+					}
+				}
+			}
+			
+			function saveAsClick() {
 				$("#savebtn").click()
 			}
 			
 			function simLoadClick() {
-				if (changesSavedCheck()) {
+				if (document.hasFocus() && changesSavedCheck()) {
 					$("#loadbtn").click()
 				}
 			}
 			
 			function simNewClick() {
-				if (changesSavedCheck()) {
+				if (document.hasFocus() && changesSavedCheck()) {
 					//$("#newbtn").click()
 					generatePlayerData()
 					loadPage("armor.html")
@@ -54,14 +66,41 @@
 				
 			}
 			
-			// Register global desktop shortcut, which can work without focus.
-			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+S", active: simSaveClick}))
-			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+O", active: simLoadClick}))
-			nw.App.registerGlobalHotKey(new nw.Shortcut({key: "Ctrl+N", active: simNewClick}))
+						
+			window.onfocus = function() { 
+			  registerHotKeys()
+			}
+
+			window.onblur = function() { 
+			  unregisterHotKeys()
+			}
+			var registeredHotKeys = []
+			
+			function registerHotKeys() {
+				var newHotKeys = [
+					{key: "Ctrl+S", active: simSaveClick},
+					{key: "Ctrl+O", active: simLoadClick},
+					{key: "Ctrl+N", active: simNewClick}
+				]
+				for (var i=0;i<newHotKeys.length;i++) {
+					var newHotKey = new nw.Shortcut(newHotKeys[i])
+					nw.App.registerGlobalHotKey(newHotKey)
+					registeredHotKeys.push(newHotKey)
+				}
+				console.log(registeredHotKeys)
+			}
+			
+			function unregisterHotKeys() {
+				for (var i=0;i<registeredHotKeys.length;i++) {
+					nw.App.unregisterGlobalHotKey(registeredHotKeys[i])
+				}
+			}
+			
+			registerHotKeys()
 		</script>
 		
 		<meta charset="UTF-8">
-		<title>SoS Character Manager</title>
+		<title>unset</title>
 		<!--meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" /-->
 			
 	</head>
@@ -83,6 +122,8 @@
 							</li>
 							<li class="separator"></li>
 							<li class="icon save" onclick="simSaveClick()"><a href="javascript:void(0)">Save<span>Ctrl+S</span></a></li>
+							<li class="icon save" onclick="saveAsClick()"><a href="javascript:void(0)">Save As...<span></span></a></li>
+							<li class="separator"></li>
 							<li class="icon load" onclick="simLoadClick()"><a href="javascript:void(0)">Open<span>Ctrl+O</span></a></li>
 						</ul>
 					</li>

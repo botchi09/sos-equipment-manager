@@ -546,17 +546,29 @@ function armorFilterClicked(btn) {
 	}
 }
 
+function equippedHighlight(item, doHighlight) {
+	if (doHighlight) {
+		$(item).addClass("armor-list-item-equipped")
+		$(item).addClass("armor-list-item")
+	} else {
+		$(item).removeClass("armor-list-item-equipped")
+		$(item).removeClass("armor-list-item")
+	}
+}
+
 function armorItemClick(item) {
 	//var id = item.getAttribute("data-id")
 	var id = $(item).attr("data-id")
-	$(item).toggleClass("armor-list-item-equipped")
-	$(item).toggleClass("armor-list-item")
+	//$(item).toggleClass("armor-list-item-equipped")
+	//$(item).toggleClass("armor-list-item")
 	if (equippedArmor[id] == null) {
 		equippedArmor[id] = armorData[id]
 		$(item).attr("data-equipped", 1)
+		equippedHighlight($(item), true)
 
 	} else {
 		$(item).attr("data-equipped", 0)
+		equippedHighlight($(item), false)
 		highlightElement($(item), false)
 		delete equippedArmor[id]
 		
@@ -753,9 +765,18 @@ function storeCharData() {
 	
 }
 
+function rehighlightArmorListItems() {
+	for (var armorIndex in armorData) {
+		if (equippedArmor[armorIndex]) {
+			equippedHighlight($("tr[data-id='"+armorIndex+"']"), true)
+		}
+	}
+}
+
 function armorCharDataLoaded() {
 	equippedArmor = playerData.equippedArmor
 	customHitZoneValues = playerData.customHitZoneValues
+	rehighlightArmorListItems()
 	recalculateLocationValues()
 	recalculateCustomIndicators()
 }

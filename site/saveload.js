@@ -2,6 +2,16 @@ var fs = require("fs")
 
 module.exports = {}
 
+module.exports.fileExists = function(file) {
+	try {
+		fs.accessSync(file, fs.constants.R_OK | fs.constants.W_OK)
+		return true
+	} catch {
+		console.log(file, "Does not exist/no read write privileges")
+		return false
+	}
+}
+
 module.exports.saveCharData = function(file, data) {
 	try {
 		var data = JSON.stringify(playerData, null, "\t")

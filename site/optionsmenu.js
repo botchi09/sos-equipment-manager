@@ -1,14 +1,20 @@
 var saveLoad = require("./saveload")
 var playerData = null
-
+var curFile = null
+ 
 function generatePlayerData() {
 	playerData = {saveInfo: {hasBeenSaved: true}} //"New" files have nothing to lose.
 }
 generatePlayerData() //First, most initial JS. Requires nothing
 
 function changesSaved(hasSaved) {
-	//TODO: display some kind of "not saved" thingo
 	playerData.saveInfo.hasBeenSaved = hasSaved
+	if (hasSaved) {
+		document.title = docTitle
+	} else {
+		document.title = docTitle + " - Unsaved changes"
+	}
+	
 }
 
 function areChangesSaved() {
@@ -25,7 +31,8 @@ function saveToFile(file) {
 	changesSaved(true)
 	var success = saveLoad.saveCharData(file, playerData)
 	if (success) {
-		
+		curFile = file
+		changesSaved(true)
 	} else {
 		console.error(file,"not saved???")
 		changesSaved(false)
@@ -34,7 +41,7 @@ function saveToFile(file) {
 }
 
 function loadFromFile(file) {
-	changesSaved(true)
+	
 	return saveLoad.loadCharData(file)
 }
 
@@ -54,7 +61,9 @@ function fileLoaded(btn) {
 	var success = loadFromFile(btn.value)
 	if (success) {
 		console.log("LOADED DATA", playerData)
+		curFile = btn.value
 		armorCharDataLoaded()
+		changesSaved(true)
 	}
-	
+	return success
 }
