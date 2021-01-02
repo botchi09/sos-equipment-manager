@@ -150,7 +150,7 @@ button {
 }
 
 .avbox {
-	font-size:18;
+	font-size:18px;
 	font-family:cursive;
 	font-weight:bolder;
     position: absolute;
@@ -163,7 +163,7 @@ button {
 }
 
 .avbox-adjust {
-	font-size:9;
+	font-size:9px;
 	font-family:cursive;
 	font-weight:bolder;
     position: absolute;

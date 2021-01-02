@@ -2,19 +2,13 @@
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<script src="libs/list.min.js"></script>
-		<script src="libs/jquery-3.5.1.min.js"></script>
-		<script src="libs/jqueryloader.js"></script>
 		<script src="libs/imageMapResizer.min.js"></script>
 		<script src="libs/jquery.maphilight.min.js"></script>
-		<script src="optionsmenu.js"></script>
 		<script src="armor.js"></script>
-		
-		
-		
 	</head>
 	<body onload="initArmorList()">
-		<img src="assets/gear.svg" class="gear" onclick="openOptions()"/>
-		<div id="menucontainer"></div>
+		<span id="page-initfunc" class="hidden">initArmorList()</span>
+		
 	
 		<div id="status" class="status" style="z-index: 3;position:absolute;top:2%;left:1%;">
 			<div id="cost">0sp 0cp</div>

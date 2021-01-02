@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<script>
-		window.location.href = "armor.html"
-	</script>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-</head>
-<body style="background: white;">
-    <h1>Hello World!</h1>
-    <p>
-        Switch to armours...
-    </p>
-</body>
+	<head>
+	<script src="libs/jquery-3.5.1.min.js"></script>
+	<script src="libs/jqueryloader.js"></script>
+	<script src="optionsmenu.js"></script>
+	<link rel="stylesheet" href="style.css">
+		<script>
+
+			function bodyLoaded() {
+				/*$("#page-content-container").load("armor.html", function() {
+					initArmorList()
+				})*/
+				loadPage("armor.html")
+			}
+			
+			function loadPage(page) {
+				$("#page-content-container").empty()
+				$("#page-content-container").load(page, function() {
+					eval($("#page-initfunc").html())
+				})
+			}
+		</script>
+		
+		<meta charset="UTF-8">
+		<title>SoS Character Manager</title>
+		<!--meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" /-->
+				
+	</head>
+	<body onload="bodyLoaded()">
+		<img src="assets/gear.svg" class="gear" onclick="openOptions()"/>
+		<div id="menucontainer"></div>
+		<div id="page-content-container"></div>
+	</body>
 </html>
