@@ -3,6 +3,7 @@ var saveLoad = require("./saveload")
 var utils = require("./utils")
 var hitZoneLib = require("./hitzones")
 var materials = require("./materials")
+
 var armorData = null
 var armorList = null
 var equippedCategoryStr = "E"
@@ -653,9 +654,23 @@ function calcLayering(hitZone, protType, armorPiece) {
 		var armor = equippedHitZoneArmor[equippedHitZoneArmorIndex]
 		
 		if (armor.Qualities.Layer != null || hasGreatHelmLayerQuality(armor)) {
+			
 			var compareLayer = 0
 			if (armor.Qualities.Layer != null) {
-				compareLayer = armor.Qualities.Layer.level
+				
+				//For armour items that specify specific layering hitzones e.g. Plackart (belly, sides)
+				if (armor.Qualities.Layer.special !== "") {
+					var extractedHitZones = hitZoneLib.stringToHitZones(armor.Qualities.Layer.special)
+					console.log("plackart... ", extractedHitZones.locations, hitZone, extractedHitZones.locations.indexOf(hitZone) > -1)
+					if (extractedHitZones.locations.indexOf(hitZone) > -1) {
+						compareLayer = armor.Qualities.Layer.level
+						
+					} else {
+						compareLayer = 0 //No layering outside of specified hitzones if exists
+					}
+				} else {
+					compareLayer = armor.Qualities.Layer.level
+				}
 			}
 			
 			//Handle greathelm/bascinet/skullcap special case
