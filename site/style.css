@@ -131,6 +131,7 @@ button {
 
 }
 .droplist-item {
+	width: fit-content;
 }
 
 .droplist-box {
@@ -200,4 +201,62 @@ button {
     z-index: 10;
     left: 97%;
     top: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: all 0.2s;
+  background: white;
+}
+
+.material-dropdown-item {
+	background-color: #d7f1fc;
+	padding-left: 8px;
+	margin: 0;
+}
+
+.material-dropdown-item:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+
+.material-dropdown-item:hover {
+	background-color: #98b2fa;
+}
+
+.dropdown-material-selected {
+	border-radius: 0.25em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: xx-small;
+    color: #FFFFFF;
+    background-color: #4eb5f1;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.material-selector-container {
+	width: fit-content;
+    left: 92%;
+    top: 0%;
+    font-size: xx-small;
+	position: absolute;
+	background-color: #f9f9f9;
+}
+
+.dropdown-content:nth-child(odd){
+  
 }

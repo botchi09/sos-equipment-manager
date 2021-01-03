@@ -21,7 +21,7 @@
 					initArmorList()
 				})*/
 				loadPage("armor.html")
-				
+				registerHotKeys()
 
 			}
 			
@@ -68,7 +68,7 @@
 			
 						
 			window.onfocus = function() { 
-			  registerHotKeys()
+			  reregisterHotKeys()
 			}
 
 			window.onblur = function() { 
@@ -96,7 +96,12 @@
 				}
 			}
 			
-			registerHotKeys()
+			function reregisterHotKeys() {
+				for (var i=0;i<registeredHotKeys.length;i++) {
+					nw.App.registerGlobalHotKey(registeredHotKeys[i])
+				}
+			}
+			
 		</script>
 		
 		<meta charset="UTF-8">

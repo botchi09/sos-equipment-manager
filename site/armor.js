@@ -191,7 +191,7 @@ function recalculateCustomIndicators() {
 }
 
 function getMissileProt(armorId) {
-	var armor = armorData[armorId]
+	var armor = equippedArmor[armorId]
 	var missileProt = armor.AVP
 	if (armor.Qualities["Textile"] != null) {
 		missileProt = missileProt * 2
@@ -201,7 +201,7 @@ function getMissileProt(armorId) {
 
 function addArmorDroplistItem(id, armorId) {
 	
-	var armor = armorData[armorId]
+	var armor = equippedArmor[armorId]
 	if (armor.Coverage.locations !== null) {
 		var isHalfProt = armor.Coverage.halfProt.indexOf(id) > -1
 		var isWeakSpot = armor.Coverage.weakSpot.indexOf(id) > -1
@@ -269,8 +269,19 @@ function addFilterButton(category, buttonText) {
 
 }
 
+var curMaterial = materials.material.Steel
+
+function attachMaterialSelector() {
+	$("#material-dropdown > div").children().click(function() {
+		curMaterial = materials.material[$(this).attr("data-value")]
+		$("#material-selected").html($(this).html())
+		console.log("selected mat", curMaterial)
+	})
+}
+
 function initArmorList() {
 	storeCharData() //Initial data so JSON writes to file correctly
+	attachMaterialSelector()
 	loadArmorData()
 
 
@@ -562,7 +573,7 @@ function armorItemClick(item) {
 	//$(item).toggleClass("armor-list-item-equipped")
 	//$(item).toggleClass("armor-list-item")
 	if (equippedArmor[id] == null) {
-		equippedArmor[id] = armorData[id]
+		equippedArmor[id] = materials.convertArmorToMaterial(armorData[id], curMaterial)
 		$(item).attr("data-equipped", 1)
 		equippedHighlight($(item), true)
 
