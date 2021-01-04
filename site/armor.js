@@ -64,7 +64,7 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 	
 	var boxTypes = ["c", "p", "b", "m", "w"]
 	for (var i=0;i<6;i++) {
-		var curX = (x + (i*boxWidth)) * dollSizeMultiplier
+		var curX = (x-10 + (i*boxWidth)) * dollSizeMultiplier
 		var curY = (y + boxWidth) * dollSizeMultiplier
 		if (i==mapPos) {
 			var curBoxW = (curX+dollSizeMultiplier*boxWidth)
@@ -561,10 +561,10 @@ function armorFilterClicked(btn) {
 function equippedHighlight(item, doHighlight) {
 	if (doHighlight) {
 		$(item).addClass("armor-list-item-equipped")
-		$(item).addClass("armor-list-item")
+		$(item).removeClass("armor-list-item")
 	} else {
 		$(item).removeClass("armor-list-item-equipped")
-		$(item).removeClass("armor-list-item")
+		$(item).addClass("armor-list-item")
 	}
 }
 
@@ -820,7 +820,7 @@ function recalculateLocationValues() {
 		var curArmor = equippedArmor[equippedIndex]
 		curWeight+=curArmor.Weight
 		curCost+=curArmor.CpCost
-		if (curArmor.Coverage.locations != null) {
+		if (curArmor && curArmor.Coverage && curArmor.Coverage.locations != null) {
 			for (var coverageIndex in curArmor.Coverage.locations) {
 				var curHitZone = curArmor.Coverage.locations[coverageIndex]
 				var protArray = ["c","p","b","m"]
