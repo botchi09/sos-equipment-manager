@@ -394,7 +394,7 @@ function getAllArmorItemsByHitZone(hitZone, equippedOnly) {
 	
 	for (armorIndex in armorArray) {
 		var armor = armorArray[armorIndex]
-		if (armor.Coverage.locations != null) {
+		if (armor != null && armor.Coverage != null && armor.Coverage.locations != null) {
 			if (armor.Coverage.locations.indexOf(parseInt(hitZone)) > -1) {
 				items[armor.Id] = armor
 			}

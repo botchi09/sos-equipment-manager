@@ -38,8 +38,8 @@
 			
 			function simSaveClick() {
 				if (document.hasFocus()) {
-				console.log("save status", curFile !== $("#savebtn").val() , curFile == null , curFile != null && saveLoad.fileExists(curFile))
-					if (curFile !== $("#savebtn").val() || curFile == null || !saveLoad.fileExists(curFile)) {
+				console.log("save status", " "+curFile , lastSaveFile,saveLoad.fileExists(curFile))
+					if (curFile !== lastSaveFile || curFile == null || (!saveLoad.fileExists(curFile))) {
 						saveAsClick()
 					} else {
 						saveToFile(curFile)
@@ -48,17 +48,20 @@
 			}
 			
 			function saveAsClick() {
+				$("#savebtn").val("")
 				$("#savebtn").click()
 			}
 			
 			function simLoadClick() {
 				if (document.hasFocus() && changesSavedCheck()) {
 					$("#loadbtn").click()
+					
 				}
 			}
 			
 			function simNewClick() {
 				if (document.hasFocus() && changesSavedCheck()) {
+					curFile = null
 					//$("#newbtn").click()
 					generatePlayerData()
 					loadPage("armor.html")
@@ -111,8 +114,8 @@
 	</head>
 	
 	<body onload="bodyLoaded()">
-	<div style="display:none;"><input id="savebtn" type="file" nwsaveas accept=".json" onchange="fileSaved(this)">
-	<input id="loadbtn" type="file" accept=".json" onchange="fileLoaded(this)"></div>
+	<div style="display:none;"><input id="savebtn" type="file" nwsaveas accept=".json" oninput="fileSaved(this)">
+	<input id="loadbtn" type="file" accept=".json" oninput="fileLoaded(this)"></div>
 		<!--img src="assets/gear.svg" class="gear" onclick="openOptions()"/-->
 		<div id="optionscontainer"></div>
 		<div id="menucontainer">

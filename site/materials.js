@@ -15,11 +15,14 @@ function modifyAVs(armor, mod) {
 	armor.AVC+=mod
 	armor.AVP+=mod
 	armor.AVB+=mod
+	
+	var newSpecialAV = {}
 	if (armor.Coverage.locations && armor.Coverage.specialAV) {
 		for (var i in armor.Coverage.specialAV) {
-			armor.Coverage.specialAV+=mod
+			newSpecialAV[i] = armor.Coverage.specialAV[i] //Why the fuck does this work????
 		}
 	}
+	armor.Coverage.specialAV = newSpecialAV
 }
 
 function roundToDecimal(val) {
