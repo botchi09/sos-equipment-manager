@@ -728,17 +728,14 @@ function calcLayering(hitZone, protType, armorPiece) {
 					compareProt = compareProt*2
 				}
 			
-				if (compareProt <= highestLayerArmor[curProtType]) { //If we have something to layer it with...
-					finalProt = highestLayerArmor[curProtType] + highestLayer //Highest layer armour AV increases by layer
+				if (compareProt >= highestLayerArmor[curProtType]) { //If we have something to layer it with...
+					finalProt = compareProt + highestLayer //Highest layer armour AV increases by layer
 				}
 			}
 		}
 	}
 	
-	//console.log(finalProt, highestLayerArmor, highestLayer)
 	
-	//TODO: go through equipped armours of a hitzone, get highest layer value, calc
-	//TODO: MISSILE ONLY: If textile, calculate missile prot, do layering with AVP
 	return finalProt
 }
 
