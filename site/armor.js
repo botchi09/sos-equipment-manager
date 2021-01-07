@@ -64,7 +64,8 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 	
 	var boxTypes = ["c", "p", "b", "m", "w"]
 	for (var i=0;i<6;i++) {
-		var curX = (x-10 + (i*boxWidth)) * dollSizeMultiplier
+		var numberBoxOffset = 10 * dollSizeMultiplier
+		var curX = (x + (i*boxWidth)) * dollSizeMultiplier
 		var curY = (y + boxWidth) * dollSizeMultiplier
 		if (i==mapPos) {
 			var curBoxW = (curX+dollSizeMultiplier*boxWidth)
@@ -81,11 +82,12 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 			if (boxTypes[0] === "w") {
 				templateId = "#avbox-template-w"
 				isWeakSpot = true
+				numberBoxOffset = 0
 			}
 			var templated = $(templateId).clone().css("display", "block")
 			.mouseover(unhideDroplist)
 			.mouseout(hideDroplist)
-			.css("top", curY).css("left", curX)
+			.css("top", curY).css("left", curX + numberBoxOffset)
 			.css("height", dollSizeMultiplier*boxWidth)
 			.attr("id", "avbox-" + id + "-" + boxTypes[0])
 			.attr("data-hitzone", id)
@@ -661,7 +663,7 @@ function calcLayering(hitZone, protType, armorPiece) {
 				//For armour items that specify specific layering hitzones e.g. Plackart (belly, sides)
 				if (armor.Qualities.Layer.special !== "") {
 					var extractedHitZones = hitZoneLib.stringToHitZones(armor.Qualities.Layer.special)
-					console.log("plackart... ", extractedHitZones.locations, hitZone, extractedHitZones.locations.indexOf(hitZone) > -1)
+					//console.log("plackart... ", extractedHitZones.locations, hitZone, extractedHitZones.locations.indexOf(hitZone) > -1)
 					if (extractedHitZones.locations.indexOf(hitZone) > -1) {
 						compareLayer = armor.Qualities.Layer.level
 						
@@ -690,7 +692,7 @@ function calcLayering(hitZone, protType, armorPiece) {
 			
 			if (highestLayer <= compareLayer) {
 				highestLayer = compareLayer
-				highestLayerArmor = armor
+				highestLayerArmor = armor //TODO:This assumes higher armor layers always have higher AV. If this is not so, this code doesn't work. 
 				/*if (highestLayerProt <= armor[curProtType]) {		
 					highestLayerProt = armor
 					highestLayerProtArmor = armor[curProtType]
@@ -712,7 +714,7 @@ function calcLayering(hitZone, protType, armorPiece) {
 	var finalProt = 0
 	
 	//If layering even applies in this scenario
-	if (highestLayerArmor != null) {
+	if (highestLayerArmor != null && Object.keys(equippedHitZoneArmor).length > 1) {
 		//Second pass- calculate highest layer + armor
 		for (var equippedHitZoneArmorIndex in equippedHitZoneArmor) {
 			var armor = equippedHitZoneArmor[equippedHitZoneArmorIndex]
@@ -729,7 +731,7 @@ function calcLayering(hitZone, protType, armorPiece) {
 				}
 			
 				if (compareProt >= highestLayerArmor[curProtType]) { //If we have something to layer it with...
-					finalProt = compareProt + highestLayer //Highest layer armour AV increases by layer
+					finalProt = Math.max(compareProt + highestLayer, finalProt) //Highest layer armour AV increases by layer
 				}
 			}
 		}

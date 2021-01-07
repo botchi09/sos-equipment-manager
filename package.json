@@ -1,6 +1,6 @@
 {
   "name": "sos_manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SoS manager",
   "main": "index.js",
   "chromium-args": "--mixed-context",
