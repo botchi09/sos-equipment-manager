@@ -9,11 +9,35 @@ body {
 tbody {
 	box-shadow: 0 0 0 1px black;
 	border-radius: 0px;
-	font-size: xx-small;
+	font-size: small;
 	padding: 0;
 	overflow: auto;
 }
 
+.armor_AVC {
+	text-align: center;
+}
+
+.armor_AVP {
+	text-align: center;
+}
+
+.armor_AVB {
+	text-align: center;
+}
+
+.armor_pp {
+	text-align: center;
+}
+
+.armor_weight {
+	text-align: center;
+}
+
+
+.armor_cost {
+	width: 6%;
+}
 
 .hidden {
 	display: none;
@@ -80,7 +104,7 @@ button {
 .filterButton {
 	display:inline-block;
 	padding:0.0em 0.0em;
-	margin:0 1.5 0.0em 0;
+	margin:0em 0.15em;
 	border-radius:0.25em;
 	box-sizing: border-box;
 	text-decoration:none;
@@ -91,6 +115,9 @@ button {
 	text-align:center;
 	transition: all 0.2s;
 	width: fit-content;
+	    border: solid;
+    border-color: black;
+    border-width: thin;
 }
 
 .filterButton:hover {
@@ -242,6 +269,9 @@ button {
     color: #FFFFFF;
     background-color: #4eb5f1;
     text-align: center;
+	border: solid;
+    border-color: black;
+    border-width: thin;
 }
 
 .dropdown:hover .dropdown-content {

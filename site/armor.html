@@ -98,7 +98,7 @@
 		</div>
 		<div id="armor-list">
 			<div style="display:block;">
-				<input class="search" placeholder="Search" /><button onclick="resetButtonClicked(this)" class="filterButton">Reset</button><button id="default-sort-btn" class="sort filterButton" data-sort="index">Default Sort</button><button onclick="toggleWordCoverage(this)" class="filterButton">Word coverages</button><button onclick="toggleEquippedFilter(this)" class="filterButton" id="filter-equipped">Equipped filter</button>
+				<input id="armor-search" class="fuzzy-search" placeholder="Search" /><button onclick="resetButtonClicked(this)" class="filterButton">Reset</button><button id="default-sort-btn" class="sort filterButton" data-sort="index">Default Sort</button><button onclick="toggleWordCoverage(this)" class="filterButton">Word coverages</button><button onclick="toggleEquippedFilter(this)" class="filterButton" id="filter-equipped">Equipped filter</button>
 			</div>
 			<span id="filters">
 				<div id="filter-template" style="display: none;" class="filterButton" data-filtercat="" onclick="armorFilterClicked(this)">template</div>
@@ -109,10 +109,10 @@
 					
 					<thead>
 						<th class="armor_type"><button class="sort" data-sort="armor_type">Type</button></th>
-						<th class="armor_name"><button class="sort" data-sort="armor_name">Name</button></th>
-						<th class="armor_AVC"><button class="sort" data-sort="armor_AVC">AVC</button></th>
-						<th class="armor_AVP"><button class="sort" data-sort="armor_AVP">AVP</button></th>
-						<th class="armor_AVB"><button class="sort" data-sort="armor_AVB">AVB</button></th>
+						<th class="armor_name"><button class="sort" data-sort="armor_name" >Name</button></th>
+						<th class="armor_AVC armor-prot"><button class="sort" data-sort="armor_AVC" >AVC</button></th>
+						<th class="armor_AVP armor-prot"><button class="sort" data-sort="armor_AVP">AVP</button></th>
+						<th class="armor_AVB armor-prot"><button class="sort" data-sort="armor_AVB">AVB</button></th>
 						<th class="armor_coverage_numbers"><button class="sort" data-sort="coveragecount">Coverage</button></th>
 						<th class="armor_coverage"><button class="sort" data-sort="coveragecount">Coverage</button></th>
 						<th class="armor_qualities"><button class="sort" data-sort="qualitycount">Qualities</button></th>

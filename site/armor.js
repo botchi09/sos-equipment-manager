@@ -64,7 +64,7 @@ function armorDisplayBox(id, x, y, mapAtEnd) {
 	
 	var boxTypes = ["c", "p", "b", "m", "w"]
 	for (var i=0;i<6;i++) {
-		var numberBoxOffset = 10 * dollSizeMultiplier
+		var numberBoxOffset = -7.5 * dollSizeMultiplier
 		var curX = (x + (i*boxWidth)) * dollSizeMultiplier
 		var curY = (y + boxWidth) * dollSizeMultiplier
 		if (i==mapPos) {
@@ -529,6 +529,8 @@ function removeArmorFilter(category) {
 }
 
 function resetButtonClicked(btn) {
+	$("#armor-search").val("")
+	armorList.search("")
 	removeAllArmorFilters()
 	$("#filter-Horse_armor").click()//Users probably don't want horse armour by default...
 	$("#default-sort-btn").click() //Default index sorting at start
