@@ -69,7 +69,13 @@
 				
 			}
 			
-						
+			var win = nw.Window.get()
+
+			win.on("close", function() {
+				if (changesSavedCheck()) {
+					this.close(true)
+				}
+			});	
 			window.onfocus = function() { 
 			  reregisterHotKeys()
 			}

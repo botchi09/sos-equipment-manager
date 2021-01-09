@@ -749,7 +749,7 @@ function calcSpecialProtection(hitZone, protType) {
 }
 
 function displayCost(cost) {
-	$("#cost").html(utils.CpToString(cost))
+	$("#cost").html(utils.CpToString(cost) + " (" + cost + " cp)")
 }
 
 function displayWeight(weight) {
